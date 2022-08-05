@@ -18,7 +18,6 @@
    :caption: PyBAMOCS:
 
    pyBAMOCS_intro
-   tutorial
 
 
 .. toctree::
