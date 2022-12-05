@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Milestone 3 Progress Report &mdash; PACMANS  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Introduction" href="pyBAMOCS_intro.html" />
+    <link rel="prev" title="Milestone 2 Progress Report" href="milestone2_report.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> PACMANS
+            <img src="_static/pacman_logo_v1.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="summary.html">Project Summary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="milestone1_report.html">Milestone 1 Progress Report</a></li>
+<li class="toctree-l1"><a class="reference internal" href="milestone2_report.html">Milestone 2 Progress Report</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Milestone 3 Progress Report</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview">1      Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#goals-and-impact"> 2      Goals and Impact</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#task-2-global-climate-models">3 Task 2. Global Climate Models</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#image2gnanadesikan-box-model-datasets-and-tools">Gnanadesikan Box Model DataSets and Tools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cesm2-datasets-and-tools">CESM2 DataSets and Tools</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#task-5-evaluation-final-report">4      Task 5. Evaluation Final Report</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#box-model-for-consistency-and-reproducibility">Box Model for Consistency and Reproducibility</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#evaluation-of-ai-surrogates-and-bifurcation">Evaluation of AI Surrogates and Bifurcation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#evaluation-of-multi-agent-gan">Evaluation of Multi-Agent GAN</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#evaluation-of-neuro-symbolic-model">Evaluation of Neuro-Symbolic Model</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#measuring-explainability-and-causality-of-final-learned-latent-space">Measuring Explainability and Causality of Final Learned Latent Space</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#pacmans-website-documentation-datasets-and-source-code">5 PACMANS Website, Documentation, Datasets and Source Code</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#project-homepage">Project Homepage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#source-code">Source Code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#datasets">Datasets</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#conclusion-and-next-steps">6 Conclusion and Next Steps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bibliography">Bibliography</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#appendix-a-tasks-2-and-5-objectives-and-milestone">Appendix A – Tasks 2 and 5 Objectives and Milestone</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">PyBAMOCS:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="pyBAMOCS_intro.html">Introduction</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Help &amp; Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="people.html">Our Team</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">PACMANS</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Milestone 3 Progress Report</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/milestone3_report.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<section id="milestone-3-progress-report">
+<h1>Milestone 3 Progress Report<a class="headerlink" href="#milestone-3-progress-report" title="Permalink to this heading"></a></h1>
+<p>Report on Metrics to be Used to Compare the Benefits of
+Hybrid Models Over Conventional Models</p>
+<section id="overview">
+<h2>1      Overview<a class="headerlink" href="#overview" title="Permalink to this heading"></a></h2>
+<p>This technical report covers the period of February 2022 through April
+13, 2022. The report documents the achievement of the milestone
+associated with Month 4 of the JHU/APL-led PACMAN team’s statement of
+work.</p>
+</section>
+<section id="goals-and-impact">
+<h2> 2      Goals and Impact<a class="headerlink" href="#goals-and-impact" title="Permalink to this heading"></a></h2>
+<p>The goals for this milestone include CMIP data wrangling and dataset
+delivery, and a report describing the metrics used for the hybrid
+methods in terms of accuracy, physical consistency, reproducibility, and
+consistency. As part of this milestone, we are providing both the tools
+and datasets that will be used to train the AI surrogate models and the
+AI simulation. We will also begin collaborating with the other teams
+working on the AMOC tipping point problem including the Exeter/Waterloo
+group. We have started a Slack channel for sharing information
+pertaining to using the data and using the data generation tools we have
+developed. We will hold tutorials with teams, as needed, and will
+encourage other non-AMOC teams to take a similar approach with the goal
+of developing a suite of tools and datasets across a variety of tipping
+points.</p>
+</section>
+<section id="task-2-global-climate-models">
+<h2>3 Task 2. Global Climate Models<a class="headerlink" href="#task-2-global-climate-models" title="Permalink to this heading"></a></h2>
+<p><strong>Subtask 2.2. CMIP Data Wrangling and Dataset Delivery Preparation.</strong></p>
+<p>This task defines the CMIP data wrangling efforts which will support
+dataset generation for the purpose of training the AI surrogate models
+and the AI simulation GAN. As previously described, we made an early
+decision to use the Gnanadesikan four box model as a starting point for
+data generation that would be used to both train and validate the AI
+models. Taking this approach has enabled us to build the AI surrogates
+and the AI simulation simultaneously. It also has allowed us to focus
+initially on the architectures rather than the complexity of the GCM
+full data domain. The Gnanadesikan four box model enables controlled
+simulations of AMOC shutoff behavior that can be detected using a fold
+bifurcation method. As part of this effort, we have developed a full
+suite of tools for AI dataset generation in Python.</p>
+<p>In addition to this effort, part of this milestone includes the first
+dataset based on the Community Earth System Model, CESM2. This model has
+been shown to have a significant weakening of the AMOC in response to a
+warming climate. To build a controlled CESM2 dataset for the AI models,
+the CESM2 data extraction has been calibrated to the Gnanadesikan four
+box model in that the CESM2 diagnostics have been extracted that
+correspond to the box model. This has enabled us to a) reduce the
+complexity of the CESM2 data generation, b) better understand AMOC
+behavior present in the CESM2 data, and c) create the same initial
+conditions and parameter values in the box model to both test validity
+and to run the model past the cut-off timestep in CESM2 runs to test for
+AMOC shut-off or collapse. As part of this milestone, in addition to the
+Gnanadesikan four box model Python data generation tools, we will also
+provide a data generation tool for CESM2 written in Matlab (v1). Python
+tools for CESM2 data generation, preferably generalized for multiple
+models taking part in the CMIP experiments, are being developed and will
+be delivered as part of milestone 5.</p>
+<p>Both of these efforts are supporting our goal of applying our AI
+simulation method to large GCMs to discover new insight into AMOC
+tipping points, either weakenings or complete shut-offs, as shown in
+Figure 1. We believe that through this exploration, we will better
+understand both AMOC collapse avoidance measures and AMOC collapse
+recovery.</p>
+<section id="image2gnanadesikan-box-model-datasets-and-tools">
+<h3><a class="reference internal" href="_images/image42.png"><img alt="image2" src="_images/image42.png" style="width: 6.5in; height: 0.77431in;" /></a>Gnanadesikan Box Model DataSets and Tools<a class="headerlink" href="#image2gnanadesikan-box-model-datasets-and-tools" title="Permalink to this heading"></a></h3>
+<p>As mentioned in the milestone 2 report, the Gnanadesikan four box model
+is a simple dynamical model that includes southern, low latitude, and
+northern surface boxes and one deep box as shown in Figure 2. The model
+and experiments that explore AMOC shut-off were published in
+(Gnanadesikan 2018) and the tools for recreating these experiments were
+written in Matlab.
+<a class="reference internal" href="_images/image21.png"><img alt="image1" src="_images/image21.png" style="width: 3.95764in; height: 2.65208in;" /></a><a class="reference internal" href="_images/image5.png"><img alt="image3" src="_images/image5.png" style="width: 3.81944in; height: 2.97153in;" /></a>As part of the milestone 3 delivery, our team has developed a
+set of tools based on the Gnanadesikan four box model for data
+generation. Specifically, we have developed a Python version of the
+Matlab four box model that allows one to specify initial conditions, and
+parameter values. A highlight of this code is shown in Figure 3. The
+Python package recreates the Gnanadesikan experiments contained in the
+Matlab code and generates the same plots as shown in Figure 4, where
+overturning behavior is visualized.</p>
+<p><a class="reference internal" href="_images/image7.png"><img alt="image4" src="_images/image7.png" style="width: 4.17222in; height: 3.05625in;" /></a>We use this tool to create the datasets we will use for
+training both the AI surrogates/bifurcation and the GAN. We are also
+using this dataset to explore building the neuro-symbolic language and
+the causal model. The dataset is generated as both a labeled dataset and
+a temporal dataset. The data generation process is flexible in terms of
+output with netcdf as the current format.</p>
+<p><a class="reference internal" href="_images/image9.png"><img alt="image5" src="_images/image9.png" style="width: 4.44028in; height: 2.52083in;" /></a>The tool also allows for grid-like data generation across the
+parameter space over the ranges of all 24 parameters. It starts from a
+base simulation with initial conditions and generates child simulations
+representing perturbed parameters sets, where a different parameter is
+choosen per run. The relationship between perturbed runs is captured
+through the naming convention of the data. An example of this structure
+is shown in Figure 5, where child simulations are based on a parent
+simulation for which a parameter is perturbed. We will use this
+structure to support training the GAN and evaluating what it learns as
+output. This structure intentionally covers the full parameter space, so
+at each node in the tree, a single parameter is perturbed and a
+perturbed value may or may not result in an AMOC shut-off. The result of
+a simulation run will include an attribute, <strong>‘mode_shift_detected’</strong>,
+which acts as a label for the run indicating whether a shut-off is
+reached or not. Labeling was achieved by identifying when northern
+hemisphere overturning (M_n) crossed 0. List of time steps where the
+criteria was met (variably sized).</p>
+</section>
+<section id="cesm2-datasets-and-tools">
+<h3>CESM2 DataSets and Tools<a class="headerlink" href="#cesm2-datasets-and-tools" title="Permalink to this heading"></a></h3>
+<p>CESM2 is a global, coupled atmosphere-ocean general circulation model
+that has participated in the Coupled Model Intercomparison Project,
+version 6 (CMIP-6), including the forward climate scenario, ocean, and
+paleoclimate experiments. The results are publicly available, archived
+at <a class="reference external" href="https://esgf-node.llnl.gov/search/cmip6/">cmip6 Data Search | cmip6 | ESGF-CoG
+(llnl.gov)</a>. In addition, a
+variety of pre-industrial runs with varied AMOC strengths are available
+through NCAR’s archive at Earth System Grid (<a class="reference external" href="https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.ocn.proc.monthly_ave.html">Dataset: CESM2 LENS Ocean
+Post Processed Data Monthly Averages
+(earthsystemgrid.org)</a>).
+Initial data wrangling includes processing 4-dimensional ocean variables
+of temperature, salinity, and velocity (4GB/decade) into zonal-mean
+(3-dimensional) temperature, salinity, potential density, and velocity
+(150MB/decade). These zonal-mean variables are then processed into
+1-dimensional time series (50kB/decade) that are parallel to those
+created by the Atlantic box model (Gnanadesikan 2018). This includes the
+spatial-mean temperature, salinity, and potential density in 4 Atlantic
+sub-regions, the pycnocline depth, the overturning flux in the northern
+and southern high latitudes where deep water is formed, the Ekman flux
+from the Southern Ocean northward, and the freshwater fluxes between
+regions. Combined with the fixed parameters used in CESM2 for
+diffusivities and an estimate of the time constant for the northern
+high-latitude near-surface box, the results are monthly data and fixed
+parameters that could be input to the box model to estimate an
+equilibrium ocean state. These data include the transient response to
+fluctuations in ocean state and atmospheric forcing, and a noticeable
+seasonal cycle as shown in Figures 6 (forward scenario SSP1-2.6) and 7
+(historical run 1850-2014).</p>
+<p>Figure 6 demonstrates the applicability of the box model for the CESM2
+data. The changes in AMOC strength (top left), pycnocline depth (just
+below AMOC), meridional density difference (difference between northern
+and low-latitude boxes, bottom right), and salinity in the northern box
+(top right, blue) are correlated. In the box model, these have the same
+relationship: freshening of the northern box reduces its density,
+leading to a reduction in the meridional density difference, a deeper
+pycnocline, and a weaker AMOC. The box model has a shutoff of AMOC when
+the meridional density difference is zero, and reverses if it is
+negative. That state is reached around 2085 for summer months, but
+winter months, when deep water formation occurs, still have a positive
+density difference, and the AMOC is about 25% of its preindustrial
+strength which is a larger change than any observed in the
+pre-industrial or historical runs for this model.</p>
+<a class="reference internal image-reference" href="_images/image111.png"><img alt="_images/image111.png" src="_images/image111.png" style="width: 6.29167in; height: 4.36458in;" /></a>
+<a class="reference internal image-reference" href="_images/image121.png"><img alt="_images/image121.png" src="_images/image121.png" style="width: 6.7in; height: 4.63896in;" /></a>
+<p>In the search for AMOC shut-offs in CESM2 data, we have also examined
+the paleoclimate runs performed for PMIP. No very weak AMOC state is
+identified that persists for multiple years. However, the decadal
+variability levels in these long (700-year) simulations may be useful
+for determining whether AMOC weakenings, as seen in the forward
+scenario, are likely leading to tipping points rather than recoveries.
+An example is shown in Figure 8: 10-20% shifts in AMOC strength are
+seen, both positive and negative, over decadal timescales. Using the
+tools built for this milestone, we will be able to add these cases to
+our dataset and study them further.</p>
+<a class="reference internal image-reference" href="_images/image14.png"><img alt="_images/image14.png" src="_images/image14.png" style="width: 6.42222in; height: 4.1in;" /></a>
+</section>
+</section>
+<section id="task-5-evaluation-final-report">
+<h2>4      Task 5. Evaluation Final Report<a class="headerlink" href="#task-5-evaluation-final-report" title="Permalink to this heading"></a></h2>
+<p><strong>Subtask 5.1. Report on metrics in terms of accuracy, physical
+consistency, reproducibility, and consistency</strong></p>
+<section id="box-model-for-consistency-and-reproducibility">
+<h3>Box Model for Consistency and Reproducibility<a class="headerlink" href="#box-model-for-consistency-and-reproducibility" title="Permalink to this heading"></a></h3>
+<p>In Figure 9, we show how ground truth will be established in order to
+evaluate the AI simulation. As we move from left to right, we show the
+project progression, the number of parameters increases, the number of
+outcomes increases, eventually moving towards realistic full GCM model
+runs. As shown, these non-calibrated models will be used after we have
+established a strong sense of system performance. When we apply the AI
+simulation to non-calibrated GCMs, we will use the climate modeling
+experts of our team to evaluate the results of these runs. The climate
+modeling experts will run in-house models and will perform analysis on
+the results to achieve an empirical evaluation of the AI simulations.</p>
+<a class="reference internal image-reference" href="_images/image16.png"><img alt="_images/image16.png" src="_images/image16.png" style="width: 6.5in; height: 3.27299in;" /></a>
+<p>The Gnanadesikan Four Box Model is used to better understand both AMOC
+on/off states over time and to generate the initial dataset for
+validation of the AI models. Model configurations discovered by the GAN
+that led to a AMOC shut-off can be reproduced using the box model.</p>
+<p>In addition, the model calibration can be performed and used to validate
+CESM2 model runs that indicate weakening of the AMOC. By recreating the
+CESM2 model configurations in the box model, the box model can be run
+beyond the last timestep in the CEMS2 model. When an AMOC shut-off is
+not present in the CESM2 model but weakening is observed, the box model
+can be used to determine if the state of the model in the presence of a
+weakening would result in a shut-off.</p>
+<p>Model calibration can be further extended against other climate models.
+Using this approach, we will be able to capture both mean state and
+variability.</p>
+<p>Future box model improvements will seek to increase the dynamics
+included in the model and potentially the boundaries. For example, the
+box model can be extended to include the Pacific Basin and to include
+the seasonal cycle.</p>
+<p>The box model enables evaluating what is learned by the AI components in
+a consistent and reproducible way. As we move away from the box model
+surrogate to the GCMs, the calibrated versions will be evaluated using
+the box model to confirm expected outcomes. The uncalibrated models will
+be used as a “model-in-the-wild”, as we will not have “ground truth”.
+When we run a “model-in-the-wild”, we will use our in-house expertise to
+validate the outcomes. We will want to explore these models only when
+the AI simulation passes the other evaluations. When we get to the point
+of running a “model-in-the-wild”, our objective will be to discover new
+AMOC behavior.</p>
+</section>
+<section id="evaluation-of-ai-surrogates-and-bifurcation">
+<h3>Evaluation of AI Surrogates and Bifurcation<a class="headerlink" href="#evaluation-of-ai-surrogates-and-bifurcation" title="Permalink to this heading"></a></h3>
+<p>The performance of surrogate models in estimating/predicting tipping
+point/escape probabilities is measured in comparison to the full model
+simulation. It is performed in two ways:</p>
+<ol class="loweralpha simple">
+<li><p>by direct simulation (when multiple random perturbation scenarios are
+simulated</p></li>
+</ol>
+<blockquote>
+<div><p>with the full model, and then also simulated by the surrogate model)
+to escape until the probability distribution of escape times
+visually/approximately converges.</p>
+</div></blockquote>
+<ol class="loweralpha simple" start="2">
+<li><p>for a low-dimensional enough targeted surrogate model in the
+neighborhood of a tipping point, one can approximate the distribution
+of tipping times by solving a PDE for the escape time distribution
+itself.</p></li>
+</ol>
+<p>In both cases, the evaluation combines (a) the cost of running the full
+model versus the cost of running the reduced one and (b) the evaluation
+of the difference of the two escape time distributions after convergence
+(i.e., of the accuracy of the surrogate model).</p>
+<p>In the early stages of experimentation, we will develop surrogates based
+on the box model. As we progress, we will work towards building
+surrogates of the full GCM models.</p>
+</section>
+<section id="evaluation-of-multi-agent-gan">
+<h3>Evaluation of Multi-Agent GAN<a class="headerlink" href="#evaluation-of-multi-agent-gan" title="Permalink to this heading"></a></h3>
+<p>The GAN architecture is described by two deep neural networks, one which
+learns a supervised model and the other which learns an unsupervised
+model.</p>
+<p>We will evaluate the unsupervised part of the GAN (the generators which
+are learning a latent space) using multiple metrics. The first metric
+will be a qualitative measure of performance. In this measure, we will
+evaluate how the generators learned different modalities of the
+distribution.</p>
+<p>Since we are building a multi-class discriminator GAN, the discriminator
+will learn a classification model classifying configurations as shut-off
+or non-shut-off initially, and eventually will perform classifications
+in terms of shut-off, weakening, strengthening and potentially more
+fine-grained classifications. The discriminator will learn how to
+predict these outcomes given the input. We will use the box model
+generated data to evaluate this method in terms of accurately predicted
+whether a given set of initial conditions, and parameter configuration
+will or will not lead to a shut-off. We will initially use a standard
+machine learning measure of accuracy for the classification as we will
+have a 2-class or binary classification setup. Accuracy is calculated
+with respect to the true positive (TP), true negative (TN), false
+positive (FP), false negative (FN) classifications, as seen below.</p>
+<div class="math notranslate nohighlight">
+\[Accuracy = \ \frac{TP + TN}{TP + TN + FP + FN}\]</div>
+<p>As classifications move to a multi-class setup, we will measure
+classification performance in terms of precision (P), recall (R), and
+F-Measure (F1) which provides are more granular understanding of the
+classification performance.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>.
+. math:: P = frac
+{text{TP}}{TP + FP}</p></td>
+<td><p>.
+. math:: R = frac
+{text{TP}}{TP + FN}</p></td>
+<td><div class="math notranslate nohighlight">
+\[F1 = \
+\frac{2*P*R}{P + R}\]</div>
+</td>
+</tr>
+</tbody>
+</table>
+<p>As we incorporate the neuro-symbolic model into the simulation, measures
+of performance will change. As we develop the models further, we will
+report on these changes.</p>
+</section>
+<section id="evaluation-of-neuro-symbolic-model">
+<h3>Evaluation of Neuro-Symbolic Model<a class="headerlink" href="#evaluation-of-neuro-symbolic-model" title="Permalink to this heading"></a></h3>
+<p>The neuro-symbolic model will need to be evaluated independently from
+the other parts of the AI simulation. In this evaluation, we will
+measure the effectiveness of the language and its representation. We
+will measure how we structurally represent the constituents of the
+domain in terms of performance and in terms of representativeness.</p>
+<p>To evaluate the effectiveness of using the neuro-symbolic model, we will
+run the GAN with and without the neuro-symbolic model as part of the
+workflow. We will measure the downstream task of causality and
+explainability in terms of this comparison.</p>
+<p>In addition, we will measure the effectiveness of the language in
+support of question answering of the model. Representation of questions
+and answers will be fundamental in linking these into the AI-learned
+causal model.</p>
+<p>The neuro-symbolic language will initially use the structurally
+represented graphs based on the Four Box model as the problem domain and
+a set of questions that imply potential causes of AMOC shut-off. This is
+be the basis for developing the model and evaluating its effectiveness.
+As we progress, the structure of this model will also be further
+developed based on the calibrated CESM2 model and eventually a large
+uncalibrated GCM.</p>
+</section>
+<section id="measuring-explainability-and-causality-of-final-learned-latent-space">
+<h3>Measuring Explainability and Causality of Final Learned Latent Space<a class="headerlink" href="#measuring-explainability-and-causality-of-final-learned-latent-space" title="Permalink to this heading"></a></h3>
+<p>As outlined in the publication (Hoffman 2018) which formalized
+explainability metrics shown in Figure 10, explainability will be
+measured roughly in terms of the described AI Explainability (XAI)
+measures.</p>
+<a class="reference internal image-reference" href="_images/image181.png"><img alt="_images/image181.png" src="_images/image181.png" style="width: 6.05972in; height: 3in;" /></a>
+<p>The causal model that results from the AI simulation will be evaluated
+based on four measures: goodness criteria, satisfaction, comprehension,
+and performance and are outlined below.</p>
+<p><strong>Goodness criteria</strong> – addresses factors such as clarity and precision
+in terms of conclusions</p>
+<blockquote>
+<div><p><strong>Satisfaction</strong> – modeler understandability of the resulting causal
+model and the conclusions obtained</p>
+<p><strong>Comprehension</strong> – is the resulting model understandable and can the
+modeler comprehend both the conclusions and the pathways which lead
+to the conclusions</p>
+<p><strong>Performance</strong> – is one able to ask questions of the resulting model
+and does the approach scale to large GCM model runs</p>
+</div></blockquote>
+</section>
+</section>
+<section id="pacmans-website-documentation-datasets-and-source-code">
+<h2>5 PACMANS Website, Documentation, Datasets and Source Code<a class="headerlink" href="#pacmans-website-documentation-datasets-and-source-code" title="Permalink to this heading"></a></h2>
+<p>The PACMANS website will be hosted by Johns Hopkins University
+SciServer. It will contain a link to our documentation, datasets and
+source code. APL website development started. We will send an updated
+email when we have completed the website development.</p>
+<section id="project-homepage">
+<h3>Project Homepage<a class="headerlink" href="#project-homepage" title="Permalink to this heading"></a></h3>
+<p><a class="reference external" href="https://www.sciserver.org/public-data/PACMANS/">https://www.sciserver.org/public-data/PACMANS/</a> (Under construction - to
+be opened shortly.)</p>
+</section>
+<section id="source-code">
+<h3>Source Code<a class="headerlink" href="#source-code" title="Permalink to this heading"></a></h3>
+<p><a class="reference external" href="https://github.com/JHUAPL/PACMANs">https://github.com/JHUAPL/PACMANs</a></p>
+</section>
+<section id="datasets">
+<h3>Datasets<a class="headerlink" href="#datasets" title="Permalink to this heading"></a></h3>
+<p>Currently available to DARPA on Github and will be transferred to
+SciServer and available on the project homepage when open.</p>
+</section>
+</section>
+<section id="conclusion-and-next-steps">
+<h2>6 Conclusion and Next Steps<a class="headerlink" href="#conclusion-and-next-steps" title="Permalink to this heading"></a></h2>
+<p>The milestone 3 deliverables exhibit both our team’s commitment to
+developing a large-scale system that can be used for discovering tipping
+points and for building a collaborative approach in working with other
+performers on the team. By building a scalable approach to modeling the
+problem, with a clear early start developing ground truth datasets that
+can be used for deep learning model, we enable both time for developing
+the research and for better understanding the behavior of the AMOC. This
+approach will better inform how this AI simulation could be built as a
+generalized approach applied to other climate tipping point phenomena.</p>
+</section>
+<section id="bibliography">
+<h2>Bibliography<a class="headerlink" href="#bibliography" title="Permalink to this heading"></a></h2>
+<p><strong>Gnanadesikan</strong>, A., R. Kelson and M. Sten, Flux correction and
+overturning stability: Insights from a dynamical box model, J. Climate,
+31, 9335-9350, <a class="reference external" href="https://doi.org/10.1175/JCLI-D-18-0388.1">https://doi.org/10.1175/JCLI-D-18-0388.1</a>, (2018).</p>
+<p>Stommel, H. Thermohaline convection with two stable regimes of flow.
+Tellus 13, 224–230 (1961).</p>
+<p>Sgubin, Giovanni, Didier Swingedouw, Sybren Drijfhout, Yannick Mary, and
+Amine Bennabi. “Abrupt cooling over the North Atlantic in modern climate
+models.” Nature Communications 8, no. 1 (2017): 1-12.</p>
+<p>Rodgers, Keith B., Sun-Seon Lee, Nan Rosenbloom, Axel Timmermann, Gokhan
+Danabasoglu, Clara Deser, Jim Edwards et al. “Ubiquity of human-induced
+changes in climate variability.” Earth System Dynamics 12, no. 4 (2021):
+1393-1411.</p>
+<p>Goodfellow, Ian, Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David
+Warde-Farley, Sherjil Ozair, Aaron Courville, and Yoshua Bengio.
+“Generative adversarial nets.” Advances in neural information processing
+systems 27 (2014).</p>
+<p>Hoang, Quan, Tu Dinh Nguyen, Trung Le, and Dinh Phung. “MGAN: Training
+generative adversarial nets with multiple generators.” In International
+conference on learning representations. 2018.</p>
+<p>Li, Wei, Zhixuan Liang, Julian Neuman, Jinlin Chen, and Xiaohui Cui.
+“Multi-generator GAN learning disconnected manifolds with mutual
+information.” Knowledge-Based Systems 212 (2021): 106513.</p>
+<p>Hoffman, Robert R., Shane T. Mueller, Gary Klein, and Jordan Litman.
+“Metrics for explainable AI: Challenges and prospects.” <em>arXiv preprint
+arXiv:1812.04608</em> (2018).</p>
+</section>
+<section id="appendix-a-tasks-2-and-5-objectives-and-milestone">
+<h2>Appendix A – Tasks 2 and 5 Objectives and Milestone<a class="headerlink" href="#appendix-a-tasks-2-and-5-objectives-and-milestone" title="Permalink to this heading"></a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Task 2.2</strong> CMIPS Data Wrangling and Dataset Delivery Preparation</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Objective: Deliver wrangled data set for both the surrogate models
+and the GAN.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Task 5.1</strong> Evaluation Development</p></td>
+</tr>
+<tr class="row-even"><td><p>Objective: Report on metrics in terms of accuracy, physical
+consistency, reproducibility, and consistency.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Milestone</strong>: Deliver prepared datasets for use in Phase 1. Report
+on metrics to be used to compare the benefits of hybrid models over
+conventional models.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="milestone2_report.html" class="btn btn-neutral float-left" title="Milestone 2 Progress Report" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="pyBAMOCS_intro.html" class="btn btn-neutral float-right" title="Introduction" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, The Johns Hopkins University Applied Physics Laboratory LLC. All rights reserved..</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
