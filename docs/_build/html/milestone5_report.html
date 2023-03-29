@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Milestone 5 Progress Report &mdash; PACMANS  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Milestone 6 Progress Report" href="milestone6_report.html" />
+    <link rel="prev" title="Milestone 4 Progress Report" href="milestone4_report.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> PACMANS
+            <img src="_static/pacman_logo_v1.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="summary.html">Project Summary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="milestone1_report.html">Milestone 1 Progress Report</a></li>
+<li class="toctree-l1"><a class="reference internal" href="milestone2_report.html">Milestone 2 Progress Report</a></li>
+<li class="toctree-l1"><a class="reference internal" href="milestone3_report.html">Milestone 3 Progress Report</a></li>
+<li class="toctree-l1"><a class="reference internal" href="milestone4_report.html">Milestone 4 Progress Report</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Milestone 5 Progress Report</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview">1 Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#goals-and-impact">2 Goals and Impact</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#key-findings">3 Key Findings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#phase-2-dataset-discussion">4 Phase 2 - Dataset Discussion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#task-1-2-use-case-ocean-modeling-summary">5 Task 1.2: Use Case Ocean Modeling Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#task-2-3-data-acquisition-dataset-delivery">6 Task 2.3: Data Acquisition Dataset Delivery</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="milestone6_report.html">Milestone 6 Progress Report</a></li>
+<li class="toctree-l1"><a class="reference internal" href="milestone7_report.html">Milestone 7 Progress Report</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">PyBAMOCS:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="pyBAMOCS_intro.html">Introduction</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Help &amp; Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="people.html">Our Team</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">PACMANS</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Milestone 5 Progress Report</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/milestone5_report.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<section id="milestone-5-progress-report">
+<h1>Milestone 5 Progress Report<a class="headerlink" href="#milestone-5-progress-report" title="Permalink to this heading"></a></h1>
+<p><strong>PACMANS TEAM:</strong>
+• Jennifer Sleeman (JHU APL) PI
+• Anand Gnanadesikan (JHU) Co-PI
+• Yannis Kevrekidis (JHU) Co-PI
+• Jay Brett (JHU APL)
+• David Chung (JHU APL)
+• Chace Ashcraft (JHU APL)
+• Thomas Haine (JHU)
+• Marie-Aude Pradal (JHU)
+• Renske Gelderloos (JHU)
+• Caroline Tang (DUKE)
+• Anshu Saksena (JHU APL)
+• Larry White (JHU APL)
+• Marisa Hughes (JHU APL)</p>
+<section id="overview">
+<h2>1 Overview<a class="headerlink" href="#overview" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>This technical report covers the period of May 2022 through June 13, 2022.</p></li>
+<li><p>The report documents the achievement of the milestone associated with Month 6 of the JHU/APL-led PACMAN team’s statement of work.</p></li>
+<li><p>The delivery for this milestone is this report which highlights identifying potential datasets (and providers) for Phase 2 to address predictability of climate effects at 1-to-3 decade time scales, regional or global spatial extents.</p></li>
+<li><p>This report includes a discussion of how our work will determine the most important measures to make with future observations and the value of that data. It also includes a description of progress for tasks 1.2 and 2.3.</p></li>
+</ul>
+</section>
+<section id="goals-and-impact">
+<h2>2 Goals and Impact<a class="headerlink" href="#goals-and-impact" title="Permalink to this heading"></a></h2>
+<p>In support of establishing additional data source requirements for Phase 2 and applying the AI simulation method to the AMOC use case, we have begun identifying GCM models and additional features that could be exposed through other data sources.</p>
+<p><strong>Goals for this milestone included:</strong>
+• Identifying GCM models that will be developed for atmosphere-ocean coupled physical processes including the AMOC (Task 1.2)</p>
+<ul class="simple">
+<li><p>Further development of the calibrated GCMs datasets and tools that will be used for testbeds for AI-supported integration (Task 2.3)</p></li>
+</ul>
+</section>
+<section id="key-findings">
+<h2>3 Key Findings<a class="headerlink" href="#key-findings" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Newly developed 6-box model (see more about the development of this next generation box model on slide 10) has provided the following insights:</dt><dd><ul>
+<li><p>Oscillatory behavior indicates that on/off states are possibly occurring over time and potential shut-offs could be recoverable from</p></li>
+<li><p>The study of these oscillations could give insight into how slow-downs could lead to full collapses and how recovery from slow-downs vs. complete collapse could imply different reversal strategies</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>Applying the 4-box model to multiple CMIP6 model projections shows that this box model theory does not fully explain the connection between AMOC strength and pycnocline depth.</p></li>
+</ul>
+</section>
+<section id="phase-2-dataset-discussion">
+<h2>4 Phase 2 - Dataset Discussion<a class="headerlink" href="#phase-2-dataset-discussion" title="Permalink to this heading"></a></h2>
+<blockquote>
+<div><ul>
+<li><p>The primary dataset for scientific discovery will be the CMIP6 archive of global coupled models.</p></li>
+<li><p>Those models with ensembles of runs for certain forward projections will be valuable in understanding <em>predictability</em> of the changes in AMOC.</p></li>
+<li><p>Model disagreement, paired with GAN discovery of tipping points, will identify the important parameters or conditions that control the AMOC shutoff.</p></li>
+<li><p>Observations that could put limits on these parameters or indicate these conditions will be the most valuable new data that could be generated.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>We expect important initial conditions to include the AMOC strength, which could be better measured with added data from floats for improved T, S structure measures, moorings for bottom pressure, or satellite SST and SSS.</p></li>
+<li><p>We expect an important forcing to be the freshwater flux from the Arctic, which might be measured by floats and satellites.</p></li>
+<li><p>We expect the important parameters to be mixing rates, which can be measured with in-situ and satellite monitoring of significant salinity anomalies for their decay rate or potentially dye experiments at the (sub)mesoscale.</p></li>
+<li><p>Existing satellite and ARGO datasets will be examined to determine what we can already learn of freshwater fluxes, AMOC strength, and salinity anomalies to constrain our model analyses.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+<p><strong>Key ideas to explore in Phase 2</strong></p>
+<blockquote>
+<div><p>Is there <strong>emergent behavior</strong> that can serve as a an index of whether models are approaching a tipping point?</p>
+<ul class="simple">
+<li><p>Amplitude of variability in the overturning circulation?</p></li>
+<li><p>Appearance or disappearance of oscillations in overturning transport?</p></li>
+<li><p>Damping time and/or persistence of salinity anomalies</p></li>
+<li><p>Relative phase of salinity and pycnocline depth anomalies</p></li>
+</ul>
+</div></blockquote>
+<dl class="simple">
+<dt>Is this emergent behavior <strong>detectable</strong> with relatively short time series?</dt><dd><ul class="simple">
+<li><p>Example: In box model, overturning variability increases as tipping point is approached… but hundreds of years of output are needed to see changes.</p></li>
+<li><p>Examine whether this is true in models with different periodicities in overturning variability.How does the GAN exploit this emergent behavior?</p></li>
+<li><p>Could the GAN be directed to exploit spaces that have high probability of causing a tip?</p></li>
+<li><p>Could additional data be used to improve the adversarial game?</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="task-1-2-use-case-ocean-modeling-summary">
+<h2>5 Task 1.2: Use Case Ocean Modeling Summary<a class="headerlink" href="#task-1-2-use-case-ocean-modeling-summary" title="Permalink to this heading"></a></h2>
+<blockquote>
+<div><p><em>Subtask Description: We will provide a report which identifies the
+GCM models that will be developed for atmosphere-ocean coupled
+physical processes including the AMOC. We will include the relevance
+of these models to both time scales and spatial extents, keeping in
+mind the questions we set out to answer with respect to AMOC focus on
+drivers that could indicate the need for additional measurements and
+how the surrogate model disagreement could explain true model
+disagreement, in addition to the questions related to the specific
+collapse of the AMOC.</em></p>
+<dl class="simple">
+<dt><strong>Accomplishments:</strong></dt><dd><ul class="simple">
+<li><p>Development of a plan of experiments in a fully-coupled global climate model to locate the overturning tipping point, allowing us to find changes in state preceding that tipping point</p></li>
+<li><p>Determination to use the Community Earth System Model, CESM</p></li>
+<li><p>Porting of CESM to JHU’s Rockfish computing center is underway</p></li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+<p><strong>Experimental plan:</strong>
+From a steady 2000s climate, we increase atmospheric CO2 at a constant rate of 4ppm/year (1%).
+Each 35 years, at an effective radiative increase of 2W/m2, we branch off two simulations, one with constant CO2 and one with decreasing CO2 at the same 1% annual rate.
+These will determine whether the AMOC recovers, stabilizes, or continues to collapse.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/image281.png"><img alt="_images/image281.png" src="_images/image281.png" style="width: 7.19722in; height: 4.30139in;" /></a>
+</div></blockquote>
+<p><strong>Experiment plan:</strong>
+Several runs of this experiment will be undertaken for a small ensemble, varying initial conditions (e.g. Atlantic Multidecadal Oscillation (AMO) phase and AMOC strength) and the parameters from the box model that the GAN indicates the tipping point or separatrix is most sensitive to.</p>
+<p>We will also repeat runs with roundoff-level differences in the atmosphere’s initial conditions. This will allow us to understand the sensitivity of AMOC collapse and recovery, determine what additional measurements could reduce uncertainty in such projections, and enable a parallel understanding of collapse to that of the GAN.</p>
+</section>
+<section id="task-2-3-data-acquisition-dataset-delivery">
+<h2>6 Task 2.3: Data Acquisition Dataset Delivery<a class="headerlink" href="#task-2-3-data-acquisition-dataset-delivery" title="Permalink to this heading"></a></h2>
+<blockquote>
+<div><p><em>Subtask Description: We will report upon the simplified GCMs that
+will be used for testbeds for AIsupported integration while retaining
+the necessary physics to recreate the physical processes identified
+in the full GCM dataset. These models are less computationally
+intensive, require less storage, and can be run on modest high
+performance computing clusters.</em></p>
+<dl class="simple">
+<dt><strong>Accomplishments:</strong></dt><dd><ul class="simple">
+<li><p>Development of the next generation of the box model, adding the Pacific Ocean and expanding from 4 to 6 boxes.</p></li>
+<li><p>Continued processing of the CESM2 large ensemble to the 4 box model calibrated time series for use in ML</p></li>
+<li><p>Beginning processing of other CMIP models’ forward scenarios to calibrated 4 box model time series</p></li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+<p><strong>Task 2.3: Data Acquisition Dataset Delivery</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>New 6-box model, adding a Pacific and Indian ocean low-latitude box and a North Pacific high-latitude box.</p></li>
+<li><p>Matlab code built, small dataset of runs with varied parameters for exploration.</p></li>
+<li><p>Enables more use cases for the AI methods.</p></li>
+</ul>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/image293.png"><img alt="_images/image293.png" src="_images/image293.png" style="width: 4.31111in; height: 2.74306in;" /></a>
+<p>4-box Model</p>
+</div></blockquote>
+</div></blockquote>
+<p><a class="reference internal" href="_images/image301.png"><img alt="image34" src="_images/image301.png" style="width: 7.74028in; height: 3.41439in;" /></a></p>
+<p>6-box Model</p>
+<ul class="simple">
+<li><p>New 6-box model</p></li>
+<li><dl class="simple">
+<dt>Bifurcation over freshwater flux strength shows switch between Atlantic and Pacific overturning. 3 time series at right for different freshwater flux conditions</dt><dd><ul>
+<li><p>Top, baseline, showing strong AMOC (blue) and no significant Pacific overturning (orange)</p></li>
+<li><p>Middle, slightly lower fluxes in both basins</p></li>
+<li><p>Bottom, higher flux in Atlantic only, as from increased meltwater</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Oscillation of AMOC strength with Pacific overturning switching on and off has been observed</dt><dd><ul>
+<li><p>See middle case on right. Southern Ocean overturning (purple) and low-latitude upwelling (yellow) are near constant, while AMOC (blue) oscillates by about 3Sv as Pacific overturning turns on and off.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<p><a class="reference internal" href="_images/image311.png"><img alt="image36" src="_images/image311.png" style="width: 5.10278in; height: 2.08964in;" /></a><a class="reference internal" href="_images/image321.png"><img alt="image37" src="_images/image321.png" style="width: 5.10417in; height: 1.97687in;" /></a><a class="reference internal" href="_images/image331.png"><img alt="image38" src="_images/image331.png" style="width: 5.06389in; height: 2.02147in;" /></a></p>
+<ul class="simple">
+<li><p>5 ensemble members of CESM2, showing variability related to varied initial conditions. Matlab generation code now released.</p></li>
+<li><p>4 CMIP models’ SSP5-85 runs processed, showing model disagreement. Python code will be released after internal review.</p></li>
+<li><p>CESM2 calibrated data will take us in the direction of working with larger parameter spaces as we apply the AI methods to the large GCM runs.</p></li>
+<li><p>This is a necessary first step in understanding the behavior of these models and the implication on the AI-based training datasets.</p></li>
+</ul>
+<p></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>5 ensemble members of CESM2, showing variability related to varied initial conditions. 4 CMIP models’ SSP5-85 runs processed, showing model disagreement.</p></li>
+<li><p>All CESM2 SSP3-7.0 show reduced AMOC strength, deepening pycnocline, and reduced meridional density differences in the Atlantic. This is consistent with the theory behind the box model.</p></li>
+<li><p>Different initial conditions affect inter-annual and decadal-scale variability</p></li>
+</ul>
+</div></blockquote>
+<div class="line-block">
+<div class="line"><a class="reference internal" href="_images/image341.png"><img alt="image41" src="_images/image341.png" style="width: 6.35278in; height: 5.77917in;" /></a></div>
+</div>
+<blockquote>
+<div><p>All CESM2 SSP3-7.0, 5 ensemble members</p>
+</div></blockquote>
+<ul class="simple">
+<li><dl class="simple">
+<dt>5 ensemble members of CESM2, showing variability related to varied initial conditions. 4 CMIP models’ SSP5-85 runs processed, showing model disagreement.</dt><dd><ul>
+<li><p>MPI-ESM1-2-LR: Max Planck Institute for Meteorology Earth System Model</p></li>
+<li><p>ACCESS-CM2: Australian Community Climate and Earth System Simulator</p></li>
+<li><p>CESM2: USA, Community Earth System Model</p></li>
+<li><p>CAN-ESM5: Canadian Earth System Model</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>3 of 4 models show strong decrease in AMOC strength, but only CESM2 shows 4-box style agreement with both pycnocline and meridional density gradient changes, supporting potential disagreement causes</p></li>
+</ul>
+<p><a class="reference internal" href="_images/image361.png"><img alt="image43" src="_images/image361.png" style="width: 6.38611in; height: 5.84608in;" /></a></p>
+<p><strong>Summary</strong></p>
+<p>With Milestone 6, we will build new datasets based on the newly developed 6-box model and incorporate that into the training/evaluation of the AI models.</p>
+<p>We continue to build out the AI Physics-Informed Surrogate models and the AI Simulation methods.</p>
+<p>Furthermore, a group effort is underway to clearly define requirements for additional datasets that could further improve the discovery of tipping points for the AMOC use case.</p>
+<blockquote>
+<div><p><a class="reference internal" href="_images/image381.png"><img alt="image45" src="_images/image381.png" style="width: 5.49444in; height: 4.08056in;" /></a>|</p>
+</div></blockquote>
+<p><strong>Approved for public release; distribution is unlimited. This material is based upon work supported by the Defense Advanced Research Projects Agency (DARPA) under Agreement No. HR00112290032.</strong></p>
+<p><strong>Citations</strong></p>
+<blockquote>
+<div><p>1. Boers, Niklas. “Observation-based early-warning signals for a
+collapse of the Atlantic Meridional Overturning Circulation.” Nature
+Climate Change 11, no. 8 (2021): 680-688.</p>
+<p>2. Gnanadesikan, A., A simple model for the structure of the oceanic
+pycnocline, Science., 283:2077-2079, (1999).</p>
+<div class="line-block">
+<div class="line">3. Forget, G., J.-M. Campin, P. Heimbach, C. N. Hill, R. M. Ponte,
+C. Wunsch, ECCO version 4: An integrated framework for non-linear
+inverse modeling and global ocean state estimation. Geosci. Model
+Dev. 8, 3071–3104 (2015)</div>
+<div class="line">4. Gnanadesikan, A., R. Kelson and M. Sten, Flux correction and
+overturning stability: Insights from a dynamical box model, J.
+Climate, 31, 9335-9350, <a class="reference external" href="https://doi.org/10.1175/JCLI-D-18-0388.1">https://doi.org/10.1175/JCLI-D-18-0388.1</a>,
+(2018).</div>
+</div>
+<p>5. Kaufhold, John Patrick, and Jennifer Alexander Sleeman. “Systems
+and methods for deep model translation generation.” U.S. Patent No.
+10,504,004. 10 Dec. 2019.</p>
+<p>6. Garcez, Artur d’Avila, and Luis C. Lamb. “Neurosymbolic AI: the
+3rd Wave.” arXiv preprint arXiv:2012.05876 (2020).</p>
+<p>7. Stommel, H. Thermohaline convection with two stable regimes of
+flow. Tellus 13, 224–230 (1961).</p>
+<p>8. Karniadakis, George Em, Ioannis G. Kevrekidis, Lu Lu, Paris
+Perdikaris, Sifan Wang, and Liu Yang. “Physics-informed machine
+learning.” Nature Reviews Physics 3, no. 6 (2021): 422-440.</p>
+<p>9. Sleeman, Jennifer, Milton Halem, Zhifeng Yang, Vanessa Caicedo,
+Belay Demoz, and Ruben Delgado. “A Deep Machine Learning Approach for
+LIDAR Based Boundary Layer Height Detection.” In IGARSS 2020-2020
+IEEE International Geoscience and Remote Sensing Symposium, pp.
+3676-3679. IEEE, 2020.</p>
+<p>10. Patel, Kinjal, Jennifer Sleeman, and Milton Halem. “Physics-aware
+deep edge detection network.” In Remote Sensing of Clouds and the
+Atmosphere XXVI, vol. 11859, pp. 32-38. SPIE, 2021.</p>
+<p>11.Brulé, Joshua. “A causation coefficient and taxonomy of
+correlation/causation relationships.” arXiv preprint arXiv:1708.05069
+(2017).</p>
+<p>12. Rasp, Stephan, Michael S. Pritchard, and Pierre Gentine. “Deep
+learning to represent subgrid processes in climate models.”
+Proceedings of the National Academy of Sciences 115, no. 39 (2018):
+9684-9689.</p>
+<p>13. Bolton, Thomas, and Laure Zanna. “Applications of deep learning
+to ocean data inference and subgrid parameterization.” Journal of
+Advances in Modeling Earth Systems 11, no. 1 (2019): 376-399.</p>
+<p>14. Kurth, Thorsten, Sean Treichler, Joshua Romero, Mayur Mudigonda,
+Nathan Luehr, Everett Phillips, Ankur Mahesh et al. “Exascale deep
+learning for climate analytics.” In SC18: International Conference
+for High Performance Computing, Networking, Storage and Analysis, pp.
+649-660. IEEE, 2018.</p>
+<p>15. Weber, Theodore, Austin Corotan, Brian Hutchinson, Ben Kravitz,
+and Robert Link. “Deep learning for creating surrogate models of
+precipitation in Earth system models.” Atmospheric Chemistry and
+Physics 20, no. 4 (2020): 2303-2317.</p>
+<p>16. Matsubara, Takashi, Ai Ishikawa, and Takaharu Yaguchi. “Deep
+energy-based modeling of discrete-time physics.” arXiv preprint
+arXiv:1905.08604 (2019).</p>
+<p>17. Kleinen, T., Held, H. &amp; Petschel-Held, G. The potential role of
+spectral properties in detecting thresholds in the Earth system:
+application to the thermohaline circulation. Ocean Dyn. 53, 53–63
+(2003).</p>
+<p>18. Kocaoglu, Murat, Christopher Snyder, Alexandros G. Dimakis, and
+Sriram Vishwanath. “Causalgan: Learning causal implicit generative
+models with adversarial training.” arXiv preprint arXiv:1709.02023
+(2017).</p>
+<p>19. Feinman, Reuben, and Brenden M. Lake. “Learning Task-General
+Representations with Generative Neuro-Symbolic Modeling.” arXiv
+preprint arXiv:2006.14448 (2020).</p>
+<p>20. Yi, Kexin, Chuang Gan, Yunzhu Li, Pushmeet Kohli, Jiajun Wu,
+Antonio Torralba, and Joshua B. Tenenbaum. “Clevrer: Collision events
+for video representation and reasoning.” arXiv preprint
+arXiv:1910.01442 (2019).</p>
+<p>21. Nowack, Peer, Jakob Runge, Veronika Eyring, and Joanna D. Haigh.
+“Causal networks for climate model evaluation and constrained
+projections.” Nature communications 11, no. 1 (2020): 1-11.</p>
+<p>22. Andersson, Tom R., J. Scott Hosking, María Pérez-Ortiz, Brooks
+Paige, Andrew Elliott, Chris Russell, Stephen Law et al. “Seasonal
+Arctic sea ice forecasting with probabilistic deep learning.” Nature
+communications 12, no. 1 (2021): 1-12.</p>
+<p>23. Storchan, Victor, Svitlana Vyetrenko, and Tucker Balch. “MAS-GAN:
+Adversarial Calibration of Multi-Agent Market Simulators.” (2020).</p>
+<p>24. De Raedt, Luc, Robin Manhaeve, Sebastijan Dumancic, Thomas
+Demeester, and Angelika Kimmig. “Neuro-symbolic=neural+ logical+
+probabilistic.” In NeSy’19&#64; IJCAI, the 14th International Workshop on
+Neural-Symbolic Learning and Reasoning. 2019.</p>
+<p>25. Eyring, V., Bony, S., Meehl, G. A., Senior, C. A., Stevens, B.,
+Stouffer, R. J., and Taylor, K. E.: Overview of the Coupled Model
+Intercomparison Project Phase 6 (CMIP6) experimental design and
+organization, Geosci. Model Dev., 9, 1937-1958,
+doi:10.5194/gmd-9-1937-2016, 2016.</p>
+<p>26. Swingedouw, Didier, Chinwe Ifejika Speranza, Annett Bartsch, Gael
+Durand, Cedric Jamet, Gregory Beaugrand, and Alessandra Conversi.</p>
+<p>“Early warning from space for a few key tipping points in physical,
+biological, and social-ecological systems.” Surveys in geophysics 41,
+no. 6 (2020): 1237-1284.</p>
+<p>27. Reichstein, Markus, Gustau Camps-Valls, Bjorn Stevens, Martin
+Jung, Joachim Denzler, and Nuno Carvalhais. “Deep learning and
+process understanding for data-driven Earth system science.” Nature
+566, no. 7743 (2019): 195-204.</p>
+<p>28. Sleeman, Jennifer, Ivanka Stajner, Christoph Keller, Milton
+Halem, Christopher Hamer, Raffaele Montuoro, and Barry Baker. “The
+Integration of Artificial Intelligence for Improved Operational Air
+Quality Forecasting.” In AGU Fall Meeting 2021. 2021.</p>
+<div class="line-block">
+<div class="line">29. Bellomo, K., Angeloni, M., Corti, S. <em>et al.</em> Future climate
+change shaped by inter-model differences in Atlantic meridional
+overturning circulation response. <em>Nat Commun</em> <strong>12,</strong> 3659 (2021).</div>
+<div class="line">30. Sgubin, G., Swingedouw, D., Drijfhout, S. <em>et al.</em> Abrupt
+cooling over the North Atlantic in modern climate models. <em>Nat
+Commun</em> <strong>8,</strong> 14375 (2017).</div>
+<div class="line">31. Swingedouw, D., Bily, A., Esquerdo, C., Borchert, L. F.,
+Sgubin, G., Mignot, J., &amp; Menary, M. (2021). On the risk of abrupt
+changes in the North Atlantic subpolar gyre in CMIP6 models.
+<em>Annals of the New York Academy of Sciences</em>, <em>1504</em>(1), 187-201.
+32. Mao, Jiayuan, Chuang Gan, Pushmeet Kohli, Joshua B. Tenenbaum,
+and Jiajun Wu. “The neuro-symbolic concept learner: Interpreting
+scenes, words, and sentences from natural supervision.” <em>arXiv
+preprint arXiv:1904.12584</em> (2019).</div>
+</div>
+</div></blockquote>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="milestone4_report.html" class="btn btn-neutral float-left" title="Milestone 4 Progress Report" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="milestone6_report.html" class="btn btn-neutral float-right" title="Milestone 6 Progress Report" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, The Johns Hopkins University Applied Physics Laboratory LLC. All rights reserved..</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,6 +1,24 @@
 ==================
-Milestone 6 Report
+Milestone 6 Progress Report
 ==================
+
+**Approved for public release; distribution is unlimited. This material is based upon work supported by the Defense Advanced Research Projects Agency (DARPA) under Agreement No. HR00112290032.**
+
+
+**PACMANS TEAM:**
+• Jennifer Sleeman (JHU APL) PI
+• Anand Gnanadesikan (JHU) Co-PI
+• Yannis Kevrekidis (JHU) Co-PI
+• Jay Brett (JHU APL)
+• David Chung (JHU APL)
+• Chace Ashcraft (JHU APL)
+• Thomas Haine (JHU)
+• Marie-Aude Pradal (JHU)
+• Renske Gelderloos (JHU)
+• Caroline Tang (DUKE)
+• Anshu Saksena (JHU APL)
+• Larry White (JHU APL)
+• Marisa Hughes (JHU APL)
 
 
 1 Overview
@@ -9,16 +27,15 @@ Milestone 6 Report
    The Physics-informed AI Climate Model Agent Neuro-symbolic Simulator
    (PACMANS) for Tipping Point Discovery
 
-   • This technical report covers the period of June 14, 2022 through
-   August 13, 2022.
+   • This technical report covers the period of June 14, 2022 through August 13, 2022.
 
    • The report documents the achievement of the milestone associated with Month 8 of the JHU/APL-led PACMAN team’s statement of work.
 
    • The delivery for this milestone is this report which highlights AI Physics-informed surrogate model progress and the AI Simulation progress.
 
    • This milestone includes:
-   | • A progress report
-   | • Preliminary software\ |image26|
+       | • A progress report
+       | • Preliminary software\
 
 
 2 Goals and Impact
@@ -29,24 +46,20 @@ Goal for this milestone included:
 
 	• The report is included in this document and preliminary software for methods described are located here:
 
-   .. image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image28.png
-      :width: 5.83333in
-      :height: 0.11111in
 
 	• The project website is located here:
 
-   |image27|\ |image28|
+   |image27|\
 
 
 3 Key Findings
 ---------------
 
-**Surrogate Models:
+**Surrogate Models:**
 
-   • We have achieved the first calculation of escape time distributions
-   for the 4-box model (non-dimensionalized)
+   • We have achieved the first calculation of escape time distributions for the 4-box model (non-dimensionalized)
 
-**AI Simulation:
+**AI Simulation:**
 
    • We showed that the GAN could be used to exploit the area of uncertainty, consistent with the separatrix of the fold bifurcations, consistent with the Gnanadesikan 2018 paper
 
@@ -54,7 +67,7 @@ Goal for this milestone included:
 
    • We believe we could extend the GAN to explore additional types of bifurcations
 
-   • Using the CLEVR dataset we are now able to measure performance of the neuro-symbolic architectures and have strong preliminary results using Levenstein distance as a metric\ |image29|
+   • Using the CLEVR dataset we are now able to measure performance of the neuro-symbolic architectures and have strong preliminary results using Levenstein distance as a metric\
 
 4 Task 3.4: AI Physics-Informed Surrogate Model Summary
 --------------------------------------------------------
@@ -68,11 +81,10 @@ Goal for this milestone included:
    • Have developed a first version of the Python code for the surrogates consistent with the bifurcation diagrams
 
    • In-process to integrate this code to be used by the GAN
-   • Working on estimating the escape time distributions\ |image30|
+   • Working on estimating the escape time distributions\
 
 
    **The Model**
-	|image31|\ 
 We consider a dynamical box model with four boxes:
 	• the southern high latitudes (0.308S)
 	• the northern high latitudes (0.458N)
@@ -83,35 +95,16 @@ State variables:
 	• 𝑇_S, 𝑇_n, 𝑇_l, 𝑇_d: Temperatures of the four boxes 
 	• 𝑆_S, 𝑆_n, 𝑆_l, 𝑆_d: Salinities of the four boxes
 
-.. image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image27.png
-   :width: 13.33333in
-   :height: 0.41667in
-	
+\ |image31|\
+
 • Single-headed bold arrows denote net fluxes of water.
 
 • Double-headed arrows denote mixing fluxes.
 
 **Nine Equations**
 
-|image32|\ |image33|\ |image34|\ |image35|\ |image36|\ |image37|\ |image38|\ |image39|\ |image40|\ |image41|\ |image42|\ |image43|\ |image44|\ |image45|\ |image46|\ |image47|\ |image48|\ |image49|\ |image50|\ |image51|\ |image52|\ |image53|\ |image54|\ |image55|\ |image56|\ |image57|\ |image58|\ |image59|\ |image60|\ |image61|\ |image62|\ |image63|\ |image64|\ |image65|\ |image66|\ |image67|\ |image68|\ |image69|
+|image32|\
 
-
-   | d𝐷
-   | d𝑡 = 1𝐴 𝑀!" + 𝑀#$% − 𝑀!&&' − 𝑀( − 𝐹%( − 𝐹%)\ |image70|
-   | d𝑇( d𝑡 = 1𝑉( 𝑀( + 𝑀*+ ⋅ 𝑇, − 𝑇( + λ-( ⋅ 𝑇.( − 𝑇(|image71|
-   | d𝑇) d𝑡 = 1 ) ⋅ 𝑇.) − 𝑇)\ |image72|\ 𝑉) 𝑀!" + 𝑀/0(1 ) ⋅ 𝑇 − 𝑇) + 𝑀*2
-     + 𝑀!&&' ⋅ 𝑇, − 𝑇) + λ-
-   | d 𝑇, ⋅ 𝑉, d𝑡 = 𝑀!" ⋅ 𝑇) − 𝑀( ⋅ 𝑆, + 𝑀*+ 𝑆( − 𝑆, − 𝑀!&&' ⋅ 𝑆, + 𝑀#$%
-     ⋅ 𝑆& + 𝑀*2 𝑆) − 𝑆, + λ-, ⋅ 𝑇., − 𝑇,\ |image73| d 𝑇& ⋅ 𝑉& d𝑡 = 𝑀( +
-     𝐹%(⋅ 𝑇( − 𝑀!" + 𝑀/0(1 + 𝑀#$% ⋅ 𝑇& + 𝑀!&&' + 𝑀/0(1 )
-   | + 𝐹%)⋅ 𝑇)\ |image74| d𝑆( d𝑡 = 1𝑉( 𝑀( ⋅ 𝑆, − 𝑀( + 𝐹%( ⋅ 𝑆( + 𝑀*+ 𝑆,
-     − 𝑆(|image75|
-   | d𝑆) d𝑡 = 1 ) ⋅ 𝑆)\ |image76|\ 𝑉) 𝑀!" + 𝑀/0(1) ⋅ 𝑆& − 𝑆) + 𝑀*2 +
-     𝑀!&&' ⋅ 𝑆, − 𝑆) − 𝐹%
-   | d 𝑆, ⋅ 𝑉,
-   | d𝑡 = 𝑀!" ⋅ 𝑆) − 𝑀( ⋅ 𝑆, + 𝑀*+ 𝑆( − 𝑆, − 𝑀!&&' ⋅ 𝑆, + 𝑀#$% ⋅ 𝑆& +
-     𝑀*2 𝑆) − 𝑆,\ |image77| d(S3 ⋅ V3) 𝑑𝑡 = M4 ⋅ S4 − M56 + M7849: +
-     M;<= ⋅ S3 + M533> + M7849: ⋅ S: + F=4 ⋅ S4 + F:4 ⋅ S:|image78|
 
    These are the equations that we start with (nine differential
    equations)
@@ -119,64 +112,22 @@ State variables:
    
 **Salt Conservation**
 
+|image33|\
 
-====== ======== ======== ======== ======
-𝑑 𝑆!𝑉! + 𝑑 𝑆"𝑉" + 𝑑 𝑆#𝑉# + 𝑑 𝑆$𝑉$    = 0
-                                  
-       𝑑𝑡       𝑑𝑡       𝑑𝑡       
-====== ======== ======== ======== ======
-𝑑𝑡                                
-====== ======== ======== ======== ======
-
-Hence, we substitute to the last ODE, the algebraic constraint:
-
-𝑆!𝑉! + 𝑆"𝑉" + 𝑆#𝑉# + 𝑆$𝑉$ = 𝑡𝑜𝑡𝑎𝑙 𝑎𝑚𝑜𝑢𝑛𝑡 𝑜𝑓 𝑆𝑎𝑙𝑡 = 𝐾
-
-So actually, 𝑉! = 𝐴! ∗ 𝐷%&' = 0.6𝑒14 ∗ 100 and 𝑉" = 𝐴" ∗ 𝐷%&' = 1𝑒14 ∗
-100 are constant, while the initial value of 𝑉(# = 2𝑒14 ∗ 𝐷(.
-
-Knowing:
-
-   𝑉($ = 𝑉)*) − 𝑉(! − 𝑉(" − 𝑉(# = 3700 ∗ 3.6𝑒14 − 0.6𝑒16 − 1𝑒16 − 2𝑒14 ∗
-   𝐷(
-
-The initial value of 𝐷( = 400.
-
-The initial value of salinities are 𝑆(! = 35, 𝑆(" = 34, 𝑆(# = 36, 𝑆($ =
-34.5.
-
-We can find directly 𝑆$:
-
-   𝑆$ = 𝐾 − 𝑆!𝑉! − 𝑆"𝑉" − 𝑆#𝑉#
-
-𝑉$\ |image79|\ |image80|\ |image81|
 
    IMPORTANTLY, we explicitly used the fact that there exists an
    algebraic constraint (a salt balance) that reduces the equations by
    one, and removes a neutral direction; this helps the conditioning of
    the Jacobian
 
-**8**
 
-|image82|\ |image83|\ |image84|\ |image85|\ |image86|\ |image87|\ |image88|\ |image89|\ |image90|\ |image91|\ |image92|
+
+
 
 
 **Non-Dimensional Equations**
 
-In order to non-dimensionalize the equations, we introduce
-non-dimensional time and variables:
-
-   | 𝑡 = 𝑡∗ ∗ 𝐴 ∗ 𝐻 , 𝐷 = 𝐻 ∗ 𝐷∗, 𝑀"#
-   | S$ = S$∗S$%, S& = S&∗S$%, S' = S'∗S$%
-   | T$ = T$∗T'%, T& = T&∗T'%, T' = T'∗T'%, 𝑇( = 𝑇(∗𝑇)%
-
-   we introduce several non-dimensional constants for the Fluxes:
-
-𝑇𝑟\* = +,- .!,.!,0"!,0#! 1$%& 2-!3() ' , 𝑀*∗ = 𝑇𝑟*Δ𝜌∗𝐷∗4; 𝑇𝑟567 =
-1$%&3(), 𝑀567∗ = 8*9#+, 0-., 1∗;𝑇𝑟"((: =90;&1 1$%&;213(), 𝑀"((:∗ =
-𝑇𝑟"((:𝐷∗ ; 𝑇𝑟<"(= = 93(4%90, 𝑀;.∗ = 𝑇𝑟<"(=𝑇𝑟"((:𝐷∗ ;
-
-𝑇𝑟.1 =356 @ =>,7 . =>,13(); 𝑇𝑟>? 3() 𝑇𝑟>? 3()
+|image34|\
 
    To make computations more accurate numerically, we
    non-dimensionalized the equations in ways **meaningful to the domain
@@ -186,11 +137,11 @@ non-dimensional time and variables:
 
 **Numerical Bifurcation Analysis**
 
-   .. image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image89.png
+   .. image:: _static/media6/image89.png
       :width: 3.61806in
       :height: 2.71389in
 
-   .. image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image90.png
+   .. image:: _static/media6/image90.png
       :width: 3.44167in
       :height: 2.58055in
 
@@ -203,7 +154,7 @@ non-dimensional time and variables:
    	And a saddle-node bifurcation: LP for 𝑇𝑟>?\* = 0.01798
 
 	Reminder: we found two different tipping points ("up to down" and "down to up” that also happened to do be of different nature ("turning point" and "subcritical Hopf")
-\ |image93|\ |image94|\ |image95|\ |image96|
+\ |image93|\ |image94|\
 
 
 
@@ -212,11 +163,8 @@ non-dimensional time and variables:
 
 To the non-dimensional system of 8 equations, we add fluctuations in the fresh water flux coefficient: :math:`𝑇𝑟_{FW}^n ∼ 𝒩(𝑇𝑟_{FW0}^n, 𝜎^2)`
 
-With :math:`𝜎 = 4% 𝑇𝑟_{FW}^n = 0.002`
+With :math:`𝜎 = 4\% 𝑇𝑟_{FW}^n = 0.002`
 
-.. image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image27.png
-   :width: 13.33333in
-   :height: 0.41667in
 
 |image97|\ |image98|
 
@@ -233,12 +181,11 @@ Next Steps:
 
 	• We have a very good handle on data-driven causality; the enabling tools are “Alternating Diffusion” / “Jointly Smooth Functions”
 
-	• **We plan to use this in the discovery of good predictors/advance indicators of tipping.** |image99|
+	• **We plan to use this in the discovery of good predictors/advance indicators of tipping.**
 
 
-4 Task 4.4: AI Simulation Progress Summary
+5 Task 4.4: AI Simulation Progress Summary
 ------------------------------------------
-
    *Subtask Description: We will provide a progress report of the early
    proof of concept experimental results for the MA-GAN, the causal
    model and the neuro-symbolic models, including isolated experimental
@@ -247,7 +194,7 @@ Next Steps:
    | Accomplishments:
    | • Showed that the GAN could be used to exploit the area of uncertainty consistent with the separatrix in the Gnanadesikan 2018 paper
    | • Developed architectures needed for a baseline neuro-symbolic language that enables a translation from human-specific questions to the GAN simulation, and from perturbed GAN runs to questions
-   | • Begun integrating the neuro-symbolic work with GAN output\ |image100|
+   | • Begun integrating the neuro-symbolic work with GAN output\
 
 
 **AI Simulation – GAN Uncertainty Experiment Objective**
@@ -261,7 +208,7 @@ Next Steps:
 
 	| • i.e. explore separatrix
 
-   | • How well can the GAN accurately predict the climate model outputs for configurations spanning these regions of uncertainty?\ |image101|
+   | • How well can the GAN accurately predict the climate model outputs for configurations spanning these regions of uncertainty?\
 
 
 **AI Simulation – GAN Uncertainty Experiments**
@@ -274,9 +221,9 @@ Next Steps:
    • Mek (Ekman flux from the southern ocean): [1.5e7, 3.5e7]
    • Fwn (Fresh water flux (North)): [5.0e4, 1.55e6]
 
-• Other variables were held constant\ |image102|
+• Other variables were held constant\
 
-|image103|\ |image104|
+|image103|\
 
 
 
@@ -290,7 +237,7 @@ Next Steps:
 
    • At each update step, the discriminator will achieve these two objectives for m(n+1) configurations (m samples per each of n generators, +1 batch from the real data distribution)
 
-   • Ground-truth shutoff labels are determined for the generated configurations by consulting the surrogate model before the training step\ |image105|
+   • Ground-truth shutoff labels are determined for the generated configurations by consulting the surrogate model before the training step\
 
 
 
@@ -308,13 +255,12 @@ Next Steps:
 
    	• Guide the discriminator into predicting that its configurations are sampled from the real data distribution
 
-   	• Generate model configurations where the discriminator is least certain about the output state (i.e. AMOC shutoff vs. non-shutoff)\ |image106|
+   	• Generate model configurations where the discriminator is least certain about the output state (i.e. AMOC shutoff vs. non-shutoff)\
 
 
 
 **AI Simulation – GAN Uncertainty Experiments**
 
-	\ |image107|\ |image108|
 
    • Real dataset generated by uniformly sampling vectors of perturbed variables from bounded 3-D subspace.
 
@@ -333,7 +279,7 @@ Next Steps:
  		• Inside/outside bifurcation region
 
 
-.. image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image99.png
+.. image:: _static/media6/image99.png
    :width: 5.66667in
    :height: 3.77778in
 
@@ -341,7 +287,6 @@ Next Steps:
 
    Test Set Based on Dataset Generated From Box Model.
 
-   3 December 2022 **19**
 
    **AI Simulation – GAN Experiments – Uncertainty Region Sampling**
 
@@ -398,28 +343,24 @@ Comparing GAN Generated Results for N = (1,2,3) with the Test Set.
 +---------------------------------------------------------+-----------+
 
 
-.. image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image27.png
-   :width: 13.33333in
-   :height: 0.41667in
 
 **AI Simulation – Neuro-Symbolic Learning**
 
 
-   .. image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image104.png
+   .. image:: _static/media6/image104.png
       :width: 7.69444in
       :height: 4.60556in
 
    Neuro-Symbolic Translations and GAN Input/Output
 
 
-   .. image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image105.png
+   .. image:: _static/media6/image105.png
       :width: 8.76111in
       :height: 4.94722in
 
    Learning to Translate Questions into Programs and Programs into
-   Questions\ |image113|
+   Questions\
 
-\ |image114|
 
    | Using the CLEVR dataset to validate architectures:
    | (https://cs.stanford.edu/people/jcjohns/clevr/)
@@ -430,7 +371,7 @@ Comparing GAN Generated Results for N = (1,2,3) with the Test Set.
 
    	• We adapt this dataset and use only the question and program portions of the data
 
-   .. image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image106.png
+   .. image:: _static/media6/image106.png
       :width: 6.275in
       :height: 4.67639in                                                                         
 
@@ -448,23 +389,22 @@ Comparing GAN Generated Results for N = (1,2,3) with the Test Set.
 
    **Example Output:**
 
-   .. image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image107.png
-      :width: 2.30556in
-      :height: 0.125in
-
    **Predicted text:** BOS how many small cyan things are there ? EOS\ 
+
    **Ground Truth Text:** BOS how many small cyan things are there ? EOS
-   **Predicted program:** BOS count ( filter_color ( filter_size ( scene , small ) , cyan ) ) EOS
+
+    **Predicted program:** BOS count ( filter_color ( filter_size ( scene , small ) , cyan ) ) EOS
 
    **Ground Truth program:** BOS count ( filter_color ( filter_size ( scene , small ) , cyan ) ) EOS\ 
-   **Predicted text from program:** BOS how many of cyan things are are ? ? EOS\ |image115|
+
+    **Predicted text from program:** BOS how many of cyan things are are ? ? EOS\
 
 
-.. image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image108.png
-   :width: 5.48056in
-   :height: 3.84722in
+   .. image:: _static/media6/image108.png
+      :width: 5.48056in
+      :height: 3.84722in
 
-   .. image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image109.png
+   .. image:: _static/media6/image109.png
       :width: 5.95in
       :height: 3.79167in
 
@@ -485,11 +425,9 @@ Comparing GAN Generated Results for N = (1,2,3) with the Test Set.
    Initial evaluations have been performed and module integrations is
    in-progress.
 
-   |image117|\ |image118|
+   |image117|\
 
-   3 December 2022 **27**
-
-|image119|\ |image120|
+**Approved for public release; distribution is unlimited. This material is based upon work supported by the Defense Advanced Research Projects Agency (DARPA) under Agreement No. HR00112290032.**
 
 
 **Citations**
@@ -553,13 +491,6 @@ Comparing GAN Generated Results for N = (1,2,3) with the Test Set.
    for High Performance Computing, Networking, Storage and Analysis, pp.
    649-660. IEEE, 2018.
 
-   3 December 2022 **29**
-
-.. image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image27.png
-   :width: 13.33333in
-   :height: 0.41667in
-
-**Citations cont.**
 
    15. Weber, Theodore, Austin Corotan, Brian Hutchinson, Ben Kravitz,
    and Robert Link. "Deep learning for creating surrogate models of
@@ -624,13 +555,6 @@ Comparing GAN Generated Results for N = (1,2,3) with the Test Set.
    process understanding for data-driven Earth system science." Nature
    566, no. 7743 (2019): 195-204.
 
-   3 December 2022 **30**
-
-.. image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image27.png
-   :width: 13.33333in
-   :height: 0.41667in
-
-**Citations cont.**
 
    28. Sleeman, Jennifer, Ivanka Stajner, Christoph Keller, Milton
    Halem, Christopher Hamer, Raffaele Montuoro, and Barry Baker. "The
@@ -652,346 +576,346 @@ Comparing GAN Generated Results for N = (1,2,3) with the Test Set.
      scenes, words, and sentences from natural supervision." *arXiv
      preprint arXiv:1904.12584* (2019).
 
-.. image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image114.png
+.. image:: _static/media6/image114.png
    :width: 3.61111in
    :height: 0.11111in
 
-   .. image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image115.png
+   .. image:: _static/media6/image115.png
       :width: 3.09722in
       :height: 0.11111in
 
-.. image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image116.png
+.. image:: _static/media6/image116.png
    :width: 2.97222in
    :height: 0.11111in
 
    3 December 2022 **31**
 
-.. |image1| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image2.png
+.. |image1| image:: _static/media6/image2.png
    :width: 1.375in
    :height: 0.45833in
-.. |image2| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image3.png
+.. |image2| image:: _static/media6/image3.png
    :width: 1.75in
    :height: 0.45833in
-.. |image3| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image4.png
+.. |image3| image:: _static/media6/image4.png
    :width: 1.625in
    :height: 0.45833in
-.. |image4| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image5.png
+.. |image4| image:: _static/media6/image5.png
    :width: 13.33056in
    :height: 7.49844in
-.. |image5| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image6.png
+.. |image5| image:: _static/media6/image6.png
    :width: 0.625in
    :height: 0.11111in
-.. |image6| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image7.png
+.. |image6| image:: _static/media6/image7.png
    :width: 9.40278in
    :height: 6.27303in
-.. |image7| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image8.png
+.. |image7| image:: _static/media6/image8.png
    :width: 2.68056in
    :height: 0.56944in
-.. |image8| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image9.png
-.. |image9| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image10.png
+.. |image8| image:: _static/media6/image9.png
+.. |image9| image:: _static/media6/image10.png
    :height: 0.11111in
-.. |image10| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image11.png
-.. |image11| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image12.png
-.. |image12| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image13.png
-.. |image13| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image14.png
-.. |image14| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image15.png
+.. |image10| image:: _static/media6/image11.png
+.. |image11| image:: _static/media6/image12.png
+.. |image12| image:: _static/media6/image13.png
+.. |image13| image:: _static/media6/image14.png
+.. |image14| image:: _static/media6/image15.png
    :width: 0.72222in
    :height: 0.59722in
-.. |image15| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image16.png
-.. |image16| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image17.png
-.. |image17| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image18.png
+.. |image15| image:: _static/media6/image16.png
+.. |image16| image:: _static/media6/image17.png
+.. |image17| image:: _static/media6/image18.png
    :height: 0.125in
-.. |image18| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image19.png
-.. |image19| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image20.png
-.. |image20| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image21.png
+.. |image18| image:: _static/media6/image19.png
+.. |image19| image:: _static/media6/image20.png
+.. |image20| image:: _static/media6/image21.png
    :width: 8.83333in
    :height: 1.06944in
-.. |image21| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image22.png
-.. |image22| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image23.png
-.. |image23| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image24.png
-.. |image24| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image25.png
-.. |image25| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image26.png
-.. |image26| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image27.png
+.. |image21| image:: _static/media6/image22.png
+.. |image22| image:: _static/media6/image23.png
+.. |image23| image:: _static/media6/image24.png
+.. |image24| image:: _static/media6/image25.png
+.. |image25| image:: _static/media6/image26.png
+.. |image26| image:: _static/media6/image27.png
    :width: 13.33333in
    :height: 0.41667in
-.. |image27| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image29.png
+.. |image27| image:: _static/media6/image29.png
    :width: 3.98611in
    :height: 0.11111in
-.. |image28| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image27.png
+.. |image28| image:: _static/media6/image27.png
    :width: 13.33333in
    :height: 0.41667in
-.. |image29| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image27.png
+.. |image29| image:: _static/media6/image27.png
    :width: 13.33333in
    :height: 0.41667in
-.. |image30| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image27.png
+.. |image30| image:: _static/media6/image27.png
    :width: 13.33333in
    :height: 0.41667in
-.. |image31| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image30.png
+.. |image31| image:: _static/media6/image30.png
    :width: 5.62361in
    :height: 3.59444in
-.. |image32| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image39.png
+.. |image32| image:: _static/media6/image39.png
    :width: 0.80556in
    :height: 0.30556in
-.. |image33| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image40.png
+.. |image33| image:: _static/media6/image40.png
    :width: 0.98611in
    :height: 0.29167in
-.. |image34| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image41.png
+.. |image34| image:: _static/media6/image41.png
    :width: 0.13889in
    :height: 0.23611in
-.. |image35| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image42.png
+.. |image35| image:: _static/media6/image42.png
    :width: 0.13889in
    :height: 0.23611in
-.. |image36| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image43.png
+.. |image36| image:: _static/media6/image43.png
    :width: 0.34722in
    :height: 0.23611in
-.. |image37| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image44.png
+.. |image37| image:: _static/media6/image44.png
    :width: 0.95833in
    :height: 0.375in
-.. |image38| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image45.png
+.. |image38| image:: _static/media6/image45.png
    :width: 0.125in
    :height: 0.23611in
-.. |image39| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image46.png
+.. |image39| image:: _static/media6/image46.png
    :width: 0.44444in
    :height: 0.30556in
-.. |image40| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image47.png
+.. |image40| image:: _static/media6/image47.png
    :width: 0.36111in
    :height: 0.29167in
-.. |image41| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image48.png
+.. |image41| image:: _static/media6/image48.png
    :width: 0.34722in
    :height: 0.23611in
-.. |image42| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image49.png
+.. |image42| image:: _static/media6/image49.png
    :width: 0.125in
    :height: 0.23611in
-.. |image43| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image50.png
+.. |image43| image:: _static/media6/image50.png
    :width: 1.91667in
    :height: 0.90278in
-.. |image44| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image51.png
+.. |image44| image:: _static/media6/image51.png
    :width: 0.125in
    :height: 0.23611in
-.. |image45| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image52.png
+.. |image45| image:: _static/media6/image52.png
    :width: 0.125in
    :height: 0.23611in
-.. |image46| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image53.png
+.. |image46| image:: _static/media6/image53.png
    :width: 0.125in
    :height: 0.23611in
-.. |image47| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image54.png
+.. |image47| image:: _static/media6/image54.png
    :width: 0.125in
    :height: 0.23611in
-.. |image48| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image55.png
+.. |image48| image:: _static/media6/image55.png
    :width: 0.13889in
    :height: 0.29167in
-.. |image49| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image56.png
+.. |image49| image:: _static/media6/image56.png
    :width: 0.125in
    :height: 0.23611in
-.. |image50| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image57.png
+.. |image50| image:: _static/media6/image57.png
    :width: 0.13889in
    :height: 0.30556in
-.. |image51| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image58.png
+.. |image51| image:: _static/media6/image58.png
    :width: 0.13889in
    :height: 0.29167in
-.. |image52| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image59.png
+.. |image52| image:: _static/media6/image59.png
    :width: 0.13889in
    :height: 0.29167in
-.. |image53| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image60.png
+.. |image53| image:: _static/media6/image60.png
    :width: 0.13889in
    :height: 0.29167in
-.. |image54| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image61.png
+.. |image54| image:: _static/media6/image61.png
    :width: 0.91667in
    :height: 0.29167in
-.. |image55| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image62.png
+.. |image55| image:: _static/media6/image62.png
    :width: 0.125in
    :height: 0.23611in
-.. |image56| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image63.png
+.. |image56| image:: _static/media6/image63.png
    :width: 0.13889in
    :height: 0.23611in
-.. |image57| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image64.png
+.. |image57| image:: _static/media6/image64.png
    :width: 0.125in
    :height: 0.23611in
-.. |image58| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image65.png
+.. |image58| image:: _static/media6/image65.png
    :width: 0.95833in
    :height: 0.375in
-.. |image59| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image66.png
+.. |image59| image:: _static/media6/image66.png
    :width: 0.44444in
    :height: 0.29167in
-.. |image60| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image67.png
+.. |image60| image:: _static/media6/image67.png
    :width: 0.36111in
    :height: 0.29167in
-.. |image61| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image68.png
+.. |image61| image:: _static/media6/image68.png
    :width: 0.34722in
    :height: 0.25in
-.. |image62| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image69.png
+.. |image62| image:: _static/media6/image69.png
    :width: 0.13889in
    :height: 0.23611in
-.. |image63| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image70.png
+.. |image63| image:: _static/media6/image70.png
    :width: 0.125in
    :height: 0.30556in
-.. |image64| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image71.png
+.. |image64| image:: _static/media6/image71.png
    :width: 1.36111in
    :height: 0.86111in
-.. |image65| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image72.png
+.. |image65| image:: _static/media6/image72.png
    :width: 0.125in
    :height: 0.23611in
-.. |image66| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image73.png
+.. |image66| image:: _static/media6/image73.png
    :width: 0.125in
    :height: 0.23611in
-.. |image67| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image74.png
+.. |image67| image:: _static/media6/image74.png
    :width: 0.125in
    :height: 0.23611in
-.. |image68| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image75.png
+.. |image68| image:: _static/media6/image75.png
    :width: 0.13889in
    :height: 0.29167in
-.. |image69| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image76.png
+.. |image69| image:: _static/media6/image76.png
    :width: 13.33333in
    :height: 1.29167in
-.. |image70| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image31.png
+.. |image70| image:: _static/media6/image31.png
    :width: 0.13889in
    :height: 0.29167in
-.. |image71| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image32.png
+.. |image71| image:: _static/media6/image32.png
    :width: 0.20833in
    :height: 0.29167in
-.. |image72| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image33.png
+.. |image72| image:: _static/media6/image33.png
    :width: 0.22222in
    :height: 0.375in
-.. |image73| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image34.png
+.. |image73| image:: _static/media6/image34.png
    :width: 0.23611in
    :height: 0.375in
-.. |image74| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image35.png
+.. |image74| image:: _static/media6/image35.png
    :width: 0.13889in
    :height: 0.375in
-.. |image75| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image36.png
+.. |image75| image:: _static/media6/image36.png
    :width: 0.20833in
    :height: 0.29167in
-.. |image76| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image35.png
+.. |image76| image:: _static/media6/image35.png
    :width: 0.13889in
    :height: 0.375in
-.. |image77| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image37.png
+.. |image77| image:: _static/media6/image37.png
    :width: 0.22222in
    :height: 0.375in
-.. |image78| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image38.png
+.. |image78| image:: _static/media6/image38.png
    :width: 0.13889in
    :height: 0.29167in
-.. |image79| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image77.png
+.. |image79| image:: _static/media6/image77.png
    :width: 4.20833in
    :height: 0.375in
-.. |image80| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image78.png
+.. |image80| image:: _static/media6/image78.png
    :width: 2.44444in
-.. |image81| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image27.png
+.. |image81| image:: _static/media6/image27.png
    :width: 13.33333in
    :height: 0.41667in
-.. |image82| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image79.png
+.. |image82| image:: _static/media6/image79.png
    :width: 0.19444in
    :height: 0.625in
-.. |image83| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image80.png
+.. |image83| image:: _static/media6/image80.png
    :width: 0.68056in
    :height: 0.625in
-.. |image84| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image81.png
+.. |image84| image:: _static/media6/image81.png
    :width: 2.30556in
    :height: 0.33333in
-.. |image85| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image82.png
+.. |image85| image:: _static/media6/image82.png
    :width: 0.55556in
    :height: 0.11111in
-.. |image86| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image83.png
+.. |image86| image:: _static/media6/image83.png
    :width: 0.94444in
    :height: 0.11111in
-.. |image87| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image84.png
+.. |image87| image:: _static/media6/image84.png
    :width: 1in
    :height: 0.11111in
-.. |image88| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image85.png
+.. |image88| image:: _static/media6/image85.png
    :width: 0.59722in
    :height: 0.11111in
-.. |image89| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image86.png
+.. |image89| image:: _static/media6/image86.png
    :width: 0.48611in
    :height: 0.11111in
-.. |image90| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image87.png
+.. |image90| image:: _static/media6/image87.png
    :width: 0.45833in
    :height: 0.11111in
-.. |image91| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image87.png
+.. |image91| image:: _static/media6/image87.png
    :width: 0.45833in
    :height: 0.11111in
-.. |image92| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image88.png
+.. |image92| image:: _static/media6/image88.png
    :width: 13.33333in
    :height: 1.36111in
-.. |image93| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image91.png
+.. |image93| image:: _static/media6/image91.png
    :width: 3.61806in
    :height: 2.71354in
-.. |image94| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image92.png
+.. |image94| image:: _static/media6/image92.png
    :width: 3.61667in
    :height: 2.7125in
-.. |image95| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image93.png
+.. |image95| image:: _static/media6/image93.png
    :width: 5.13889in
    :height: 1.68056in
-.. |image96| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image94.png
+.. |image96| image:: _static/media6/image94.png
    :width: 13.33333in
    :height: 0.41667in
-.. |image97| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image95.png
+.. |image97| image:: _static/media6/image95.png
    :width: 4.6625in
    :height: 3.49722in
-.. |image98| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image96.png
+.. |image98| image:: _static/media6/image96.png
    :width: 4.37917in
    :height: 3.28472in
-.. |image99| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image27.png
+.. |image99| image:: _static/media6/image27.png
    :width: 13.33333in
    :height: 0.41667in
-.. |image100| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image27.png
+.. |image100| image:: _static/media6/image27.png
    :width: 13.33333in
    :height: 0.41667in
-.. |image101| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image27.png
+.. |image101| image:: _static/media6/image27.png
    :width: 13.33333in
    :height: 0.41667in
-.. |image102| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image27.png
+.. |image102| image:: _static/media6/image27.png
    :width: 13.33333in
    :height: 0.41667in
-.. |image103| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image97.png
+.. |image103| image:: _static/media6/image97.png
    :width: 11.84722in
    :height: 5.27778in
-.. |image104| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image98.png
+.. |image104| image:: _static/media6/image98.png
    :width: 13.33333in
    :height: 0.625in
-.. |image105| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image27.png
+.. |image105| image:: _static/media6/image27.png
    :width: 13.33333in
    :height: 0.41667in
-.. |image106| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image27.png
+.. |image106| image:: _static/media6/image27.png
    :width: 13.33333in
    :height: 0.41667in
-.. |image107| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image100.png
+.. |image107| image:: _static/media6/image100.png
    :width: 4.77778in
    :height: 0.51389in
-.. |image108| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image27.png
+.. |image108| image:: _static/media6/image27.png
    :width: 13.33333in
    :height: 0.41667in
-.. |image109| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image101.png
+.. |image109| image:: _static/media6/image101.png
    :width: 3.00694in
    :height: 2.00417in
-.. |image110| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image99.png
+.. |image110| image:: _static/media6/image99.png
    :width: 3.00556in
    :height: 2.00417in
-.. |image111| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image102.png
+.. |image111| image:: _static/media6/image102.png
    :width: 3.00694in
    :height: 2.00417in
-.. |image112| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image103.png
+.. |image112| image:: _static/media6/image103.png
    :width: 3.00694in
    :height: 2.00417in
-.. |image113| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image27.png
+.. |image113| image:: _static/media6/image27.png
    :width: 13.33333in
    :height: 0.41667in
-.. |image114| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image27.png
+.. |image114| image:: _static/media6/image27.png
    :width: 13.33333in
    :height: 0.41667in
-.. |image115| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image27.png
+.. |image115| image:: _static/media6/image27.png
    :width: 13.33333in
    :height: 0.41667in
-.. |image116| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image110.png
+.. |image116| image:: _static/media6/image110.png
    :width: 13.33333in
    :height: 1.36111in
-.. |image117| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image111.png
+.. |image117| image:: _static/media6/image111.png
    :width: 5.49444in
    :height: 4.08056in
-.. |image118| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image27.png
+.. |image118| image:: _static/media6/image27.png
    :width: 13.33333in
    :height: 0.41667in
-.. |image119| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image112.png
+.. |image119| image:: _static/media6/image112.png
    :width: 13.33333in
    :height: 7.5in
-.. |image120| image:: vertopal_ea832640753a469abb549c4d9b6a8c68/media/image113.png
+.. |image120| image:: _static/media6/image113.png
    :width: 13.33056in
    :height: 7.49844in

@@ -19,7 +19,9 @@
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" /> 
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Milestone 5 Progress Report" href="milestone5_report.html" />
+    <link rel="prev" title="Milestone 3 Progress Report" href="milestone3_report.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -39,11 +41,28 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Overview:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="summary.html">Project Summary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="milestone1_report.html">Milestone 1 Progress Report</a></li>
 <li class="toctree-l1"><a class="reference internal" href="milestone2_report.html">Milestone 2 Progress Report</a></li>
 <li class="toctree-l1"><a class="reference internal" href="milestone3_report.html">Milestone 3 Progress Report</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Milestone 4 Progress Report</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview">1      Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#goals-and-impact">2      Goals and Impact</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#key-findings">3      Key Findings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#task-3-3-surrogate-learning">4      Task 3.3 – Surrogate Learning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#task-4-3-ai-simulation">5      Task 4.3 – AI Simulation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#gan-experiments">GAN Experiments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#neuro-symbolic-learning">Neuro-Symbolic Learning</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#causality">Causality</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#summary">6 Summary</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="milestone5_report.html">Milestone 5 Progress Report</a></li>
+<li class="toctree-l1"><a class="reference internal" href="milestone6_report.html">Milestone 6 Progress Report</a></li>
+<li class="toctree-l1"><a class="reference internal" href="milestone7_report.html">Milestone 7 Progress Report</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">PyBAMOCS:</span></p>
 <ul>
@@ -104,244 +123,131 @@
 </style>
 <section id="milestone-4-progress-report">
 <h1>Milestone 4 Progress Report<a class="headerlink" href="#milestone-4-progress-report" title="Permalink to this heading"></a></h1>
-<p><strong>1</strong></p>
-<p><strong>Overview</strong></p>
+<p><strong>PACMANS TEAM:</strong>
+• Jennifer Sleeman (JHU APL) PI
+• Anand Gnanadesikan (JHU) Co-PI
+• Yannis Kevrekidis (JHU) Co-PI
+• Jay Brett (JHU APL)
+• David Chung (JHU APL)
+• Chace Ashcraft (JHU APL)
+• Thomas Haine (JHU)
+• Marie-Aude Pradal (JHU)
+• Renske Gelderloos (JHU)
+• Caroline Tang (DUKE)
+• Anshu Saksena (JHU APL)
+• Larry White (JHU APL)
+• Marisa Hughes (JHU APL)</p>
+<section id="overview">
+<h2>1      Overview<a class="headerlink" href="#overview" title="Permalink to this heading"></a></h2>
 <blockquote>
-<div><p>The Physics-informed AI Climate Model Agent Neuro-symbolic Simulator
-(PACMANS) for Tipping Point Discovery</p>
-<ul class="simple">
-<li><p>This technical report covers the period of April 2022 through May</p></li>
-</ul>
-<p>13,</p>
-<ol class="arabic simple" start="2022">
-<li></li>
-</ol>
-<ul class="simple">
-<li><p>The report documents the achievement of the milestone associated</p></li>
-</ul>
-<p>with Month 5 of the JHU/APL-led PACMAN team’s statement of work.</p>
-<ul class="simple">
-<li><p>The delivery for this milestone is this report which highlights</p></li>
-</ul>
-<p>progress</p>
-<p>made for the AI surrogate modeling and the AI simulation research.</p>
+<div><p>This technical report covers the period of April 2022 through May
+13, 2022. The report documents the achievement of the milestone associated with Month 5 of the JHU/APL-led PACMAN team’s statement of work. The delivery for this milestone is this report which highlights
+progress made for the AI surrogate modeling and the AI simulation research.</p>
 <div class="line-block">
 <div class="line">• This report includes:</div>
 <div class="line">• New architectures</div>
 <div class="line">• Experimental definitions</div>
-<div class="line">• Findings based on experimental results• Next steps<a class="reference internal" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png"><img alt="image26" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png" style="width: 13.33333in; height: 0.41667in;" /></a></div>
+<div class="line">• Findings based on experimental results</div>
+<div class="line">• Next steps</div>
 </div>
 </div></blockquote>
-<p>3 December 2022</p>
-<p><strong>2</strong></p>
-<p><strong>Goals and Impact</strong></p>
-<blockquote>
-<div><p>The Physics-informed AI Climate Model Agent Neuro-symbolic Simulator
-(PACMANS) for Tipping Point Discovery</p>
-<div class="line-block">
-<div class="line">Goals for this milestone included:</div>
-<div class="line">• Obtain the first set of experimental results for the AI surrogate</div>
-</div>
-<p>modeling based on testing the formalizations described in Milestone 3</p>
-<ul class="simple">
-<li><p>Perform early experimentation of a baseline GAN for a subset of</p></li>
+</section>
+<section id="goals-and-impact">
+<h2>2      Goals and Impact<a class="headerlink" href="#goals-and-impact" title="Permalink to this heading"></a></h2>
+<dl class="simple">
+<dt>Goals for this milestone included:</dt><dd><ul class="simple">
+<li><p>Obtain the first set of experimental results for the AI surrogate modeling based on testing the formalizations described in Milestone 3</p></li>
+<li><p>Perform early experimentation of a baseline GAN for a subset of explorations and what-if questions</p></li>
+<li><p>Show feasibility of the causal model</p></li>
+<li><p>Obtain baseline symbolic language experimental results</p></li>
 </ul>
-<div class="line-block">
-<div class="line">explorations and what-if questions</div>
-<div class="line">• Show feasibility of the causal model</div>
-<div class="line">• Obtain baseline symbolic language experimental results<a class="reference internal" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png"><img alt="image27" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png" style="width: 13.33333in; height: 0.41667in;" /></a></div>
-</div>
-</div></blockquote>
-<p>3 December 2022</p>
-<p><strong>3</strong></p>
-<p><strong>Key Findings</strong></p>
-<blockquote>
-<div><p>The Physics-informed AI Climate Model Agent Neuro-symbolic Simulator
-(PACMANS) for Tipping Point Discovery</p>
-<div class="line-block">
-<div class="line">• Surrogate Learning (Task 3.3)</div>
-<div class="line">• Completed the first set of bifurcation diagrams for the box model
-equations</div>
-<div class="line">• Discovered a new type of tipping point in the Box model using the
-non-dimensionalized equations</div>
-</div>
-</div></blockquote>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 4%" />
-<col style="width: 96%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><ul class="simple">
-<li></li>
-</ul>
-</th>
-<th class="head"><p>In Gnanadesikan 2018 paper a fold bifurcation was assumed, we
-discovered subcritical Hopf bifurcation also exists for</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><ul class="simple">
-<li></li>
-</ul>
-</td>
-<td><p>the reverse transition</p></td>
-</tr>
-<tr class="row-odd"><td></td>
-<td><ul class="simple">
-<li><p><a href="#id1"><span class="problematic" id="id2">**</span></a>Plan to publish these findings – this represents a new</p></li>
-</ul>
-<p>insight into potential AMOC behavior**</p>
-</td>
-</tr>
-</tbody>
-</table>
+</dd>
+</dl>
+</section>
+<section id="key-findings">
+<h2>3      Key Findings<a class="headerlink" href="#key-findings" title="Permalink to this heading"></a></h2>
 <blockquote>
 <div><ul class="simple">
-<li><p>AI simulation (Task 4.3)</p></li>
-<li><p>Completed first set of multi-agent generator GAN experiments using</p></li>
+<li><dl class="simple">
+<dt>Surrogate Learning (Task 3.3)</dt><dd><ul>
+<li><p>Completed the first set of bifurcation diagrams for the box model equations</p></li>
+<li><dl class="simple">
+<dt>Discovered a new type of tipping point in the Box model using the non-dimensionalized equations</dt><dd><ul>
+<li><p>In Gnanadesikan 2018 paper a fold bifurcation was assumed, we discovered subcritical Hopf bifurcation also exists for the reverse transition</p></li>
+<li><p><strong>Plan to publish these findings – this represents a new insight into potential AMOC behavior</strong></p></li>
 </ul>
-<p>the box model data</p>
-<ul class="simple">
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>AI simulation (Task 4.3)</dt><dd><ul>
+<li><dl class="simple">
+<dt>Completed first set of multi-agent generator GAN experiments using the box model data</dt><dd><ul>
 <li><p><strong>Generators show a positive tendency towards AMOC collapse</strong></p></li>
-<li><p>Setup a baseline neuro-symbolic experiment using rules-based model</p></li>
 </ul>
-<p>with a set of questions</p>
-<p>which correlate with the box model Gnanadesikan 2018 experiments</p>
-<ul class="simple">
-<li><p>Developed a first approach for bi-directional translation between</p></li>
+</dd>
+</dl>
+</li>
+<li><p>Setup a baseline neuro-symbolic experiment using rules-based model with a set of questions which correlate with the box model Gnanadesikan 2018 experiments</p></li>
+<li><dl class="simple">
+<dt>Developed a first approach for bi-directional translation between the neuro-symbolic language and the GAN perturbations</dt><dd><ul>
+<li><p><strong>If successful, this model will show how a GAN’s perturbations of symbols can be translated to “purely generative” natural language questions</strong></p></li>
 </ul>
-<p>the neuro-symbolic language</p>
-<p>and the GAN perturbations</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>To address questions around AMOC slowing vs. complete shut-off and recovery from AMOC, we are exploring causality at the model level</dt><dd><ul>
+<li><p><strong>we expect to address these two areas with a probabilistic causal model</strong></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
 </div></blockquote>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 4%" />
-<col style="width: 96%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><ul class="simple">
-<li></li>
-</ul>
-</td>
-<td><table class="docutils align-default">
-<colgroup>
-<col style="width: 4%" />
-<col style="width: 96%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td></td>
-<td><p><strong>If successful, this model will show how a GAN’s
-perturbations of symbols can be translated to “purely
-generative” natural language questions</strong></p></td>
-</tr>
-</tbody>
-</table>
-<ul class="simple">
-<li></li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
+</section>
+<section id="task-3-3-surrogate-learning">
+<h2>4      Task 3.3 – Surrogate Learning<a class="headerlink" href="#task-3-3-surrogate-learning" title="Permalink to this heading"></a></h2>
 <blockquote>
-<div><ul class="simple">
-<li><p>To address questions around AMOC slowing vs. complete shut-off and</p></li>
-</ul>
-<p>recovery from AMOC, we</p>
-<p>are exploring causality at the model level</p>
-<ul class="simple">
-<li><p><a href="#id3"><span class="problematic" id="id4">**</span></a>we expect to address these two areas with a probabilistic causal</p></li>
-</ul>
-<p>model**<a class="reference internal" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png"><img alt="image28" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png" style="width: 13.33333in; height: 0.41667in;" /></a></p>
-</div></blockquote>
-<p>3 December 2022</p>
-<p><strong>4</strong></p>
-<p><strong>Task 3.3 – Surrogate Learning Summary</strong></p>
-<blockquote>
-<div><p>The Physics-informed AI Climate Model Agent Neuro-symbolic Simulator
-(PACMANS) for Tipping Point Discovery</p>
-<p><em>Subtask Description: Report on the first set of experimental results
+<div><p><em>Subtask Description: Report on the first set of experimental results
 based on testing the formalizations set forth in Milestone 3.</em></p>
 <div class="line-block">
 <div class="line">Accomplishments:</div>
 <div class="line">• <strong>Major breakthrough</strong> in terms of bifurcation modeling</div>
 </div>
 <ul class="simple">
-<li><p>We have been able to perform detailed bifurcation diagrams of the</p></li>
+<li><p>We have been able to perform detailed bifurcation diagrams of the box model</p></li>
+<li><p>This was enabled by a careful non-dimensionalization of the related equations, without which the accuracy of the numerical computations would be unsatisfactory</p></li>
+<li><p>With the non-dimensionalized equations, the problem possesses not one but two tipping points (fold and Hopf bifurcations)</p></li>
 </ul>
-<p>box</p>
-<p>model</p>
-<ul class="simple">
-<li><p>This was enabled by a careful non-dimensionalization of the related</p></li>
-</ul>
-<p>equations, without which the accuracy of the numerical computations
-would be unsatisfactory</p>
-<ul class="simple">
-<li><p>With the non-dimensionalized equations, the problem possesses not</p></li>
-</ul>
-<p>one but two tipping points (fold and Hopf bifurcations)<a class="reference internal" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png"><img alt="image29" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png" style="width: 13.33333in; height: 0.41667in;" /></a></p>
-</div></blockquote>
-<p>3 December 2022</p>
-<p><strong>5</strong></p>
-<p><strong>Task 3.3 - Surrogate Learning</strong></p>
-<blockquote>
-<div><p>The Physics-informed AI Climate Model Agent Neuro-symbolic Simulator
-(PACMANS) for Tipping Point Discovery</p>
 <p>With the non-dimensionalized equations, the problem possesses not one
 but two tipping points (from the “upper” branch to the lower, but
 also from the lower to the upper) as shown in Figures 1-2.</p>
-<a class="reference internal image-reference" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image28.png"><img alt="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image28.png" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image28.png" style="width: 5.01806in; height: 3.7625in;" /></a>
-<a class="reference internal image-reference" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image29.png"><img alt="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image29.png" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image29.png" style="width: 5.01805in; height: 3.7625in;" /></a>
+<a class="reference internal image-reference" href="_images/image28.png"><img alt="_images/image28.png" src="_images/image28.png" style="width: 5.01806in; height: 3.7625in;" /></a>
+<a class="reference internal image-reference" href="_images/image29.png"><img alt="_images/image29.png" src="_images/image29.png" style="width: 5.01805in; height: 3.7625in;" /></a>
 <p><strong>Figures 1a-1b. Diagram of NH Overturning Mn (a) and Zoomed-In View
-of the subcritical Hopf Bifurcation Point (b).</strong> <a class="reference internal" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png"><img alt="image30" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png" style="width: 13.33333in; height: 0.41667in;" /></a></p>
-</div></blockquote>
-<p>3 December 2022</p>
-<p><strong>6</strong></p>
-<p><strong>Task 3.3 - Surrogate Learning</strong></p>
-<blockquote>
-<div><p>The Physics-informed AI Climate Model Agent Neuro-symbolic Simulator
-(PACMANS) for Tipping Point Discovery</p>
+of the subcritical Hopf Bifurcation Point (b).</strong></p>
 <p>Second view - the two tipping points are of different nature: one of
 the two is the fold point bifurcation, but the second one is a
 subcritical Hopf, highlighted in Figures 1-2. The Hopf at
 TrFWn=0.0384 is subcritical.</p>
-<p><a class="reference internal" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image30.png"><img alt="image31" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image30.png" style="width: 5.07639in; height: 3.87083in;" /></a> <a class="reference internal" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image31.png"><img alt="image32" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image31.png" style="width: 5.07639in; height: 3.87083in;" /></a></p>
+<p><a class="reference internal" href="_images/image30.png"><img alt="image31" src="_images/image30.png" style="width: 5.07639in; height: 3.87083in;" /></a> <a class="reference internal" href="_images/image31.png"><img alt="image32" src="_images/image31.png" style="width: 5.07639in; height: 3.87083in;" /></a></p>
 <p><strong>Figures 2a-2b. Diagram of Low Latitude Depth D* (a) and Zoomed-In
-View of the Hopf Bifurcation Point (b).</strong> <a class="reference internal" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png"><img alt="image33" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png" style="width: 13.33333in; height: 0.41667in;" /></a></p>
-</div></blockquote>
-<p>3 December 2022</p>
-<p><strong>7</strong></p>
-<p><strong>Task 3.3 - Surrogate Learning</strong></p>
-<blockquote>
-<div><p>The Physics-informed AI Climate Model Agent Neuro-symbolic Simulator
-(PACMANS) for Tipping Point Discovery</p>
+View of the Hopf Bifurcation Point (b).</strong></p>
 <ul class="simple">
-<li><p>The value where the limit cycle branch appears to become</p></li>
+<li><p>The value where the limit cycle branch appears to become  vertical (an infinite period, homoclinic orbit) is 0.0375.</p></li>
+<li><p>The subcritical Hopf gives birth to an unstable limit cycle “backwards” in parameter space (that surrounds the exiting stable steady state).</p></li>
+<li><p>This steady state loses stability at the Hopf bifurcation (red branch in Figures 1-2).</p></li>
+<li><p>The escape (the “tipping”) arises when a stochastic trajectory wandering around the stable state manages to “cross” the unstable limit cycle and escape to either large oscillations or to a completely different lower circulation branch.</p></li>
 </ul>
-<p>vertical (an infinite period, homoclinic orbit) is 0.0375.</p>
-<ul class="simple">
-<li><p>The subcritical Hopf gives birth to an unstable limit cycle</p></li>
-</ul>
-<p>“backwards” in parameter space (that surrounds the exiting stable
-steady state).</p>
-<ul class="simple">
-<li><p>This steady state loses stability at the Hopf bifurcation (red</p></li>
-</ul>
-<p>branch in Figures 1-2).</p>
-<ul class="simple">
-<li><p>The escape (the “tipping”) arises when a stochastic trajectory</p></li>
-</ul>
-<p>wandering around the stable state manages to “cross” the unstable
-limit cycle and escape to either large oscillations or to a
-completely different lower circulation branch.<a class="reference internal" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png"><img alt="image34" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png" style="width: 13.33333in; height: 0.41667in;" /></a></p>
-</div></blockquote>
-<p>3 December 2022</p>
-<p><strong>8</strong></p>
-<p><strong>Task 3.3 - Surrogate Learning</strong></p>
-<blockquote>
-<div><p>The Physics-informed AI Climate Model Agent Neuro-symbolic Simulator
-(PACMANS) for Tipping Point Discovery</p>
 <p>Where the initial condition with D=1 (where D is the Low latitude
 pycnocline depth) is attracted by the upper branch because there is
 an early switch activation, so the sharp transition that we see is
@@ -349,36 +255,22 @@ given by the upper limit point LP. While for D=4 we observe the sharp
 transition close to the subcritical Hopf (the solution loses
 stability at the exact Hopf point, because the initial condition may
 start outside the unstable limit cycle).</p>
-<p><a class="reference internal" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image32.png"><img alt="image35" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image32.png" style="width: 5.08056in; height: 3.80972in;" /></a> <a class="reference internal" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image33.png"><img alt="image36" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image33.png" style="width: 5.08055in; height: 3.80972in;" /></a></p>
+<p><a class="reference internal" href="_images/image32.png"><img alt="image35" src="_images/image32.png" style="width: 5.08056in; height: 3.80972in;" /></a> <a class="reference internal" href="_images/image33.png"><img alt="image36" src="_images/image33.png" style="width: 5.08055in; height: 3.80972in;" /></a></p>
 <p><strong>Figures 3a-3b. Temporal Bifurcation Diagram for Depth (a) and the
-Limit Cycle Continuation (b).</strong> <a class="reference internal" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png"><img alt="image37" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png" style="width: 13.33333in; height: 0.41667in;" /></a></p>
+Limit Cycle Continuation (b).</strong></p>
 </div></blockquote>
-<p>3 December 2022</p>
-<p><strong>9</strong></p>
-<p><strong>Task 3.3 - Surrogate Learning</strong></p>
-<blockquote>
-<div><p>The Physics-informed AI Climate Model Agent Neuro-symbolic Simulator
-(PACMANS) for Tipping Point Discovery</p>
-<div class="line-block">
-<div class="line">Next Steps:</div>
-<div class="line">• We are working on a stochastic simulation close to the presented</div>
-</div>
-<p>tipping points, to collect data towards a targeted surrogate model.
-This will allow us to efficiently and accurately estimate escape time
-distributions.</p>
-<ul class="simple">
-<li><p>We will learn targeted effective stochastic DEs (one-dimensional at</p></li>
+<dl class="simple">
+<dt>Next Steps:</dt><dd><ul class="simple">
+<li><p>We are working on a stochastic simulation close to the presented tipping points, to collect data towards a targeted surrogate model. This will allow us to efficiently and accurately estimate escape time distributions.</p></li>
+<li><p>We will learn targeted effective stochastic DEs (one-dimensional at the LP tipping, two-dimensional at the Hopf tipping) and use them to estimate escape time statistics in both cases.</p></li>
 </ul>
-<p>the LP tipping, two-dimensional at the Hopf tipping) and use them to
-estimate escape time statistics in both cases.<a class="reference internal" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png"><img alt="image38" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png" style="width: 13.33333in; height: 0.41667in;" /></a></p>
-</div></blockquote>
-<p>3 December 2022</p>
-<p><strong>10</strong></p>
-<p><strong>Task 4.3 – AI Simulation Summary</strong></p>
+</dd>
+</dl>
+</section>
+<section id="task-4-3-ai-simulation">
+<h2>5      Task 4.3 – AI Simulation<a class="headerlink" href="#task-4-3-ai-simulation" title="Permalink to this heading"></a></h2>
 <blockquote>
-<div><p>The Physics-informed AI Climate Model Agent Neuro-symbolic Simulator
-(PACMANS) for Tipping Point Discovery</p>
-<p><em>Subtask Description: Report on early experimentation of a baseline
+<div><p><em>Subtask Description: Report on early experimentation of a baseline
 GAN for a subset of explorations and what-if questions, including a
 set of experiments that show feasibility of the causal model, and
 baseline symbolic language experimental results.</em></p>
@@ -395,65 +287,44 @@ to the GAN simulation, and from perturbed GAN runs to questions.</div>
 </div>
 <ul class="simple">
 <li><p>Set up a baseline model that will be used for experimentation</p></li>
-<li><p>Defined causality in terms of model behavior/time<a class="reference internal" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png"><img alt="image39" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png" style="width: 13.33333in; height: 0.41667in;" /></a></p></li>
+<li><p>Defined causality in terms of model behavior/time</p></li>
 </ul>
 </div></blockquote>
-<p>3 December 2022</p>
-<p><strong>11</strong></p>
-<p><strong>Task 4.3 - AI Simulation – GAN Experiments</strong></p>
+<section id="gan-experiments">
+<h3>GAN Experiments<a class="headerlink" href="#gan-experiments" title="Permalink to this heading"></a></h3>
 <blockquote>
-<div><p>The Physics-informed AI Climate Model Agent Neuro-symbolic Simulator
-(PACMANS) for Tipping Point Discovery</p>
-<div class="line-block">
+<div><div class="line-block">
 <div class="line">• Three experiments using the Box model simulation data</div>
 <div class="line">• With a vector of 3 dimensions and perturbations of parameters</div>
 </div>
 <div class="line-block">
-<div class="line">(bounded):</div>
-<div class="line">• Dlow0 (Thermocline depth of lower latitudes): [100.0, 400.0]• Mek
-(Ekman flux from the southern ocean): [1.5e7, 3.5e7]• Fwn (Fresh
-water flux (North)): [5.0e4, 1.55e6]</div>
+<div class="line">(bounded):
+• Dlow0 (Thermocline depth of lower latitudes): [100.0, 400.0]
+• Mek (Ekman flux from the southern ocean): [1.5e7, 3.5e7]
+• Fwn (Fresh water flux (North)): [5.0e4, 1.55e6]</div>
 </div>
 <ul class="simple">
-<li><p>Data was augmented for uniform sampling from a 3-D space• In</p></li>
+<li><p>Data was augmented for uniform sampling from a 3-D space</p></li>
+<li><p>In addition to samples, generated 1,000 synthetic samples</p></li>
+<li><p>Distribution of shutoff vs non-shutoff samples 743/413</p></li>
 </ul>
-<p>addition to samples, generated 1,000 synthetic samples</p>
-<ul class="simple">
-<li><p>Distribution of shutoff vs non-shutoff samples 743/413 <a class="reference internal" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png"><img alt="image40" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png" style="width: 13.33333in; height: 0.41667in;" /></a></p></li>
-</ul>
-</div></blockquote>
-<p>3 December 2022</p>
-<p><strong>12</strong></p>
-<p><strong>Task 4.3 - AI Simulation – GAN Experiments</strong></p>
-<blockquote>
-<div><p>The Physics-informed AI Climate Model Agent Neuro-symbolic Simulator
-(PACMANS) for Tipping Point Discovery</p>
 <div class="line-block">
 <div class="line">• Trained the GAN using equally-weighted generators</div>
 <div class="line">• Shutoff classification cross-entropy loss functions</div>
 <div class="line">• Ran for ~250 epochs</div>
-<div class="line">• Ran experiments with n = to the number of generators where n ∈</div>
+<div class="line">• Ran experiments with n = to the number of generators where n ∈ [1,2,4]</div>
+<div class="line">• Generated samples result in shutoffs/non-shutoffs</div>
 </div>
-<p>[1,2,4]</p>
-<ul class="simple">
-<li><p>Generated samples result in shutoffs/non-shutoffs<a class="reference internal" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png"><img alt="image41" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png" style="width: 13.33333in; height: 0.41667in;" /></a></p></li>
-</ul>
 </div></blockquote>
-<p>3 December 2022</p>
-<p><strong>13</strong></p>
-<blockquote>
-<div><p><strong>Task 4.3 - AI Simulation – GAN Experiments</strong></p>
-<p>The Physics-informed AI Climate Model Agent Neuro-symbolic Simulator
-(PACMANS) for Tipping Point Discovery</p>
 <ul class="simple">
 <li><p>Discriminator performance in classifying runs as shut-off or not•</p></li>
+<li><dl class="simple">
+<dt>High F-measure scores indicate the discriminator was able to accuracy classify shut-off from non-shut-off runs for held-out test</dt><dd><p>set</p>
+</dd>
+</dl>
+</li>
 </ul>
-<p>High F-measure scores indicate the discriminator was able to</p>
-<p>accuracy classify shut-off from non-shut-off runs for held-out test
-set</p>
-<p><strong>Table 1. Precision, Recall, F-Measure scores for 1,2,4 generator
-GANs.</strong></p>
-</div></blockquote>
+<p><strong>Table 1. Precision, Recall, F-Measure scores for 1,2,4 generator GANs.</strong></p>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 29%" />
@@ -493,22 +364,8 @@ GANs.</strong></p>
 </table>
 <p><strong>Small initial experiment- but very promising results from
 discriminator in classifying runs</strong></p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 71%" />
-<col style="width: 29%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>3 December 2022</p></td>
-<td><p><strong>14</strong></p></td>
-</tr>
-</tbody>
-</table>
 <blockquote>
-<div><p><strong>Task 4.3 - AI Simulation – GAN Experiments</strong></p>
-<p>The Physics-informed AI Climate Model Agent Neuro-symbolic Simulator
-(PACMANS) for Tipping Point Discovery</p>
-<div class="line-block">
+<div><div class="line-block">
 <div class="line">• After training the GAN, sampled 500 times</div>
 <div class="line">• Generators tend to favor exploring areas of shut-offs</div>
 </div>
@@ -571,22 +428,6 @@ resulted in a shut-off.</strong></p>
 </table>
 <p><strong>The trained generators are successfully generating a latent space of
 shut-offs</strong></p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 71%" />
-<col style="width: 29%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>3 December 2022</p></td>
-<td><p><strong>15</strong></p></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Task 4.3 - AI Simulation – GAN Experiments</strong></p>
-<blockquote>
-<div><p>The Physics-informed AI Climate Model Agent Neuro-symbolic Simulator
-(PACMANS) for Tipping Point Discovery</p>
-</div></blockquote>
 <ul>
 <li><p>Early GAN results show interesting results regarding M_n and shut-off</p>
 <blockquote>
@@ -595,20 +436,14 @@ shut-offs</strong></p>
 </li>
 </ul>
 <p><strong>Figure 4a-c. GAN generated shut-offs for 1 generator (a), 2 generators
-(b), and 4 generators (c).</strong><a class="reference internal" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image34.png"><img alt="image42" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image34.png" style="width: 4.61944in; height: 4.61944in;" /></a><a class="reference internal" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image35.png"><img alt="image43" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image35.png" style="width: 4.61944in; height: 4.61944in;" /></a><a class="reference internal" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image36.png"><img alt="image44" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image36.png" style="width: 4.61944in; height: 4.61944in;" /></a><a class="reference internal" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png"><img alt="image45" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png" style="width: 13.33333in; height: 0.41667in;" /></a></p>
-<p>3 December 2022</p>
-<p><strong>16</strong></p>
-<p><strong>Task 4.3 - AI Simulation – GAN Experiments</strong></p>
-<blockquote>
-<div><p>The Physics-informed AI Climate Model Agent Neuro-symbolic Simulator
-(PACMANS) for Tipping Point Discovery</p>
-<div class="line-block">
-<div class="line">Observations:</div>
-<div class="line">• The n=1 generator case produces the greatest fraction of
-configurations that</div>
-</div>
-<p>are non-shutoff states. This could be attributed to the GAN having
-more synthetic samples to learn from (i.e. n=2 and n=4 training loops
+(b), and 4 generators (c).</strong><a class="reference internal" href="_images/image34.png"><img alt="image42" src="_images/image34.png" style="width: 4.61944in; height: 4.61944in;" /></a><a class="reference internal" href="_images/image35.png"><img alt="image43" src="_images/image35.png" style="width: 4.61944in; height: 4.61944in;" /></a><a class="reference internal" href="_images/image36.png"><img alt="image44" src="_images/image36.png" style="width: 4.61944in; height: 4.61944in;" /></a></p>
+<dl>
+<dt>Observations:</dt><dd><blockquote>
+<div><ul class="simple">
+<li><p>The n=1 generator case produces the greatest fraction of
+configurations that are non-shutoff states. This could be attributed to the GAN having</p></li>
+</ul>
+<p>more synthetic samples to learn from (i.e. n=2 and n=4 training loops
 versus n=1 training loop per epoch).</p>
 <ul class="simple">
 <li><p>For this particular scenario (i.e. 3 perturbed features w/ fixed</p></li>
@@ -616,587 +451,176 @@ versus n=1 training loop per epoch).</p>
 <p>bounds), it appears that n=1 generator is enough to roughly capture
 the shutoff configurations in this feature space. However, it’s still
 to be determined how the generators will perform when allowed to
-perturb more than 3 features.<a class="reference internal" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png"><img alt="image46" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png" style="width: 13.33333in; height: 0.41667in;" /></a></p>
-</div></blockquote>
-<p>3 December 2022</p>
-<p><strong>17</strong></p>
-<p><strong>Task 4.3 - AI Simulation – GAN Experiments</strong></p>
-<blockquote>
-<div><p>The Physics-informed AI Climate Model Agent Neuro-symbolic Simulator
-(PACMANS) for Tipping Point Discovery</p>
-<ul class="simple">
-<li><p>For Fwn the n=1 generator GAN learns a bi-modal sampling</p></li>
-</ul>
-<p>distribution with</p>
-<p>modes centered at approx.. 0.65e6 and 1.3e6.</p>
-<ul class="simple">
-<li><p>When n=2 or n=4, generators learns a left-skewed uni-modal sampling</p></li>
-</ul>
-<p>distribution with mode centered at approx.. 1.3e6.</p>
-<p><strong>Figure 5a-c. Histograms showing distribution of generated shut-offs
-for 1 generator (a), 2 generators (b), and 4 generators
-(c).</strong><a class="reference internal" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image37.png"><img alt="image47" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image37.png" style="width: 4in; height: 4in;" /></a><a class="reference internal" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image38.png"><img alt="image48" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image38.png" style="width: 4in; height: 4in;" /></a><a class="reference internal" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image39.png"><img alt="image49" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image39.png" style="width: 4in; height: 4in;" /></a><a class="reference internal" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png"><img alt="image50" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png" style="width: 13.33333in; height: 0.41667in;" /></a></p>
-</div></blockquote>
-<p>3 December 2022</p>
-<p><strong>18</strong></p>
-<p><strong>Task 4.3 - AI Simulation – GAN Experiments</strong></p>
-<blockquote>
-<div><p>The Physics-informed AI Climate Model Agent Neuro-symbolic Simulator
-(PACMANS) for Tipping Point Discovery</p>
-<div class="line-block">
-<div class="line">Observations:</div>
-<div class="line">• The mode at 0.65e6 has a large cluster of non-shutoff states,
-while the mode</div>
-</div>
-<div class="line-block">
-<div class="line">at 1.3e6 appears to be a cluster for a shutoff state. This finding
-also</div>
-<div class="line">coincides with the larger fraction of non-shutoff states generated
-by the n=1 GAN vs. n=2 and n=4 GANs.</div>
-</div>
-<ul class="simple">
-<li><p>Discriminators incorrectly classify a larger fraction of real</p></li>
-</ul>
-<p>samples as</p>
-<p>synthetic as the number of generators increases.<a class="reference internal" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png"><img alt="image51" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png" style="width: 13.33333in; height: 0.41667in;" /></a></p>
-</div></blockquote>
-<p>3 December 2022</p>
-<p><strong>19</strong></p>
-<p><strong>Task 4.3 - AI Simulation – Neuro-Symbolic Learning</strong></p>
-<blockquote>
-<div><p>The Physics-informed AI Climate Model Agent Neuro-symbolic Simulator
-(PACMANS) for Tipping Point Discovery<a class="reference internal" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png"><img alt="image52" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png" style="width: 13.33333in; height: 0.41667in;" /></a></p>
-<div class="line-block">
-<div class="line">Neuro-symbolic architecture has been defined in terms of levels of</div>
-<div class="line">representation:</div>
-</div>
-<ul class="simple">
-<li><p>Text level – climate modeler asks</p></li>
-</ul>
-<p>questions</p>
-<ul class="simple">
-<li><p>Symbolic level – “programs” generated</p></li>
-</ul>
-<p>from natural language</p>
-<ul class="simple">
-<li><p>Vector level – GAN works at vector-level</p></li>
-</ul>
-<p>perturbing parameters</p>
-<div class="line-block">
-<div class="line">• Model level – Surrogate receives input in terms of initial
-conditions and</div>
-<div class="line">parameters to run model</div>
-</div>
-<a class="reference internal image-reference" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image40.png"><img alt="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image40.png" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image40.png" style="width: 6.36805in; height: 3.54167in;" /></a>
-<p><strong>Figure 6. Levels of Representation from Natural Language to Model
-runs.</strong></p>
-<p>3 December 2022 <strong>20</strong></p>
-</div></blockquote>
-<p><strong>Task 4.3 - AI Simulation – Neuro-Symbolic Learning</strong></p>
-<blockquote>
-<div><p>The Physics-informed AI Climate Model Agent Neuro-symbolic Simulator
-(PACMANS) for Tipping Point Discovery<a class="reference internal" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png"><img alt="image53" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png" style="width: 13.33333in; height: 0.41667in;" /></a></p>
-<ul class="simple">
-<li><p>In training mode: GAN explores space</p></li>
-</ul>
-<p>through perturbations</p>
-<ul class="simple">
-<li><p>Perturbations are translated into “programs”</p></li>
-<li><p>“Programs” are translated into natural</p></li>
-</ul>
-<p>language</p>
-<ul class="simple">
-<li><p>In trained mode: Questions can be asked of</p></li>
-</ul>
-<p>the model</p>
+perturb more than 3 features.</p>
 </div></blockquote>
 <ul>
-<li><p>Questions are translated into ‘programs’</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>‘Programs’ are used to find answers using</p></li>
+<li><p>For Fwn the n=1 generator GAN learns a bi-modal sampling
+distribution with modes centered at approx.. 0.65e6 and 1.3e6.</p>
+<ul class="simple">
+<li><p>When n=2 or n=4, generators learns a left-skewed uni-modal sampling distribution with mode centered at approx.. 1.3e6.</p></li>
 </ul>
-<p>latent space</p>
-</div></blockquote>
+<p><strong>Figure 5a-c. Histograms showing distribution of generated shut-offs
+for 1 generator (a), 2 generators (b), and 4 generators
+(c).</strong><a class="reference internal" href="_images/image37.png"><img alt="image47" src="_images/image37.png" style="width: 4in; height: 4in;" /></a><a class="reference internal" href="_images/image38.png"><img alt="image48" src="_images/image38.png" style="width: 4in; height: 4in;" /></a><a class="reference internal" href="_images/image39.png"><img alt="image49" src="_images/image39.png" style="width: 4in; height: 4in;" /></a></p>
 </li>
 </ul>
-<p><strong>Task 4.3 - AI Simulation – Neuro-Symbolic Learning</strong></p>
+</dd>
+<dt>Observations:</dt><dd><ul class="simple">
+<li><p>The mode at 0.65e6 has a large cluster of non-shutoff states,</p></li>
+</ul>
 <blockquote>
-<div><p>The Physics-informed AI Climate Model Agent Neuro-symbolic Simulator
-(PACMANS) for Tipping Point Discovery<a class="reference internal" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png"><img alt="image54" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png" style="width: 13.33333in; height: 0.41667in;" /></a></p>
-<ul class="simple">
-<li><p>Programs are embedded in a latent</p></li>
+<div><p>while the mode at 1.3e6 appears to be a cluster for a shutoff state. This finding
+also coincides with the larger fraction of non-shutoff states generated
+by the n=1 GAN vs. n=2 and n=4 GANs.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Discriminators incorrectly classify a larger fraction of real samples as synthetic as the number of generators increases.</p></li>
 </ul>
-<p>shared space with the GAN</p>
-<ul class="simple">
-<li><p>GAN perturbations and human-generated</p></li>
-</ul>
-<p>questions can be bi-directionally translated using this space</p>
-<ul class="simple">
-<li><p>Question “programs” similar to each other</p></li>
-</ul>
-<p>will be embedded near each other in this space</p>
-<a class="reference internal image-reference" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image42.png"><img alt="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image42.png" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image42.png" style="width: 5.24306in; height: 2.41806in;" /></a>
-<div class="line-block">
-<div class="line"><strong>Figure 8. Notional low dimensional embedding of “programs” that
-represent natural language</strong></div>
-<div class="line"><strong>questions.</strong></div>
-</div>
-<p>3 December 2022 <strong>22</strong></p>
 </div></blockquote>
-<p><strong>Task 4.3 - AI Simulation – Neuro-Symbolic Learning</strong></p>
+</div></blockquote>
+</dd>
+</dl>
+</section>
+<section id="neuro-symbolic-learning">
+<h3>Neuro-Symbolic Learning<a class="headerlink" href="#neuro-symbolic-learning" title="Permalink to this heading"></a></h3>
 <blockquote>
-<div><p>The Physics-informed AI Climate Model Agent Neuro-symbolic Simulator
-(PACMANS) for Tipping Point Discovery</p>
+<div><div class="line-block">
+<div class="line">Neuro-symbolic architecture has been defined in terms of levels ofrepresentation:</div>
+</div>
 <ul class="simple">
-<li><p><strong>Designed a question template for experimentation</strong></p></li>
-<li><p>Simple template as shown in Figure 9a</p></li>
-<li><p>Will be used as a first version of questions for training networks</p></li>
-<li><p>Questions are generated similar to the example question in Figure</p></li>
+<li><p>Text level – climate modeler asks questions</p></li>
+<li><p>Symbolic level – “programs” generated from natural language</p></li>
+<li><p>Vector level – GAN works at vector-level perturbing parameters</p></li>
 </ul>
-<p>9b</p>
+<div class="line-block">
+<div class="line">• Model level – Surrogate receives input in terms of initial conditions and parameters to run model</div>
+</div>
+<a class="reference internal image-reference" href="_images/image40.png"><img alt="_images/image40.png" src="_images/image40.png" style="width: 6.36805in; height: 3.54167in;" /></a>
+<p><strong>Figure 6. Levels of Representation from Natural Language to Model
+runs.</strong></p>
 <ul class="simple">
-<li><p>These questions correlate tightly to the box model experiments and</p></li>
+<li><p>In training mode: GAN explores space through perturbations</p></li>
+<li><p>Perturbations are translated into “programs”</p></li>
+<li><p>“Programs” are translated into natural language</p></li>
+<li><p>In trained mode: Questions can be asked of the model</p></li>
+<li><p>Questions are translated into ‘programs’</p></li>
+<li><p>‘Programs’ are used to find answers using latent space</p></li>
 </ul>
-<p>also with</p>
-<p>the GAN experiments</p>
 </div></blockquote>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 8%" />
-<col style="width: 85%" />
-<col style="width: 8%" />
+<col style="width: 92%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><ol class="loweralpha simple">
 <li></li>
 </ol>
 </td>
-<td><blockquote>
-<div><img alt="verto" src="verto" />
-</div></blockquote>
-<dl class="simple">
-<dt>pal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image43.png</dt><dd><dl class="field-list simple">
-<dt class="field-odd">width</dt>
-<dd class="field-odd"><p>5.01111in</p>
-</dd>
-<dt class="field-even">height</dt>
-<dd class="field-even"><p>1.95972in</p>
-</dd>
-</dl>
-</dd>
-</dl>
+<td><a class="reference internal image-reference" href="_images/image43.png"><img alt="_images/image43.png" src="_images/image43.png" style="width: 5.01111in; height: 1.95972in;" /></a>
 </td>
-<td><ol class="loweralpha simple" start="2">
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 92%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><ol class="loweralpha simple" start="2">
 <li></li>
 </ol>
+</td>
+<td><a class="reference internal image-reference" href="_images/image44.png"><img alt="_images/image44.png" src="_images/image44.png" style="width: 5.01111in; height: 1.95972in;" /></a>
 </td>
 </tr>
 </tbody>
 </table>
 <blockquote>
-<div><a class="reference internal image-reference" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image44.png"><img alt="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image44.png" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image44.png" style="width: 5.72639in; height: 1.95972in;" /></a>
-<p><strong>Figure 9a-b. Question Template for Version 1 of Neuro-symbolic
+<div><p><strong>Figure 9a-b. Question Template for Version 1 of Neuro-symbolic
 language (a) and Example Question Using this Template
-(b).</strong><a class="reference internal" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png"><img alt="image55" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png" style="width: 13.33333in; height: 0.41667in;" /></a></p>
-</div></blockquote>
-<p>3 December 2022</p>
-<p><strong>23</strong></p>
-<p><strong>Task 4.3 - AI Simulation – Neuro-Symbolic Learning</strong></p>
+(b).</strong></p>
 <blockquote>
-<div><p>The Physics-informed AI Climate Model Agent Neuro-symbolic Simulator
-(PACMANS) for Tipping Point Discovery</p>
-<ul class="simple">
-<li><p><strong>Have currently developed a rule-based method that</strong></p></li>
-</ul>
-<div class="line-block">
-<div class="line"><strong>generates encodings of questions as “programs”</strong></div>
-<div class="line">• Based on a defined Domain Specific Language (DSL)</div>
-<div class="line">• Will be used as a baseline for evaluating deep learning methods•
-Built an automatic question generator for questions following the</div>
-</div>
-<p>form in Figure 9a.<a class="reference internal" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png"><img alt="image56" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png" style="width: 13.33333in; height: 0.41667in;" /></a></p>
-</div></blockquote>
-<p>3 December 2022</p>
-<p><strong>24</strong></p>
-<p><strong>Task 4.3 - AI Simulation – Neuro-Symbolic Learning</strong></p>
-<blockquote>
-<div><p>The Physics-informed AI Climate Model Agent Neuro-symbolic Simulator
-(PACMANS) for Tipping Point Discovery<a class="reference internal" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png"><img alt="image57" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png" style="width: 13.33333in; height: 0.41667in;" /></a></p>
-<ul class="simple">
-<li><p>Experimenting with a sequence-to-sequence</p></li>
-</ul>
-<p>autoencoder to encode questions, and decode into vector input for a
-GAN</p>
-<ul class="simple">
+<div><ul class="simple">
+<li><p><strong>Have currently developed a rule-based method that generates encodings of questions as “programs”</strong></p></li>
+<li><p>Based on a defined Domain Specific Language (DSL)</p></li>
+<li><p>Will be used as a baseline for evaluating deep learning methods</p></li>
+<li><p>Built an automatic question generator for questions following the form in Figure 9a.</p></li>
+<li><p>Experimenting with a sequence-to-sequence autoencoder to encode questions, and decode into vector input for a GAN</p></li>
 <li><p>Based on a sequence-to-sequence machine translation</p></li>
 <li><p>Includes an encoder, encoder vector, and decoder</p></li>
-<li><p>Encoder has LSTM units stacked, each accepting an</p></li>
-</ul>
-<p>element from the question</p>
-<ul class="simple">
+<li><p>Encoder has LSTM units stacked, each accepting an element from the question</p></li>
 <li><p>Encoder vector captures information across the question</p></li>
 <li><p>Decoder has a stack of LSTMs each predicting an output</p></li>
-<li><p>This model supports varying length input/output though</p></li>
+<li><p>This model supports varying length input/output though we are starting with a fixed length and using padding</p></li>
 </ul>
-<p>we are starting with a fixed length and using padding</p>
-<a class="reference internal image-reference" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image45.png"><img alt="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image45.png" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image45.png" style="width: 4.35694in; height: 2.0375in;" /></a>
+</div></blockquote>
+<a class="reference internal image-reference" href="_images/image45.png"><img alt="_images/image45.png" src="_images/image45.png" style="width: 4.35694in; height: 2.0375in;" /></a>
 <p><strong>Figure 10. Seq-to-seq Deep Autoencoder for Learning Translations
 Between Text and Programs, and Programs and Vectors.</strong></p>
-<p>3 December 2022 <strong>25</strong></p>
-</div></blockquote>
-<p><strong>Task 4.3 - AI Simulation – Neuro-Symbolic Learning</strong></p>
-<blockquote>
-<div><p>The Physics-informed AI Climate Model Agent Neuro-symbolic Simulator
-(PACMANS) for Tipping Point Discovery</p>
 <div class="line-block">
-<div class="line"><a class="reference internal" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image46.png"><img alt="image58" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image46.png" style="width: 7.55417in; height: 3.94028in;" /></a>• Also, beginning to experiment with the</div>
-<div class="line">workflow shown in Figure 11</div>
-<div class="line">• Starting with experiments that focus on</div>
-<div class="line">question to program translation• A model that learns a fixed sized
-embedding of the question • Translatable to programs and readable
-text• Based on Neuro-Symbolic Concept Learner</div>
+<div class="line"><a class="reference internal" href="_images/image46.png"><img alt="image58" src="_images/image46.png" style="width: 7.55417in; height: 3.94028in;" /></a></div>
 </div>
+<blockquote>
+<div><ul class="simple">
+<li><p>Also, beginning to experiment with the workflow shown in Figure 11</p></li>
+<li><p>Starting with experiments that focus on question to program translation• A model that learns a fixed sized embedding of the question</p></li>
+<li><p>Translatable to programs and readable text</p></li>
+<li><p>Based on Neuro-Symbolic Concept Learner</p></li>
+</ul>
+</div></blockquote>
 <p><strong>Figure 11. Novel Neuro-Symbolic Architecture for Translating
 Questions to Programs based on Neuro-Symbolic Concept Learner
-(NS-CL).</strong><a class="reference internal" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png"><img alt="image59" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png" style="width: 13.33333in; height: 0.41667in;" /></a></p>
-</div></blockquote>
-<p>3 December 2022</p>
-<blockquote>
-<div><p><strong>26</strong></p>
-</div></blockquote>
-<p><strong>Task 4.3 - AI Simulation – Neuro-Symbolic Learning</strong></p>
-<blockquote>
-<div><p>The Physics-informed AI Climate Model Agent Neuro-symbolic Simulator
-(PACMANS) for Tipping Point Discovery</p>
+(NS-CL).</strong></p>
 <ul class="simple">
-<li><p>Next Steps:</p></li>
+<li><dl class="simple">
+<dt>Next Steps:</dt><dd><ul>
 <li><p>Measure performance of the following translations:</p></li>
+<li><p>Questions to programs **</p></li>
+<li><p>Vectors to programs</p></li>
 </ul>
-<div class="line-block">
-<div class="line">• Questions to programs **</div>
-<div class="line">• Vectors to programs</div>
-</div>
-<a class="reference internal image-reference" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image47.png"><img alt="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image47.png" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image47.png" style="width: 8.60833in; height: 2.12083in;" /></a>
+</dd>
+</dl>
+</li>
+</ul>
+<a class="reference internal image-reference" href="_images/image47.png"><img alt="_images/image47.png" src="_images/image47.png" style="width: 8.60833in; height: 2.12083in;" /></a>
 <p><strong>Figure 12. Visualizing Translations Between Levels – Questions
 to/from Symbolic Programs (top) and Symbolic Programs to/from Vectors
-(bottom).</strong><a class="reference internal" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png"><img alt="image60" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png" style="width: 13.33333in; height: 0.41667in;" /></a></p>
+(bottom).</strong></p>
 </div></blockquote>
-<p>3 December 2022</p>
-<p><strong>27</strong></p>
-<p><strong>Task 4.3 - AI Simulation – Causality – New Insights</strong></p>
+</section>
+<section id="causality">
+<h3>Causality<a class="headerlink" href="#causality" title="Permalink to this heading"></a></h3>
+<p><strong>New Insights</strong></p>
 <blockquote>
-<div><p>The Physics-informed AI Climate Model Agent Neuro-symbolic Simulator
-(PACMANS) for Tipping Point Discovery</p>
-<p>To address two outstanding issues:</p>
-<p>1.) AMOC slowing as shown in Figure 13 and inferring</p>
-<p>likelihood of shutoff, and</p>
+<div><p>To address two outstanding issues:</p>
+<p>1.) AMOC slowing as shown in Figure 13 and inferring likelihood of shutoff, and</p>
 <p>2.) Learning how to recover from an AMOC shutoff</p>
 <ul class="simple">
-<li><p>Developing causal inference based on temporal evolution of</p></li>
+<li><p>Developing causal inference based on temporal evolution of system state</p></li>
+<li><p>Working on a model to learn relevant causal structures that are occurring as a result of dynamics included in surrogate model<a class="reference internal" href="_images/image48.png"><img alt="image61" src="_images/image48.png" style="width: 4.29861in; height: 3.59425in;" /></a></p></li>
+<li><p>Causal model will capture intermediate states along the way to AMOC shutoffs, focusing on particular states that lie at causal forks in the road of the system’s temporal evolution and that are most</p></li>
 </ul>
-<p>system state</p>
-<ul class="simple">
-<li><p>Working on a model to learn relevant causal structures that are</p></li>
-</ul>
-<p>occurring as a result of dynamics included in surrogate
-model<a class="reference internal" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image48.png"><img alt="image61" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image48.png" style="width: 4.29861in; height: 3.59425in;" /></a><a class="reference internal" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png"><img alt="image62" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png" style="width: 13.33333in; height: 0.41667in;" /></a></p>
-<ul class="simple">
-<li><p>Causal model will capture intermediate states along the way to</p></li>
-</ul>
-<p>AMOC shutoffs, focusing on particular states that lie at causal forks
-in the road of the system’s temporal evolution and that are most
-relevant to whether there will be a shutoff or not</p>
+<p>relevant to whether there will be a shutoff or not</p>
 <ul class="simple">
 <li><p>Will be used to assign probabilities to potential outcomes</p></li>
 </ul>
 <p><strong>Figure 13. CESM-2 Model Runs that show weakening of the AMOC.</strong></p>
-<p>3 December 2022 <strong>28</strong></p>
 </div></blockquote>
-<p><strong>Summary</strong></p>
+</section>
+</section>
+<section id="summary">
+<h2>6 Summary<a class="headerlink" href="#summary" title="Permalink to this heading"></a></h2>
 <blockquote>
 <div><p>In summary, we have shared results from our initial experimentation
 related to the surrogate modeling and the AI simulation, specifically
 related to the GAN and the neuro-symbolic language.</p>
 <p>With Milestone 5, we will continue to push forward with building
 large GCM calibrated data sets and extensions to the box model.</p>
-<p><a class="reference internal" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image49.png"><img alt="image63" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image49.png" style="width: 5.49444in; height: 4.08056in;" /></a><a class="reference internal" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png"><img alt="image64" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png" style="width: 13.33333in; height: 0.41667in;" /></a></p>
-<p>3 December 2022 <strong>29</strong></p>
+<p><a class="reference internal" href="_images/image49.png"><img alt="image63" src="_images/image49.png" style="width: 5.49444in; height: 4.08056in;" /></a></p>
 </div></blockquote>
-<p><a class="reference internal" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image50.png"><img alt="image65" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image50.png" style="width: 13.33333in; height: 7.5in;" /></a><a class="reference internal" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image51.png"><img alt="image66" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image51.png" style="width: 13.33056in; height: 7.49844in;" /></a></p>
-<p>JHU/APL Proprietary - For Internal Use Only <strong>30</strong></p>
-<blockquote>
-<div><p><strong>Appendix A</strong></p>
-</div></blockquote>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 39%" />
-<col style="width: 39%" />
-<col style="width: 17%" />
-<col style="width: 5%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p><strong>Task 3.3</strong></p></th>
-<th class="head"></th>
-<th class="head"><p><strong>L</strong></p></th>
-<th class="head"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><strong>Objective</strong></p></td>
-<td><p>Task Description</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><p><strong>AI
-Physics-Informed
-Surrogate Learning</strong></p></td>
-<td><p>Report on the first
-set of experimental
-results based on
-testing the
-formalizations set
-forth in Milestone
-3.</p></td>
-<td><p><strong>o</strong></p></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><p><strong>Formalizations</strong></p></td>
-<td><p><strong>c</strong></p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td></td>
-<td><p><strong>a</strong></p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><td></td>
-<td><p><strong>t</strong></p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td></td>
-<td><p><strong>i</strong></p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><td></td>
-<td><p><strong>o</strong></p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td></td>
-<td><p><strong>n</strong></p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><td></td>
-<td><p><strong>J</strong></p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td></td>
-<td><p><strong>H</strong></p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><td></td>
-<td><p><strong>U</strong></p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><p><strong>Primary
-Organization
-Responsible</strong></p></td>
-<td><p><strong>JHU</strong></p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><p><strong>Human Subjects or
-Animal Research?</strong></p></td>
-<td><p><strong>No</strong></p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><p><strong>Associated
-Milestones</strong></p></td>
-<td><p>Deliverables</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><p><strong>Milestone 4</strong></p></td>
-<td><p><strong>Report on ‘beta
-version’ of hybrid
-model analysis
-including new
-mathematical
-insights, along with
-insights in data</strong></p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td></td>
-<td><p><strong>analysis.</strong></p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><td></td>
-<td><p>3 December 2022</p></td>
-<td><p><strong>31</strong></p></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<div><p><strong>Appendix B</strong></p>
-</div></blockquote>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 39%" />
-<col style="width: 39%" />
-<col style="width: 17%" />
-<col style="width: 5%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p><strong>Task 4.3</strong></p></th>
-<th class="head"></th>
-<th class="head"><p><strong>L</strong></p></th>
-<th class="head"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><strong>Objective</strong></p></td>
-<td><p>Subtask Description</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><p><strong>AI Simulation
-Formalizations</strong></p></td>
-<td><p>Report on early
-experimentation of a
-baseline GAN for a
-subset of explorations
-and what-if questions,
-including a set of</p></td>
-<td><p><strong>o</strong></p></td>
-<td></td>
-</tr>
-<tr class="row-even"><td></td>
-<td><p>experiments that
-show feasibility of
-the causal model,
-and baseline
-symbolic language
-experimental
-results.</p></td>
-<td><p><strong>c</strong></p></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td></td>
-<td><p><strong>a</strong></p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><td></td>
-<td><p><strong>t</strong></p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td></td>
-<td><p><strong>i</strong></p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><td></td>
-<td><p><strong>o</strong></p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td></td>
-<td><p><strong>n</strong></p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><td></td>
-<td><p><strong>A</strong></p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td></td>
-<td><p><strong>P</strong></p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><td></td>
-<td><p><strong>L</strong></p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td></td>
-<td><p><strong>,</strong></p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><td></td>
-<td><p><strong>J</strong></p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td></td>
-<td><p><strong>H</strong></p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><td></td>
-<td><p><strong>U</strong></p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><p><strong>Primary
-Organization
-Responsible</strong></p></td>
-<td><p><strong>APL</strong></p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><p><strong>Human Subjects or
-Animal Research?</strong></p></td>
-<td><p><strong>No</strong></p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><p><strong>Associated
-Milestones</strong></p></td>
-<td><p>Deliverables</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><p><strong>Milestone 4</strong></p></td>
-<td><p><strong>Milestone report –
-report on ‘beta
-version’ of hybrid
-model analysis
-including new
-mathematical
-insights, along</strong></p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td></td>
-<td><p><strong>with insights in
-data analysis.</strong></p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><td></td>
-<td><p>3 December 2022</p></td>
-<td><p><strong>32</strong></p></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<a class="reference internal image-reference" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png"><img alt="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png" style="width: 13.33333in; height: 0.41667in;" /></a>
+<p><strong>Approved for public release; distribution is unlimited. This material is based upon work supported by the Defense Advanced Research Projects Agency (DARPA) under Agreement No. HR00112290032.</strong></p>
 <p><strong>Citations</strong></p>
 <blockquote>
 <div><p>1. Boers, Niklas. “Observation-based early-warning signals for a
@@ -1247,92 +671,17 @@ Nathan Luehr, Everett Phillips, Ankur Mahesh et al. “Exascale deep
 learning for climate analytics.” In SC18: International Conference
 for High Performance Computing, Networking, Storage and Analysis, pp.
 649-660. IEEE, 2018.</p>
-<p>3 December 2022 <strong>33</strong></p>
 </div></blockquote>
-<a class="reference internal image-reference" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png"><img alt="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png" style="width: 13.33333in; height: 0.41667in;" /></a>
-<p><strong>Citations cont.</strong></p>
-<blockquote>
-<div><p>15. Weber, Theodore, Austin Corotan, Brian Hutchinson, Ben Kravitz,
-and Robert Link. “Deep learning for creating surrogate models of
-precipitation in Earth system models.” Atmospheric Chemistry and
-Physics 20, no. 4 (2020): 2303-2317.</p>
-<p>16. Matsubara, Takashi, Ai Ishikawa, and Takaharu Yaguchi. “Deep
-energy-based modeling of discrete-time physics.” arXiv preprint
-arXiv:1905.08604 (2019).</p>
-<p>17. Kleinen, T., Held, H. &amp; Petschel-Held, G. The potential role of
-spectral properties in detecting thresholds in the Earth system:
-application to the thermohaline circulation. Ocean Dyn. 53, 53–63
-(2003).</p>
-<p>18. Kocaoglu, Murat, Christopher Snyder, Alexandros G. Dimakis, and
-Sriram Vishwanath. “Causalgan: Learning causal implicit generative
-models with adversarial training.” arXiv preprint arXiv:1709.02023
-(2017).</p>
-<p>19. Feinman, Reuben, and Brenden M. Lake. “Learning Task-General
-Representations with Generative Neuro-Symbolic Modeling.” arXiv
-preprint arXiv:2006.14448 (2020).</p>
-<p>20. Yi, Kexin, Chuang Gan, Yunzhu Li, Pushmeet Kohli, Jiajun Wu,
-Antonio Torralba, and Joshua B. Tenenbaum. “Clevrer: Collision events
-for video representation and reasoning.” arXiv preprint
-arXiv:1910.01442 (2019).</p>
-<p>21. Nowack, Peer, Jakob Runge, Veronika Eyring, and Joanna D. Haigh.
-“Causal networks for climate model evaluation and constrained
-projections.” Nature communications 11, no. 1 (2020): 1-11.</p>
-<p>22. Andersson, Tom R., J. Scott Hosking, María Pérez-Ortiz, Brooks
-Paige, Andrew Elliott, Chris Russell, Stephen Law et al. “Seasonal
-Arctic sea ice forecasting with probabilistic deep learning.” Nature
-communications 12, no. 1 (2021): 1-12.</p>
-<p>23. Storchan, Victor, Svitlana Vyetrenko, and Tucker Balch. “MAS-GAN:
-Adversarial Calibration of Multi-Agent Market Simulators.” (2020).</p>
-<p>24. De Raedt, Luc, Robin Manhaeve, Sebastijan Dumancic, Thomas
-Demeester, and Angelika Kimmig. “Neuro-symbolic=neural+ logical+
-probabilistic.” In NeSy’19&#64; IJCAI, the 14th International Workshop on
-Neural-Symbolic Learning and Reasoning. 2019.</p>
-<p>25. Eyring, V., Bony, S., Meehl, G. A., Senior, C. A., Stevens, B.,
-Stouffer, R. J., and Taylor, K. E.: Overview of the Coupled Model
-Intercomparison Project Phase 6 (CMIP6) experimental design and
-organization, Geosci. Model Dev., 9, 1937-1958,
-doi:10.5194/gmd-9-1937-2016, 2016.</p>
-<p>26. Swingedouw, Didier, Chinwe Ifejika Speranza, Annett Bartsch, Gael
-Durand, Cedric Jamet, Gregory Beaugrand, and Alessandra Conversi.</p>
-<p>“Early warning from space for a few key tipping points in physical,
-biological, and social-ecological systems.” Surveys in geophysics 41,
-no. 6 (2020): 1237-1284.</p>
-<p>27. Reichstein, Markus, Gustau Camps-Valls, Bjorn Stevens, Martin
-Jung, Joachim Denzler, and Nuno Carvalhais. “Deep learning and
-process understanding for data-driven Earth system science.” Nature
-566, no. 7743 (2019): 195-204.</p>
-<p>3 December 2022 <strong>34</strong></p>
-</div></blockquote>
-<a class="reference internal image-reference" href="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png"><img alt="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png" src="vertopal_a95e69d1a8ef476fa2c88eca416e7e2c/media/image27.png" style="width: 13.33333in; height: 0.41667in;" /></a>
-<p><strong>Citations cont.</strong></p>
-<blockquote>
-<div><p>28. Sleeman, Jennifer, Ivanka Stajner, Christoph Keller, Milton
-Halem, Christopher Hamer, Raffaele Montuoro, and Barry Baker. “The
-Integration of Artificial Intelligence for Improved Operational Air
-Quality Forecasting.” In AGU Fall Meeting 2021. 2021.</p>
-<div class="line-block">
-<div class="line">29. Bellomo, K., Angeloni, M., Corti, S. <em>et al.</em> Future climate
-change shaped by inter-model differences in Atlantic meridional
-overturning circulation response. <em>Nat Commun</em> <strong>12,</strong> 3659 (2021).</div>
-<div class="line">30. Sgubin, G., Swingedouw, D., Drijfhout, S. <em>et al.</em> Abrupt
-cooling over the North Atlantic in modern climate models. <em>Nat
-Commun</em> <strong>8,</strong> 14375 (2017).</div>
-<div class="line">31. Swingedouw, D., Bily, A., Esquerdo, C., Borchert, L. F.,
-Sgubin, G., Mignot, J., &amp; Menary, M. (2021). On the risk of abrupt
-changes in the North Atlantic subpolar gyre in CMIP6 models.
-<em>Annals of the New York Academy of Sciences</em>, <em>1504</em>(1), 187-201.
-32. Mao, Jiayuan, Chuang Gan, Pushmeet Kohli, Joshua B. Tenenbaum,
-and Jiajun Wu. “The neuro-symbolic concept learner: Interpreting
-scenes, words, and sentences from natural supervision.” <em>arXiv
-preprint arXiv:1904.12584</em> (2019).</div>
-</div>
-</div></blockquote>
+</section>
 </section>
 
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="milestone3_report.html" class="btn btn-neutral float-left" title="Milestone 3 Progress Report" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="milestone5_report.html" class="btn btn-neutral float-right" title="Milestone 5 Progress Report" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 

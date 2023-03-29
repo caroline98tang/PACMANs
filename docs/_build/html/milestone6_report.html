@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Milestone 6 Progress Report &mdash; PACMANS  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Milestone 7 Progress Report" href="milestone7_report.html" />
+    <link rel="prev" title="Milestone 5 Progress Report" href="milestone5_report.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> PACMANS
+            <img src="_static/pacman_logo_v1.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="summary.html">Project Summary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="milestone1_report.html">Milestone 1 Progress Report</a></li>
+<li class="toctree-l1"><a class="reference internal" href="milestone2_report.html">Milestone 2 Progress Report</a></li>
+<li class="toctree-l1"><a class="reference internal" href="milestone3_report.html">Milestone 3 Progress Report</a></li>
+<li class="toctree-l1"><a class="reference internal" href="milestone4_report.html">Milestone 4 Progress Report</a></li>
+<li class="toctree-l1"><a class="reference internal" href="milestone5_report.html">Milestone 5 Progress Report</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Milestone 6 Progress Report</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview">1 Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#goals-and-impact">2 Goals and Impact</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#key-findings">3 Key Findings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#task-3-4-ai-physics-informed-surrogate-model-summary">4 Task 3.4: AI Physics-Informed Surrogate Model Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#task-4-4-ai-simulation-progress-summary">5 Task 4.4: AI Simulation Progress Summary</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="milestone7_report.html">Milestone 7 Progress Report</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">PyBAMOCS:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="pyBAMOCS_intro.html">Introduction</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Help &amp; Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="people.html">Our Team</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">PACMANS</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Milestone 6 Progress Report</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/milestone6_report.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<section id="milestone-6-progress-report">
+<h1>Milestone 6 Progress Report<a class="headerlink" href="#milestone-6-progress-report" title="Permalink to this heading"></a></h1>
+<p><strong>PACMANS TEAM:</strong>
+• Jennifer Sleeman (JHU APL) PI
+• Anand Gnanadesikan (JHU) Co-PI
+• Yannis Kevrekidis (JHU) Co-PI
+• Jay Brett (JHU APL)
+• David Chung (JHU APL)
+• Chace Ashcraft (JHU APL)
+• Thomas Haine (JHU)
+• Marie-Aude Pradal (JHU)
+• Renske Gelderloos (JHU)
+• Caroline Tang (DUKE)
+• Anshu Saksena (JHU APL)
+• Larry White (JHU APL)
+• Marisa Hughes (JHU APL)</p>
+<section id="overview">
+<h2>1 Overview<a class="headerlink" href="#overview" title="Permalink to this heading"></a></h2>
+<blockquote>
+<div><p>The Physics-informed AI Climate Model Agent Neuro-symbolic Simulator
+(PACMANS) for Tipping Point Discovery</p>
+<ul>
+<li><p>This technical report covers the period of June 14, 2022 through August 13, 2022.</p></li>
+<li><p>The report documents the achievement of the milestone associated with Month 8 of the JHU/APL-led PACMAN team’s statement of work.</p></li>
+<li><p>The delivery for this milestone is this report which highlights AI Physics-informed surrogate model progress and the AI Simulation progress.</p></li>
+<li><dl>
+<dt>This milestone includes:</dt><dd><div class="line-block">
+<div class="line">• A progress report</div>
+<div class="line">• Preliminary software</div>
+</div>
+</dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
+</section>
+<section id="goals-and-impact">
+<h2>2 Goals and Impact<a class="headerlink" href="#goals-and-impact" title="Permalink to this heading"></a></h2>
+<dl>
+<dt>Goal for this milestone included:</dt><dd><blockquote>
+<div><ul class="simple">
+<li><p>Deliver progress report and preliminary software for the hybrid models/methods</p></li>
+<li><p>The report is included in this document and preliminary software for methods described are located here:</p></li>
+<li><p>The project website is located here:</p></li>
+</ul>
+</div></blockquote>
+<p><a class="reference internal" href="_images/image291.png"><img alt="image27" src="_images/image291.png" style="width: 3.98611in; height: 0.11111in;" /></a></p>
+</dd>
+</dl>
+</section>
+<section id="key-findings">
+<h2>3 Key Findings<a class="headerlink" href="#key-findings" title="Permalink to this heading"></a></h2>
+<p><strong>Surrogate Models:</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>We have achieved the first calculation of escape time distributions for the 4-box model (non-dimensionalized)</p></li>
+</ul>
+</div></blockquote>
+<p><strong>AI Simulation:</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>We showed that the GAN could be used to exploit the area of uncertainty, consistent with the separatrix of the fold bifurcations, consistent with the Gnanadesikan 2018 paper</p></li>
+<li><p>By fixing the loss function to include information from the discriminator’s uncertainty and increasing the number of generators using this generative setup, as the number of generators increases, the GAN becomes more focused on this area of uncertainty</p></li>
+<li><p>We believe we could extend the GAN to explore additional types of bifurcations</p></li>
+<li><p>Using the CLEVR dataset we are now able to measure performance of the neuro-symbolic architectures and have strong preliminary results using Levenstein distance as a metric</p></li>
+</ul>
+</div></blockquote>
+</section>
+<section id="task-3-4-ai-physics-informed-surrogate-model-summary">
+<h2>4 Task 3.4: AI Physics-Informed Surrogate Model Summary<a class="headerlink" href="#task-3-4-ai-physics-informed-surrogate-model-summary" title="Permalink to this heading"></a></h2>
+<blockquote>
+<div><p><em>Subtask Description: We will provide a progress report of the early
+proof of concept experimental results.</em></p>
+<p>Accomplishments:</p>
+<ul class="simple">
+<li><p>Have developed a first version of the Python code for the surrogates consistent with the bifurcation diagrams</p></li>
+<li><p>In-process to integrate this code to be used by the GAN</p></li>
+<li><p>Working on estimating the escape time distributions</p></li>
+</ul>
+<p><strong>The Model</strong></p>
+</div></blockquote>
+<dl class="simple">
+<dt>We consider a dynamical box model with four boxes:</dt><dd><ul class="simple">
+<li><p>the southern high latitudes (0.308S)</p></li>
+<li><p>the northern high latitudes (0.458N)</p></li>
+<li><p>mid- to low latitudes</p></li>
+<li><p>a deep box that lies beneath all of the surface boxes.</p></li>
+</ul>
+</dd>
+<dt>State variables:</dt><dd><ul class="simple">
+<li><p>𝐷: Low latitude pycnocline depth.</p></li>
+<li><p>𝑇_S, 𝑇_n, 𝑇_l, 𝑇_d: Temperatures of the four boxes</p></li>
+<li><p>𝑆_S, 𝑆_n, 𝑆_l, 𝑆_d: Salinities of the four boxes</p></li>
+</ul>
+</dd>
+</dl>
+<p><a class="reference internal" href="_images/image302.png"><img alt="image31" src="_images/image302.png" style="width: 5.62361in; height: 3.59444in;" /></a></p>
+<ul class="simple">
+<li><p>Single-headed bold arrows denote net fluxes of water.</p></li>
+<li><p>Double-headed arrows denote mixing fluxes.</p></li>
+</ul>
+<p><strong>Nine Equations</strong></p>
+<p><a class="reference internal" href="_images/image392.png"><img alt="image32" src="_images/image392.png" style="width: 0.80556in; height: 0.30556in;" /></a></p>
+<blockquote>
+<div><p>These are the equations that we start with (nine differential
+equations)</p>
+</div></blockquote>
+<p><strong>Salt Conservation</strong></p>
+<p><a class="reference internal" href="_images/image402.png"><img alt="image33" src="_images/image402.png" style="width: 0.98611in; height: 0.29167in;" /></a></p>
+<blockquote>
+<div><p>IMPORTANTLY, we explicitly used the fact that there exists an
+algebraic constraint (a salt balance) that reduces the equations by
+one, and removes a neutral direction; this helps the conditioning of
+the Jacobian</p>
+</div></blockquote>
+<p><strong>Non-Dimensional Equations</strong></p>
+<p><a class="reference internal" href="_images/image412.png"><img alt="image34" src="_images/image412.png" style="width: 0.13889in; height: 0.23611in;" /></a></p>
+<blockquote>
+<div><p>To make computations more accurate numerically, we
+non-dimensionalized the equations in ways <strong>meaningful to the domain
+scientist</strong> (Anand G.) to reduce the number of free parameters</p>
+</div></blockquote>
+<p><strong>Numerical Bifurcation Analysis</strong></p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/image89.png"><img alt="_images/image89.png" src="_images/image89.png" style="width: 3.61806in; height: 2.71389in;" /></a>
+<a class="reference internal image-reference" href="_images/image90.png"><img alt="_images/image90.png" src="_images/image90.png" style="width: 3.44167in; height: 2.58055in;" /></a>
+<p>The Hysteretic behavior found in [Gnanadesikan, Kelson, Sten 2018],
+can be described as:</p>
+<blockquote>
+<div><p>The ‘switching’ between ‘off’ and ‘on’ state is given by a subcritical Hopf bifurcation: H for 𝑇𝑟&gt;?* = 0.03529</p>
+<p>And a saddle-node bifurcation: LP for 𝑇𝑟&gt;?* = 0.01798</p>
+<p>Reminder: we found two different tipping points (“up to down” and “down to up” that also happened to do be of different nature (“turning point” and “subcritical Hopf”)</p>
+</div></blockquote>
+</div></blockquote>
+<p><a class="reference internal" href="_images/image911.png"><img alt="image93" src="_images/image911.png" style="width: 3.61806in; height: 2.71354in;" /></a><a class="reference internal" href="_images/image921.png"><img alt="image94" src="_images/image921.png" style="width: 3.61667in; height: 2.7125in;" /></a></p>
+<p><strong>Stochastic version</strong></p>
+<p>To the non-dimensional system of 8 equations, we add fluctuations in the fresh water flux coefficient: <span class="math notranslate nohighlight">\(𝑇𝑟_{FW}^n ∼ 𝒩(𝑇𝑟_{FW0}^n, 𝜎^2)\)</span></p>
+<p>With <span class="math notranslate nohighlight">\(𝜎 = 4\% 𝑇𝑟_{FW}^n = 0.002\)</span></p>
+<p><a class="reference internal" href="_images/image95.png"><img alt="image97" src="_images/image95.png" style="width: 4.6625in; height: 3.49722in;" /></a><a class="reference internal" href="_images/image96.png"><img alt="image98" src="_images/image96.png" style="width: 4.37917in; height: 3.28472in;" /></a></p>
+<div class="line-block">
+<div class="line">• Sitting close to the subcritical Hopf tipping point, on its “safe side” we performed our first stochastic simulations (with fluctuating freshwater flux coefficient, again designed in collaboration with the domain expert, Anand G.)</div>
+<div class="line">• Notice on the left the simulations, the variable <strong>oscillates over time near 4.7 before it eventually “tips”</strong></div>
+<div class="line">• Notice also, on the right, some initial statistics of <strong>escape times</strong> for a fixed parameter value</div>
+</div>
+<p><strong>AI Surrogate Learning Progress</strong>
+Next Steps:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>We started collecting data towards a targeted surrogate model. This will allow us to efficiently and accurately estimate escape time distributions.</p></li>
+<li><p>We will learn targeted effective stochastic DEs (one-dimensional at the LP tipping, two-dimensional at the Hopf tipping) and use them to estimate escape time statistics in both cases.</p></li>
+<li><p>We have a very good handle on data-driven causality; the enabling tools are “Alternating Diffusion” / “Jointly Smooth Functions”</p></li>
+<li><p><strong>We plan to use this in the discovery of good predictors/advance indicators of tipping.</strong></p></li>
+</ul>
+</div></blockquote>
+</section>
+<section id="task-4-4-ai-simulation-progress-summary">
+<h2>5 Task 4.4: AI Simulation Progress Summary<a class="headerlink" href="#task-4-4-ai-simulation-progress-summary" title="Permalink to this heading"></a></h2>
+<blockquote>
+<div><p><em>Subtask Description: We will provide a progress report of the early
+proof of concept experimental results for the MA-GAN, the causal
+model and the neuro-symbolic models, including isolated experimental
+results and early integration results.</em></p>
+<div class="line-block">
+<div class="line">Accomplishments:</div>
+<div class="line">• Showed that the GAN could be used to exploit the area of uncertainty consistent with the separatrix in the Gnanadesikan 2018 paper</div>
+<div class="line">• Developed architectures needed for a baseline neuro-symbolic language that enables a translation from human-specific questions to the GAN simulation, and from perturbed GAN runs to questions</div>
+<div class="line">• Begun integrating the neuro-symbolic work with GAN output</div>
+</div>
+</div></blockquote>
+<p><strong>AI Simulation – GAN Uncertainty Experiment Objective</strong></p>
+<blockquote>
+<div><div class="line-block">
+<div class="line">• Initial Questions:
+| • How does increasing generators affect learning behavior?</div>
+</div>
+<blockquote>
+<div><div class="line-block">
+<div class="line">• How should we modify the loss function (best function for finding optimal gradients of model) for this problem domain?</div>
+</div>
+</div></blockquote>
+<div class="line-block">
+<div class="line">• Can the GAN discover input configurations for a climate model whose outputs are unstable or uncertain?</div>
+</div>
+<blockquote>
+<div><div class="line-block">
+<div class="line">• i.e. explore separatrix</div>
+</div>
+</div></blockquote>
+<div class="line-block">
+<div class="line">• How well can the GAN accurately predict the climate model outputs for configurations spanning these regions of uncertainty?</div>
+</div>
+</div></blockquote>
+<p><strong>AI Simulation – GAN Uncertainty Experiments</strong></p>
+<ul>
+<li><p>Reproduced one of the Box model simulation experiments to validate the GAN architecture</p></li>
+<li><p>With a vector of 3 dimensions and perturbations of parameters (bounded):</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Dlow0 (Thermocline depth of lower latitudes): [100.0, 400.0]</p></li>
+<li><p>Mek (Ekman flux from the southern ocean): [1.5e7, 3.5e7]</p></li>
+<li><p>Fwn (Fresh water flux (North)): [5.0e4, 1.55e6]</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Other variables were held constant</p></li>
+</ul>
+<p><a class="reference internal" href="_images/image97.png"><img alt="image103" src="_images/image97.png" style="width: 11.84722in; height: 5.27778in;" /></a></p>
+<p><strong>AI Simulation – GAN Uncertainty Experiment Discriminator</strong></p>
+<blockquote>
+<div><ul>
+<li><p>Given a configuration, the discriminator has two objectives:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Identify the origin of the configuration (i.e. which generator produced it or if it was sampled from the real data distribution)</p></li>
+<li><p>Correctly predict if the configuration will induce a shutoff state</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>At each update step, the discriminator will achieve these two objectives for m(n+1) configurations (m samples per each of n generators, +1 batch from the real data distribution)</p></li>
+<li><p>Ground-truth shutoff labels are determined for the generated configurations by consulting the surrogate model before the training step</p></li>
+</ul>
+</div></blockquote>
+<p><strong>AI Simulation – GAN Uncertainty Experiment Generator</strong></p>
+<blockquote>
+<div><ul>
+<li><p><em>n</em> Generators:</p>
+<blockquote>
+<div><ul>
+<li><p>for i=1,…, n</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Generator <em>i</em> (𝐺𝑖 ) produces m configurations for the surrogate model (m = batch size)</p></li>
+<li><p>The generated configurations are passed through the discriminator to compute both the GAN logits and the AMOC state classification logits</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Each generator has two objectives:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Guide the discriminator into predicting that its configurations are sampled from the real data distribution</p></li>
+<li><p>Generate model configurations where the discriminator is least certain about the output state (i.e. AMOC shutoff vs. non-shutoff)</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+<p><strong>AI Simulation – GAN Uncertainty Experiments</strong></p>
+<blockquote>
+<div><ul>
+<li><p>Real dataset generated by uniformly sampling vectors of perturbed variables from bounded 3-D subspace.</p></li>
+<li><p>Goal of GAN is to learn a distribution that explores this space, but with a bias to identify regions of AMOC instability (e.g. bifurcation region)</p></li>
+<li><p>Number of generators varied (<em>n</em> = 1, 2, 3)</p></li>
+<li><p>Evaluation metrics:</p>
+<blockquote>
+<div><ul>
+<li><p>Percentage of generated samples within the bifurcation region</p></li>
+<li><p>Discriminator shutoff classification metrics (precision, recall, F1, confusion matrices)</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Test/generated sets</p></li>
+<li><p>Inside/outside bifurcation region</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 70%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Dataset</strong></p></th>
+<th class="head"><p><strong>Percent in uncertainty region</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Training</p></td>
+<td><p>34.9%</p></td>
+</tr>
+<tr class="row-odd"><td><p>Test</p></td>
+<td><p>35.5%</p></td>
+</tr>
+<tr class="row-even"><td><p>GAN (N=1)</p></td>
+<td><p>67.4%</p></td>
+</tr>
+<tr class="row-odd"><td><p>GAN (N=2)</p></td>
+<td><p>91.4%</p></td>
+</tr>
+<tr class="row-even"><td><p>GAN (N=3)</p></td>
+<td><p>98.7%</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><div class="line-block">
+<div class="line">Training samples: 10,774 Test samples: 2,694</div>
+<div class="line">GAN samples: 2,694</div>
+<div class="line">N = number of generators</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="_images/image1011.png"><img alt="image109" src="_images/image1011.png" style="width: 3.00694in; height: 2.00417in;" /></a></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Generated Set (N=3)</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="_images/image99.png"><img alt="image110" src="_images/image99.png" style="width: 3.00556in; height: 2.00417in;" /></a></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Test set</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="_images/image1021.png"><img alt="image111" src="_images/image1021.png" style="width: 3.00694in; height: 2.00417in;" /></a></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Generated Set (N=1)</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><a class="reference internal" href="_images/image103.png"><img alt="image112" src="_images/image103.png" style="width: 3.00694in; height: 2.00417in;" /></a></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Generated Set (N=2)</p></td>
+</tr>
+</tbody>
+</table>
+<p>Comparing GAN Generated Results for N = (1,2,3) with the Test Set.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 84%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>The GAN successfully learned to sample configurations
+from the bifurcation region</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>This selectivity <em>increases</em> w/ the number of
+generators – supporting our multiGAN approach</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>AI Simulation – Neuro-Symbolic Learning</strong></p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/image104.png"><img alt="_images/image104.png" src="_images/image104.png" style="width: 7.69444in; height: 4.60556in;" /></a>
+<p>Neuro-Symbolic Translations and GAN Input/Output</p>
+<a class="reference internal image-reference" href="_images/image105.png"><img alt="_images/image105.png" src="_images/image105.png" style="width: 8.76111in; height: 4.94722in;" /></a>
+<p>Learning to Translate Questions into Programs and Programs into
+Questions</p>
+<div class="line-block">
+<div class="line">Using the CLEVR dataset to validate architectures:</div>
+<div class="line">(<a class="reference external" href="https://cs.stanford.edu/people/jcjohns/clevr/">https://cs.stanford.edu/people/jcjohns/clevr/</a>)</div>
+</div>
+<blockquote>
+<div><ul class="simple">
+<li><p>Common dataset for neuro-symbolic method evaluation</p></li>
+<li><p>Specific to image object understanding</p></li>
+<li><p>We adapt this dataset and use only the question and program portions of the data</p></li>
+</ul>
+</div></blockquote>
+<a class="reference internal image-reference" href="_images/image106.png"><img alt="_images/image106.png" src="_images/image106.png" style="width: 6.275in; height: 4.67639in;" /></a>
+<ul class="simple">
+<li><p>Used 59,307 training samples and 12,698 test samples</p></li>
+<li><p>Trained network with shared word embeddings</p></li>
+<li><p>Evaluated using test samples</p></li>
+<li><p>Test samples contained both natural language questions and equivalent programs</p></li>
+<li><p>Early results showed a range of 65%-75% accuracy overall translating from questions to questions, questions to programs, and programs to questions dependent up the token length</p></li>
+<li><p>We show better results with longer token length</p></li>
+</ul>
+<p><strong>Example Output:</strong></p>
+<p><strong>Predicted text:</strong> BOS how many small cyan things are there ? EOS</p>
+<p><strong>Ground Truth Text:</strong> BOS how many small cyan things are there ? EOS</p>
+<blockquote>
+<div><p><strong>Predicted program:</strong> BOS count ( filter_color ( filter_size ( scene , small ) , cyan ) ) EOS</p>
+</div></blockquote>
+<p><strong>Ground Truth program:</strong> BOS count ( filter_color ( filter_size ( scene , small ) , cyan ) ) EOS</p>
+<blockquote>
+<div><p><strong>Predicted text from program:</strong> BOS how many of cyan things are are ? ? EOS</p>
+</div></blockquote>
+<a class="reference internal image-reference" href="_images/image108.png"><img alt="_images/image108.png" src="_images/image108.png" style="width: 5.48056in; height: 3.84722in;" /></a>
+<a class="reference internal image-reference" href="_images/image1091.png"><img alt="_images/image1091.png" src="_images/image1091.png" style="width: 5.95in; height: 3.79167in;" /></a>
+<p>Levenshtein distance shows the number of transformations from one
+sentence to another.</p>
+<p>Initial results are promising; transfer learning into the climate
+domain in progress <a class="reference internal" href="_images/image110.png"><img alt="image116" src="_images/image110.png" style="width: 13.33333in; height: 1.36111in;" /></a></p>
+</div></blockquote>
+<p><strong>Summary</strong></p>
+<blockquote>
+<div><p>In summary, we have described consistent progress across both the
+surrogate methods and the AI Simulation methods.</p>
+<p>All source code is open and available in Github.</p>
+<p>Initial evaluations have been performed and module integrations is
+in-progress.</p>
+<p><a class="reference internal" href="_images/image1111.png"><img alt="image117" src="_images/image1111.png" style="width: 5.49444in; height: 4.08056in;" /></a></p>
+</div></blockquote>
+<p><strong>Approved for public release; distribution is unlimited. This material is based upon work supported by the Defense Advanced Research Projects Agency (DARPA) under Agreement No. HR00112290032.</strong></p>
+<p><strong>Citations</strong></p>
+<blockquote>
+<div><p>1. Boers, Niklas. “Observation-based early-warning signals for a
+collapse of the Atlantic Meridional Overturning Circulation.” Nature
+Climate Change 11, no. 8 (2021): 680-688.</p>
+<p>2. Gnanadesikan, A., A simple model for the structure of the oceanic
+pycnocline, Science., 283:2077-2079, (1999).</p>
+<div class="line-block">
+<div class="line">3. Forget, G., J.-M. Campin, P. Heimbach, C. N. Hill, R. M. Ponte,
+C. Wunsch, ECCO version 4: An integrated framework for non-linear
+inverse modeling and global ocean state estimation. Geosci. Model
+Dev. 8, 3071–3104 (2015)</div>
+<div class="line">4. Gnanadesikan, A., R. Kelson and M. Sten, Flux correction and
+overturning stability: Insights from a dynamical box model, J.
+Climate, 31, 9335-9350, <a class="reference external" href="https://doi.org/10.1175/JCLI-D-18-0388.1">https://doi.org/10.1175/JCLI-D-18-0388.1</a>,
+(2018).</div>
+</div>
+<p>5. Kaufhold, John Patrick, and Jennifer Alexander Sleeman. “Systems
+and methods for deep model translation generation.” U.S. Patent No.
+10,504,004. 10 Dec. 2019.</p>
+<p>6. Garcez, Artur d’Avila, and Luis C. Lamb. “Neurosymbolic AI: the
+3rd Wave.” arXiv preprint arXiv:2012.05876 (2020).</p>
+<p>7. Stommel, H. Thermohaline convection with two stable regimes of
+flow. Tellus 13, 224–230 (1961).</p>
+<p>8. Karniadakis, George Em, Ioannis G. Kevrekidis, Lu Lu, Paris
+Perdikaris, Sifan Wang, and Liu Yang. “Physics-informed machine
+learning.” Nature Reviews Physics 3, no. 6 (2021): 422-440.</p>
+<p>9. Sleeman, Jennifer, Milton Halem, Zhifeng Yang, Vanessa Caicedo,
+Belay Demoz, and Ruben Delgado. “A Deep Machine Learning Approach for
+LIDAR Based Boundary Layer Height Detection.” In IGARSS 2020-2020
+IEEE International Geoscience and Remote Sensing Symposium, pp.
+3676-3679. IEEE, 2020.</p>
+<p>10. Patel, Kinjal, Jennifer Sleeman, and Milton Halem. “Physics-aware
+deep edge detection network.” In Remote Sensing of Clouds and the
+Atmosphere XXVI, vol. 11859, pp. 32-38. SPIE, 2021.</p>
+<p>11.Brulé, Joshua. “A causation coefficient and taxonomy of
+correlation/causation relationships.” arXiv preprint arXiv:1708.05069
+(2017).</p>
+<p>12. Rasp, Stephan, Michael S. Pritchard, and Pierre Gentine. “Deep
+learning to represent subgrid processes in climate models.”
+Proceedings of the National Academy of Sciences 115, no. 39 (2018):
+9684-9689.</p>
+<p>13. Bolton, Thomas, and Laure Zanna. “Applications of deep learning
+to ocean data inference and subgrid parameterization.” Journal of
+Advances in Modeling Earth Systems 11, no. 1 (2019): 376-399.</p>
+<p>14. Kurth, Thorsten, Sean Treichler, Joshua Romero, Mayur Mudigonda,
+Nathan Luehr, Everett Phillips, Ankur Mahesh et al. “Exascale deep
+learning for climate analytics.” In SC18: International Conference
+for High Performance Computing, Networking, Storage and Analysis, pp.
+649-660. IEEE, 2018.</p>
+<p>15. Weber, Theodore, Austin Corotan, Brian Hutchinson, Ben Kravitz,
+and Robert Link. “Deep learning for creating surrogate models of
+precipitation in Earth system models.” Atmospheric Chemistry and
+Physics 20, no. 4 (2020): 2303-2317.</p>
+<p>16. Matsubara, Takashi, Ai Ishikawa, and Takaharu Yaguchi. “Deep
+energy-based modeling of discrete-time physics.” arXiv preprint
+arXiv:1905.08604 (2019).</p>
+<p>17. Kleinen, T., Held, H. &amp; Petschel-Held, G. The potential role of
+spectral properties in detecting thresholds in the Earth system:
+application to the thermohaline circulation. Ocean Dyn. 53, 53–63
+(2003).</p>
+<p>18. Kocaoglu, Murat, Christopher Snyder, Alexandros G. Dimakis, and
+Sriram Vishwanath. “Causalgan: Learning causal implicit generative
+models with adversarial training.” arXiv preprint arXiv:1709.02023
+(2017).</p>
+<p>19. Feinman, Reuben, and Brenden M. Lake. “Learning Task-General
+Representations with Generative Neuro-Symbolic Modeling.” arXiv
+preprint arXiv:2006.14448 (2020).</p>
+<p>20. Yi, Kexin, Chuang Gan, Yunzhu Li, Pushmeet Kohli, Jiajun Wu,
+Antonio Torralba, and Joshua B. Tenenbaum. “Clevrer: Collision events
+for video representation and reasoning.” arXiv preprint
+arXiv:1910.01442 (2019).</p>
+<p>21. Nowack, Peer, Jakob Runge, Veronika Eyring, and Joanna D. Haigh.
+“Causal networks for climate model evaluation and constrained
+projections.” Nature communications 11, no. 1 (2020): 1-11.</p>
+<p>22. Andersson, Tom R., J. Scott Hosking, María Pérez-Ortiz, Brooks
+Paige, Andrew Elliott, Chris Russell, Stephen Law et al. “Seasonal
+Arctic sea ice forecasting with probabilistic deep learning.” Nature
+communications 12, no. 1 (2021): 1-12.</p>
+<p>23. Storchan, Victor, Svitlana Vyetrenko, and Tucker Balch. “MAS-GAN:
+Adversarial Calibration of Multi-Agent Market Simulators.” (2020).</p>
+<p>24. De Raedt, Luc, Robin Manhaeve, Sebastijan Dumancic, Thomas
+Demeester, and Angelika Kimmig. “Neuro-symbolic=neural+ logical+
+probabilistic.” In NeSy’19&#64; IJCAI, the 14th International Workshop on
+Neural-Symbolic Learning and Reasoning. 2019.</p>
+<p>25. Eyring, V., Bony, S., Meehl, G. A., Senior, C. A., Stevens, B.,
+Stouffer, R. J., and Taylor, K. E.: Overview of the Coupled Model
+Intercomparison Project Phase 6 (CMIP6) experimental design and
+organization, Geosci. Model Dev., 9, 1937-1958,
+doi:10.5194/gmd-9-1937-2016, 2016.</p>
+<p>26. Swingedouw, Didier, Chinwe Ifejika Speranza, Annett Bartsch, Gael
+Durand, Cedric Jamet, Gregory Beaugrand, and Alessandra Conversi.</p>
+<p>“Early warning from space for a few key tipping points in physical,
+biological, and social-ecological systems.” Surveys in geophysics 41,
+no. 6 (2020): 1237-1284.</p>
+<p>27. Reichstein, Markus, Gustau Camps-Valls, Bjorn Stevens, Martin
+Jung, Joachim Denzler, and Nuno Carvalhais. “Deep learning and
+process understanding for data-driven Earth system science.” Nature
+566, no. 7743 (2019): 195-204.</p>
+<p>28. Sleeman, Jennifer, Ivanka Stajner, Christoph Keller, Milton
+Halem, Christopher Hamer, Raffaele Montuoro, and Barry Baker. “The
+Integration of Artificial Intelligence for Improved Operational Air
+Quality Forecasting.” In AGU Fall Meeting 2021. 2021.</p>
+<div class="line-block">
+<div class="line">29. Bellomo, K., Angeloni, M., Corti, S. <em>et al.</em> Future climate
+change shaped by inter-model differences in Atlantic meridional
+overturning circulation response. <em>Nat Commun</em> <strong>12,</strong> 3659 (2021).</div>
+<div class="line">30. Sgubin, G., Swingedouw, D., Drijfhout, S. <em>et al.</em> Abrupt
+cooling over the North Atlantic in modern climate models. <em>Nat
+Commun</em> <strong>8,</strong> 14375 (2017).</div>
+<div class="line">31. Swingedouw, D., Bily, A., Esquerdo, C., Borchert, L. F.,
+Sgubin, G., Mignot, J., &amp; Menary, M. (2021). On the risk of abrupt
+changes in the North Atlantic subpolar gyre in CMIP6 models.
+<em>Annals of the New York Academy of Sciences</em>, <em>1504</em>(1), 187-201.
+32. Mao, Jiayuan, Chuang Gan, Pushmeet Kohli, Joshua B. Tenenbaum,
+and Jiajun Wu. “The neuro-symbolic concept learner: Interpreting
+scenes, words, and sentences from natural supervision.” <em>arXiv
+preprint arXiv:1904.12584</em> (2019).</div>
+</div>
+</div></blockquote>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="milestone5_report.html" class="btn btn-neutral float-left" title="Milestone 5 Progress Report" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="milestone7_report.html" class="btn btn-neutral float-right" title="Milestone 7 Progress Report" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, The Johns Hopkins University Applied Physics Laboratory LLC. All rights reserved..</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

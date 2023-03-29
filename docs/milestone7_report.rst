@@ -1,6 +1,25 @@
 ==========================
 Milestone 7 Progress Report
-===========================
+==========================
+
+**Approved for public release; distribution is unlimited. This material is based upon work supported by the Defense Advanced Research Projects Agency (DARPA) under Agreement No. HR00112290032.**
+
+
+**PACMANS TEAM:**
+• Jennifer Sleeman (JHU APL) PI
+• Anand Gnanadesikan (JHU) Co-PI
+• Yannis Kevrekidis (JHU) Co-PI
+• Jay Brett (JHU APL)
+• David Chung (JHU APL)
+• Chace Ashcraft (JHU APL)
+• Thomas Haine (JHU)
+• Marie-Aude Pradal (JHU)
+• Renske Gelderloos (JHU)
+• Caroline Tang (DUKE)
+• Anshu Saksena (JHU APL)
+• Larry White (JHU APL)
+• Marisa Hughes (JHU APL)
+
 
 1 Overview
 -----------
@@ -10,7 +29,7 @@ Milestone 7 Progress Report
 
    • The report documents the achievement of the milestone associated with Month 10 of the JHU/APL-led PACMAN team’s statement of work.
 
-   • The deliverable for this milestone is this report which includes a research plan for Phase 2.\ |image26|
+   • The deliverable for this milestone is this report which includes a research plan for Phase 2.
 
 2 Team Resources
 ----------------
@@ -19,15 +38,13 @@ Milestone 7 Progress Report
 
    	• https://github.com/JHUAPL/PACMANs - Public to all (Up to date with all code from start to MS 3 deliverables)
 
-	• https://github.com/JHUAPL/PACMANs_internal - Public to DARPA, JHU, and APL (Hold until internal approvals)
-
    • Documentation
 
    	• https://pacmans.readthedocs.io/en/latest/
 
    • Datasets
 
-   	• http://sciserver.org/public-data/PACMANS/datasets\ |image27|
+   	• http://sciserver.org/public-data/PACMANS/datasets
 
 3 Goals and Impact
 ------------------
@@ -36,7 +53,7 @@ Milestone 7 Progress Report
 
    	• Develop a detailed research plan for Phase 2 to include specifics of data, specifying data providers and availability
 
-   	• Describe expected updates to the AI climate modeling methods\ |image28|
+   	• Describe expected updates to the AI climate modeling methods
 
 
 4 Phase 1 Accomplishments To Date
@@ -47,12 +64,12 @@ Milestone 7 Progress Report
 	• Research showed 4-box model captures 60-90% of the variation in the AMOC and pycnocline of CESM2, suggesting 4-box results can be used to understand
 CMIP-class AMOC model disagreement
 • Development of the **new 6-box model** for AMOC overturning research
-	• Enables the study of oscillations providing insights into why some slow-downs lead to full collapses whereas some lead to recovery, which could inform climate
-intervention strategies
+	• Enables the study of oscillations providing insights into why some slow-downs lead to full collapses whereas some lead to recovery, which could inform climate intervention strategies
 • **New bifurcation method** for stochastic differential equations to estimate escape times in addition to identifying
 bifurcations
 	• Goes beyond SOA providing measurements for determining how far away we are from a tipping point and likelihood of recovering – applied to the stochastic 4-
 box model
+
 • New AI-based method – TIP-GAN – a **generative adversarial network that is used to discover AMOC tipping points**
 	• Generalizable to other types of tipping points
 • Newly developed **neuro-symbolic deep learning architecture** that provides a means to ask questions of what is learned by TIP-GAN and a way to explore **causal paths**
@@ -73,10 +90,6 @@ box model
 • AI Simulation: New integration between the GAN and the surrogate models
 • AI Simulation: New integration between the GAN and the neuro-symbolic methods including an advancement in the language and realistic questions that could be evaluated against in-house model runs, and the inclusion of an explainability module that uses causal paths learned by the GAN
 
-.. image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image27.png
-   :width: 13.33333in
-   :height: 0.41667in
-
 
 
 **Phase 2 Discussion – Value of Data**
@@ -86,7 +99,7 @@ Three areas where additional data sources could be of use
    | • As additional data for training the AI simulation
    | • After the AI simulation is trained and identifies areas of the search space that likely to exhibit collapse, apply modeling and additional observational data to better understand this behavior
 
-   | • Use the AI simulation to identify variables\ |image29|
+   | • Use the AI simulation to identify variables\
 
 
 **Phase 2 Discussion – Data Sources**
@@ -109,7 +122,7 @@ Three areas where additional data sources could be of use
    	• We expect the important parameters to be mixing rates, which can be
    measured with in-situ and satellite monitoring of significant salinity anomalies for their decay rate or potentially dye experiments at the (sub)mesoscale.
 
-   	• Existing satellite and ARGO datasets will be examined to determine what we can already learn of freshwater fluxes, AMOC strength, and salinity anomalies to constrain our model analyses.\ |image30|
+   	• Existing satellite and ARGO datasets will be examined to determine what we can already learn of freshwater fluxes, AMOC strength, and salinity anomalies to constrain our model analyses.\
 
 
 **Phase 2 Discussion – Value of New Data**
@@ -119,11 +132,8 @@ Three areas where additional data sources could be of use
 
    | • *Precursor patterns-* focus modeling activity near tipping point, look for common precursors of collapse.
 
-   |image31|\ |image32|
+   |image31|
 
-.. image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image27.png
-   :width: 13.33333in
-   :height: 0.41667in
 
 **Phase 2 Discussion – Questions to Explore**
 
@@ -172,11 +182,11 @@ Each 35 years, at an effective radiative increase of 2W/m2, we branch off two si
 
 These will determine whether the AMOC recovers, stabilizes, or continues to collapse.
 
-\ |image34|
+
 
    Atmospheric CO2 concentration for CESM2 experiments
 
-   .. image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image29.png
+   .. image:: _static/media7/image29.png
       :width: 7.19722in
       :height: 4.30139in
 
@@ -198,10 +208,10 @@ These will determine whether the AMOC recovers, stabilizes, or continues to coll
    understand the sensitivity of AMOC collapse and recovery, determine
    what additional measurements could reduce uncertainty in such
    projections, and enable a parallel understanding of collapse to that
-   of the GAN.\ |image35|
+   of the GAN.
 
 
-5 Task 2.4: Data Plan for AMOC Use Case
+7 Task 2.4: Data Plan for AMOC Use Case
 ----------------------------------------
 
    The Physics-informed AI Climate Model Agent Neuro-symbolic Simulator
@@ -210,14 +220,13 @@ These will determine whether the AMOC recovers, stabilizes, or continues to coll
    *Subtask Description: We will report how and which datasets will be
    used to support the use case experiments.*
 
-   | *Tasks to Complete for Phase 2:*
+*Tasks to Complete for Phase 2:*
    	• Code for calibrating CMIP-archived data to the 4 and 6 box models.
 	• Calibration of CESM2 Large Ensemble members to the 4 and 6 box model.
 	• Development of a plan for integrating the GAN with the calibrated data for identification of several model-specific separatrix
-	• Development of a plan for integrating the calibrated data into the surrogate
-modeling
+	• Development of a plan for integrating the calibrated data into the surrogate modeling
 	• Development of a plan to evaluate the GAN results with our use case modeling
-	 Identify new informative observations to limit parameters based on GAN results
+    • Identify new informative observations to limit parameters based on GAN results
 
 
 **Experiment plan:**
@@ -228,7 +237,7 @@ modeling
 	• These are all z-level models (they use depth below sea surface as their vertical coordinate). Continued code development for calibrating models with other vertical coordinates would be required.
 2. Calibrated data will be used to fit the 4 and 6 box model for multiple CMIP-class global coupled models
 	CESM2: Fitting historical run of LE ensemble member 1 yields AI=1429, epsilon=1.6724e-04,Kv=3.3703e-05.
-	In the forward scenario, these allow for 4box AMOC to explain 91% of variation in CESM2 AMOC.\ |image38|\ |image39|\ |image40|
+	In the forward scenario, these allow for 4box AMOC to explain 91% of variation in CESM2 AMOC.\ |image38|\ |image39|\
 
 3. The GAN (see GAN experiments) will be used to explore the AMOC dynamics for the different models using the 4 and 6 box model with parameters fitted to the individual models
 
@@ -239,7 +248,7 @@ modeling
 6. Acquire new observational data to constrain parameters based on GAN results
 
 
-7 Task 3.5: AI Physics-Informed Surrogate Updated Models
+8 Task 3.5: AI Physics-Informed Surrogate Updated Models
 ---------------------------------------------------------
 
    *Subtask Description: We will report how the surrogate models will be
@@ -249,7 +258,7 @@ modeling
 
 	*Tasks to Complete for Phase 2:*
 		• Transition from 4 to 6 box models
-		• Extend existing work with introduction of a GAN\ |image42|
+		• Extend existing work with introduction of a GAN\
 
 
    **Experiment plan (Transitioning from the 4 box to the 6 box model):** 
@@ -257,7 +266,7 @@ modeling
 
 2. Will use numerical bifurcation computations with respect to the same parameters we used in the 4-box case to computer several one-parameter bifurcation diagrams in comparable operating regimes
 
-3. Will pinpoint the candidate tipping point bifurcations (turning points involving a stable and an unstable steady branch as well as possibly subcritical Hopf bifurcations where a stable focus loses stability “backwards” and an unstable limit cycle is born in the reverse direction.\ |image43|
+3. Will pinpoint the candidate tipping point bifurcations (turning points involving a stable and an unstable steady branch as well as possibly subcritical Hopf bifurcations where a stable focus loses stability “backwards” and an unstable limit cycle is born in the reverse direction.\
 
    
 4. In the neighborhood of these candidate tipping points will include noise terms for deterministic evolution equations, and perform stochastic simulations from rich ensembles of initial conditions.
@@ -287,7 +296,7 @@ model are firmly established and which are more tenuous
 
 
 
-8 Task 4.5: AI Simulation Updated Models
+9 Task 4.5: AI Simulation Updated Models
 ------------------------------------------
 
    *Subtask Description: We will report how the simulation will be
@@ -296,6 +305,7 @@ model are firmly established and which are more tenuous
    causal model to answer specific questions.*
 
 *Tasks to Complete for Phase 2:*
+
 	• New GAN experiments based on the 6-box model and calibrated CEMS2 model 
 		• Validated using the expected 6-box model output and JHU in-house models
 	• New integration between the surrogate models (non-box) and the GAN
@@ -308,17 +318,18 @@ we will setup a set of questions that will be used to query the learned latent s
 
 
 **Experiment plan 6-box model - GAN:
+
 1. Train the GAN using the 6-box model data 
 	• 6-box model surrogate will be used
 2. Compare models learned by GAN that “tip” with in-house model runs
 3. Compare models learned by GAN that did not “tip” with in-house model runs
 4. Compare models learned by GAN that “tipped and recovered” with in-house model runs 
-\ |image46|
+\
 
 
 **Experiment plan CESM2 calibrated model - GAN:**
-1. Build a calibrated surrogate model using the 6-box model as a template
 
+1. Build a calibrated surrogate model using the 6-box model as a template
 2. Train the GAN using the 6-box model data
 	• 6-box model surrogate will be used
 3. Compare models learned by GAN that “tip” with in-house model runs 
@@ -328,6 +339,7 @@ we will setup a set of questions that will be used to query the learned latent s
    boxes)
 
 **Experiment plan - Neuro-Symbolic Research Question Evaluation:**
+
 1. Define a set of questions and programs consulting with JHU collaborators
 	• that are realistic scientific questions one would ask
 	• that can be validated using a standard in-house modeling approach
@@ -352,7 +364,7 @@ we will setup a set of questions that will be used to query the learned latent s
 
 
 
-8 Summary – Phase 2 Plans
+10 Summary – Phase 2 Plans
 -------------------------
 • Expand from 4 to 6 box model
 • Calibration of CESM2 and the box models
@@ -361,6 +373,8 @@ we will setup a set of questions that will be used to query the learned latent s
 • New TIP-GAN CESM2 experiments with in-house model benchmarking
 • Integration of the surrogates, TIP-GAN, and the neuro-symbolic work
 • Expansion of the causal work
+
+**Approved for public release; distribution is unlimited. This material is based upon work supported by the Defense Advanced Research Projects Agency (DARPA) under Agreement No. HR00112290032.**
 
 
 
@@ -511,126 +525,126 @@ Citations
      scenes, words, and sentences from natural supervision." *arXiv
      preprint arXiv:1904.12584* (2019).
 
-.. |image1| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image2.png
+.. |image1| image:: _static/media7/image2.png
    :width: 1.375in
    :height: 0.45833in
-.. |image2| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image3.png
+.. |image2| image:: _static/media7/image3.png
    :width: 1.75in
    :height: 0.45833in
-.. |image3| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image4.png
+.. |image3| image:: _static/media7/image4.png
    :width: 1.625in
    :height: 0.45833in
-.. |image4| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image5.png
+.. |image4| image:: _static/media7/image5.png
    :width: 13.33056in
    :height: 7.49844in
-.. |image5| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image6.png
+.. |image5| image:: _static/media7/image6.png
    :width: 0.625in
    :height: 0.11111in
-.. |image6| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image7.png
+.. |image6| image:: _static/media7/image7.png
    :width: 9.40278in
    :height: 6.27303in
-.. |image7| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image8.png
+.. |image7| image:: _static/media7/image8.png
    :width: 2.68056in
    :height: 0.56944in
-.. |image8| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image9.png
-.. |image9| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image10.png
+.. |image8| image:: _static/media7/image9.png
+.. |image9| image:: _static/media7/image10.png
    :height: 0.11111in
-.. |image10| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image11.png
-.. |image11| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image12.png
-.. |image12| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image13.png
-.. |image13| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image14.png
-.. |image14| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image15.png
+.. |image10| image:: _static/media7/image11.png
+.. |image11| image:: _static/media7/image12.png
+.. |image12| image:: _static/media7/image13.png
+.. |image13| image:: _static/media7/image14.png
+.. |image14| image:: _static/media7/image15.png
    :width: 0.72222in
    :height: 0.59722in
-.. |image15| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image16.png
-.. |image16| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image17.png
-.. |image17| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image18.png
+.. |image15| image:: _static/media7/image16.png
+.. |image16| image:: _static/media7/image17.png
+.. |image17| image:: _static/media7/image18.png
    :height: 0.125in
-.. |image18| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image19.png
-.. |image19| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image20.png
-.. |image20| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image21.png
+.. |image18| image:: _static/media7/image19.png
+.. |image19| image:: _static/media7/image20.png
+.. |image20| image:: _static/media7/image21.png
    :width: 8.83333in
    :height: 1.06944in
-.. |image21| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image22.png
-.. |image22| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image23.png
-.. |image23| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image24.png
-.. |image24| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image25.png
-.. |image25| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image26.png
-.. |image26| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image27.png
+.. |image21| image:: _static/media7/image22.png
+.. |image22| image:: _static/media7/image23.png
+.. |image23| image:: _static/media7/image24.png
+.. |image24| image:: _static/media7/image25.png
+.. |image25| image:: _static/media7/image26.png
+.. |image26| image:: _static/media7/image27.png
    :width: 13.33333in
    :height: 0.41667in
-.. |image27| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image27.png
+.. |image27| image:: _static/media7/image27.png
    :width: 13.33333in
    :height: 0.41667in
-.. |image28| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image27.png
+.. |image28| image:: _static/media7/image27.png
    :width: 13.33333in
    :height: 0.41667in
-.. |image29| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image27.png
+.. |image29| image:: _static/media7/image27.png
    :width: 13.33333in
    :height: 0.41667in
-.. |image30| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image27.png
+.. |image30| image:: _static/media7/image27.png
    :width: 13.33333in
    :height: 0.41667in
-.. |image31| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image28.png
+.. |image31| image:: _static/media7/image28.png
    :width: 5.96944in
    :height: 5.19306in
-.. |image32| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image27.png
+.. |image32| image:: _static/media7/image27.png
    :width: 13.33333in
    :height: 0.41667in
-.. |image33| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image27.png
+.. |image33| image:: _static/media7/image27.png
    :width: 13.33333in
    :height: 0.41667in
-.. |image34| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image27.png
+.. |image34| image:: _static/media7/image27.png
    :width: 13.33333in
    :height: 0.41667in
-.. |image35| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image27.png
+.. |image35| image:: _static/media7/image27.png
    :width: 13.33333in
    :height: 0.41667in
-.. |image36| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image27.png
+.. |image36| image:: _static/media7/image27.png
    :width: 13.33333in
    :height: 0.41667in
-.. |image37| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image27.png
+.. |image37| image:: _static/media7/image27.png
    :width: 13.33333in
    :height: 0.41667in
-.. |image38| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image31.png
+.. |image38| image:: _static/media7/image31.png
    :width: 5.175in
    :height: 4.74991in
-.. |image39| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image32.png
+.. |image39| image:: _static/media7/image32.png
    :width: 5.17778in
    :height: 4.73633in
-.. |image40| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image27.png
+.. |image40| image:: _static/media7/image27.png
    :width: 13.33333in
    :height: 0.41667in
-.. |image41| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image27.png
+.. |image41| image:: _static/media7/image27.png
    :width: 13.33333in
    :height: 0.41667in
-.. |image42| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image27.png
+.. |image42| image:: _static/media7/image27.png
    :width: 13.33333in
    :height: 0.41667in
-.. |image43| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image27.png
+.. |image43| image:: _static/media7/image27.png
    :width: 13.33333in
    :height: 0.41667in
-.. |image44| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image27.png
+.. |image44| image:: _static/media7/image27.png
    :width: 13.33333in
    :height: 0.41667in
-.. |image45| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image27.png
+.. |image45| image:: _static/media7/image27.png
    :width: 13.33333in
    :height: 0.41667in
-.. |image46| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image27.png
+.. |image46| image:: _static/media7/image27.png
    :width: 13.33333in
    :height: 0.41667in
-.. |image47| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image27.png
+.. |image47| image:: _static/media7/image27.png
    :width: 13.33333in
    :height: 0.41667in
-.. |image48| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image27.png
+.. |image48| image:: _static/media7/image27.png
    :width: 13.33333in
    :height: 0.41667in
-.. |image49| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image27.png
+.. |image49| image:: _static/media7/image27.png
    :width: 13.33333in
    :height: 0.41667in
-.. |image50| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image33.png
+.. |image50| image:: _static/media7/image33.png
    :width: 13.33333in
    :height: 7.5in
-.. |image51| image:: vertopal_d80452d548514fa8a70c02ed7de5c7bb/media/image34.png
+.. |image51| image:: _static/media7/image34.png
    :width: 13.33056in
    :height: 7.49844in
