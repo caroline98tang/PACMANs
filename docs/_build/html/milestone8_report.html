@@ -53,15 +53,16 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Milestone 8 Progress Report</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#overview">1   Overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#final-report-accomplishments">2   Final Report Accomplishments</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id1">3 Final Report Accomplishments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">3 Final Report Accomplishments</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#task-1-4-use-case-ocean-models-comparisons">4 Task 1.4 Use Case Ocean Models Comparisons</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#task-2-5-phase-1-data-final-delivery">5   Task 2.5: Phase 1 Data Final Delivery</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#task-2-5-phase-1-data-final-delivery-cesm2">6 Task 2.5: Phase 1 Data Final Delivery – CESM2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#task-3-6-ai-physics-informed-surrogate-model-phase-1-final-report">7   Task 3.6: AI Physics-Informed Surrogate Model Phase 1 Final Report</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#task-5-2-evaluation-final-report">8   Task 5.2: Evaluation Final Report</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#task-3-6-ai-physics-informed-surrogate-model-phase-1-final-report">6   Task 3.6: AI Physics-Informed Surrogate Model Phase 1 Final Report</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#task-4-6-ai-simulation-phase-1-final-report">8    Task 4.6 AI Simulation Phase 1 Final Report</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#task-5-2-evaluation-final-report">7   Task 5.2: Evaluation Final Report</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="milestone9_report.html">Milestone 9 Progress Report</a></li>
+<li class="toctree-l1"><a class="reference internal" href="milestone10_report.html">Milestone 10 Progress Report</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">PyBAMOCS:</span></p>
 <ul>
@@ -146,12 +147,12 @@
 <li><p>The report documents the achievement of the milestone associated with Month 12 of the JHU/APL-led PACMAN team’s statement of work</p></li>
 <li><p>The delivery for this milestone is this final report for Phase 1</p></li>
 </ul>
-<div class="line-block">
-<div class="line">Goals</div>
-<div class="line">The goal for this milestone included:</div>
-<div class="line">• Deliver final report of all modules to conclude the Phase 1 effort including: • Data analysis</div>
-</div>
-<ul class="simple">
+</div></blockquote>
+<p><a href="#id1"><span class="problematic" id="id2">**</span></a>Goals **
+The goal for this milestone included:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Deliver final report of all modules to conclude the Phase 1 effort including: • Data analysis</p></li>
 <li><p>Characterization of benefits of new hybrid models over conventional models</p></li>
 <li><p>Evaluations</p></li>
 <li><p>All models, source code, and datasets to support results</p></li>
@@ -163,36 +164,32 @@
 <ul class="simple">
 <li><dl class="simple">
 <dt>Development of the new 6-box model for AMOC tipping point research</dt><dd><ul>
-<li><p>Enables the study of oscillations providing insights into why some slow-downs lead to full collapses whereas some lead to recovery, which could inform climate intervention</p></li>
+<li><p>Enables the study of oscillations providing insights into why some slow-downs lead to full collapses whereas some lead to recovery, which could inform climate intervention strategies</p></li>
 </ul>
 </dd>
 </dl>
 </li>
-</ul>
-<p>strategies
-• Generation of novel AMOC tipping point datasets geared toward machine learning</p>
-<blockquote>
-<div><ul class="simple">
+<li><dl class="simple">
+<dt>Generation of novel AMOC tipping point datasets geared toward machine learning</dt><dd><ul>
 <li><p>Includes open sourced models being used by other performers</p></li>
 </ul>
-</div></blockquote>
-<ul class="simple">
+</dd>
+</dl>
+</li>
 <li><dl class="simple">
 <dt>CEMS2 4-box model Verification – Path for AI Learning of Large GCM Models</dt><dd><ul>
-<li><p>Research showed 4-box model captures 60-90% of the variation in the AMOC and pycnocline of CESM2, suggesting 4-box results can be used to understand CMIP-class AMOC</p></li>
+<li><p>Research showed 4-box model captures 60-90% of the variation in the AMOC and pycnocline of CESM2, suggesting 4-box results can be used to understand CMIP-class AMOC model disagreement</p></li>
 </ul>
 </dd>
 </dl>
 </li>
-</ul>
-<p>model disagreement
-• New bifurcation method for stochastic differential equations to estimate escape times in addition to identifying bifurcations</p>
-<blockquote>
-<div><ul class="simple">
+<li><dl class="simple">
+<dt>New bifurcation method for stochastic differential equations to estimate escape times in addition to identifying bifurcations</dt><dd><ul>
 <li><p>Goes beyond state of the art in providing measurements for determining distance from a tipping point and likelihood of recovering – applied to the stochastic 4-box model</p></li>
 </ul>
-</div></blockquote>
-<ul class="simple">
+</dd>
+</dl>
+</li>
 <li><dl class="simple">
 <dt>New AI-based method: TIP-GAN, a generative adversarial network that is used to discover AMOC tipping points</dt><dd><ul>
 <li><p>Generalizable to other types of tipping points</p></li>
@@ -200,493 +197,173 @@
 </dd>
 </dl>
 </li>
-<li><p>Newly developed neuro-symbolic deep learning architecture that provides a means to ask questions of what is learned by TIP-</p></li>
+<li><p>Newly developed neuro-symbolic deep learning architecture that provides a means to ask questions of what is learned by TIP-GAN and a way to explore causal paths</p></li>
+<li><p>First version of causal models based on TIP-GAN learned paths</p></li>
+<li><p>Three accepted AGU presentations (2 oral, 1 poster), one AAAI Fall Symposium paper acceptance, draft of two journal papers, proposal acceptance to the AAAI Spring Symposium for AI Climate Tipping-Point Discovery (ACTD)</p></li>
 </ul>
-<p>GAN and a way to explore causal paths
-• First version of causal models based on TIP-GAN learned paths
-• Three accepted AGU presentations (2 oral, 1 poster), one AAAI Fall Symposium paper acceptance, draft of two journal papers,
-proposal acceptance to the AAAI Spring Symposium for AI Climate Tipping-Point Discovery (ACTD)</p>
 </section>
-<section id="id1">
-<h2>3 Final Report Accomplishments<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
-<blockquote>
-<div><p>This report includes a detailed final report for Phase 1 of:</p>
-<div class="line-block">
-<div class="line">• The conventional use of ocean models in terms of climate
-forecasting</div>
-<div class="line">• Updates and delivery of any new datasets</div>
-<div class="line">• Surrogate models performance with a comparison to conventional
-models using metrics defined in Milestone 3</div>
-<div class="line">• Performance of the simulation, causal model, and neuro-symbolic
-translation, including a comparison with conventional models using
-metrics defined in Milestone 3</div>
-<div class="line">• Benchmark comparison between the AI approach and the conventional
-approach, comparing their performance</div>
-</div>
-</div></blockquote>
+<section id="id3">
+<h2>3 Final Report Accomplishments<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h2>
+<p>This report includes a detailed final report for Phase 1 of:</p>
+<ul class="simple">
+<li><p>The conventional use of ocean models in terms of climate forecasting</p></li>
+<li><p>Updates and delivery of any new datasets</p></li>
+<li><p>Surrogate models performance with a comparison to conventional models using metrics defined in Milestone 3</p></li>
+<li><p>Performance of the simulation, causal model, and neuro-symbolic translation, including a comparison with conventional models using metrics defined in Milestone 3</p></li>
+<li><p>Benchmark comparison between the AI approach and the conventional approach, comparing their performance</p></li>
+</ul>
 </section>
 <section id="task-1-4-use-case-ocean-models-comparisons">
 <h2>4 Task 1.4 Use Case Ocean Models Comparisons<a class="headerlink" href="#task-1-4-use-case-ocean-models-comparisons" title="Permalink to this heading"></a></h2>
-<dl>
-<dt><a href="#id2"><span class="problematic" id="id3">*</span></a>Subtask Description: We will provide a final report detailing the</dt><dd><blockquote>
-<div><p>conventional use of ocean models in terms of climate forecastig*</p>
+<p><em>Subtask Description: We will provide a final report detailing the conventional use of ocean models in terms of climate forecastig</em></p>
+<p>In this report we provide a detailed discussion around the 4-box and 6-box models and the benefits of using these models to train machine learning algorithms with a path towards applying machine learning algorithms to large coupled GCMs.</p>
+<p><strong>Task 1.4: Use Case Ocean Models Comparisons – 4-Box Model</strong>
+On long time scales, Atlantic overturning can often be described by the simple box model…
+… which exhibits tipping points.</p>
+<ul>
+<li><p>We used the box model as a first-step data set</p></li>
+<li><p>We then extended this to include the larger climate models</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Extend to include Pacific Basin</p></li>
+<li><p>Calibrated model against specific climate models (NCAR+CMIP6) using preindustrial and historical simulations</p></li>
+<li><p>Showed that model can capture both mean state and variability</p></li>
+<li><p>Used surrogate model to project tipping points, examine for accuracy of prediction</p></li>
+</ul>
 </div></blockquote>
-<p>In this report we provide a detailed discussion around the 4-box and
-6-box models and the benefits of using these models to train machine
-learning algorithms with a path towards applying machine learning
-algorithms to large coupled GCMs.</p>
-</dd>
-</dl>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Task 1.4: Use Case Ocean
-Models Comparisons – 4-Box
-Model</p></th>
-<th class="head"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>On long time scales, Atlantic
-overturning can often be
-described by the simple box
-model…</p>
-<p>… which exhibits tipping
-points.</p>
-<ul class="simple">
-<li><p>We used the box model as a</p></li>
+</li>
 </ul>
-<p>first-step data set</p>
-<ul class="simple">
-<li><p>We then extended this to</p></li>
-</ul>
-<p>include the larger climate
-models</p>
-<ul class="simple">
-<li><p>Extend to include Pacific</p></li>
-</ul>
-<p>Basin</p>
-<ul class="simple">
-<li><p>Calibrated model against</p></li>
-</ul>
-<p>specific climate models</p>
-<p>(NCAR+CMIP6) using
-preindustrial and historical</p>
-<p>simulations</p>
-<ul class="simple">
-<li><p>Showed that model can</p></li>
-</ul>
-<p>capture both mean state and</p>
-<p>variability</p>
-<ul class="simple">
-<li><p>Used surrogate model to</p></li>
-</ul>
-<p>project tipping points,
-examine</p>
-<p>for accuracy of prediction</p>
-</td>
-<td><p><a class="reference internal" href="_images/image217.png"><img alt="image1" src="_images/image217.png" style="width: 3.82222in; height: 5.175in;" /></a></p></td>
-</tr>
-</tbody>
-</table>
+<p><a class="reference internal" href="_images/image217.png"><img alt="image1" src="_images/image217.png" style="width: 3.82222in; height: 5.175in;" /></a></p>
 <blockquote>
 <div><div class="line-block">
 <div class="line"><em>Gnanadesikan, 1999;</em></div>
 <div class="line"><em>Gnanadesikan, Kelson and Sten, J. Climate 2018</em></div>
 </div>
 </div></blockquote>
+<p>** Task 1.4: Use Case Ocean Models Comparisons – 6-Box Model**</p>
 <a class="reference internal image-reference" href="_images/image208.png"><img alt="_images/image208.png" src="_images/image208.png" style="width: 6in; height: 4in;" /></a>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><ul class="simple">
-<li><p>In the calibrating model,</p></li>
-</ul>
-<p>Pacific shows more “resistance”
-to overturning than Southern
-Ocean. Why?</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>Atlantic is denser than</p></li>
-</ul>
-<p>Southern Ocean</p>
 <ul class="simple">
-<li><p>Sinking gets kick from both</p></li>
+<li><dl class="simple">
+<dt>In the calibrating model, Pacific shows more “resistance” to overturning than Southern Ocean. Why?</dt><dd><ul>
+<li><p>Atlantic is denser than Southern Ocean</p></li>
+<li><p>Sinking gets kick from both intermediate and shallow water (low resistance)</p></li>
+<li><p>Pacific is lighter than Southern Ocean. Sinking is opposed by AAIW… (higher resistance)</p></li>
 </ul>
-<p>intermediate and shallow water
-(low resistance)</p>
-<ul class="simple">
-<li><p>Pacific is <em>lighter</em> than</p></li>
+</dd>
+</dl>
+</li>
+<li><p>North Pacific receives less freshwater than North Atlantic +Arctic</p></li>
 </ul>
-<p>Southern Ocean. Sinking is
-opposed by AAIW… (higher
-resistance)</p>
-<ul class="simple">
-<li><p>North Pacific receives less</p></li>
-</ul>
-<p>freshwater than North Atlantic
-+Arctic</p>
-</div></blockquote>
-</th>
-<th class="head"><blockquote>
-<div></div></blockquote>
-<dl>
-<dt>image::  _static/media8/image5.png</dt><dd><blockquote>
-<div><dl class="field-list simple">
-<dt class="field-odd">width</dt>
-<dd class="field-odd"><p>2.80556in</p>
-</dd>
-<dt class="field-even">height</dt>
-<dd class="field-even"><p>1.88889in</p>
-</dd>
-</dl>
-</div></blockquote>
-</dd>
-<dt>image:: _static/media8/image6.png</dt><dd><dl class="field-list simple">
-<dt class="field-odd">width</dt>
-<dd class="field-odd"><p>2.80556in</p>
-</dd>
-<dt class="field-even">height</dt>
-<dd class="field-even"><p>1.88889in</p>
-</dd>
-</dl>
-</dd>
-</dl>
-</th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><div class="line-block">
-<div class="line">If freshwater flux is higher
-in the Pacific, increasing</div>
-<div class="line">hydrological cycle shuts off
-Pacific first, then
-Atlantic.</div>
-</div>
-<div class="line-block">
-<div class="line">If freshwater flux is higher
-in Atlantic/Arctic,
-potential for restart of
-Pacific</div>
-<div class="line">overturning when Arctic
-turns off.</div>
-</div>
-<p>Three ways of increasing
-Pacific overturning!</p>
-</th>
-<th class="head"><blockquote>
-<div></div></blockquote>
-<dl class="simple">
-<dt>image:: _static/media8/image7.png</dt><dd><dl class="field-list simple">
-<dt class="field-odd">width</dt>
-<dd class="field-odd"><p>7.15556in</p>
-</dd>
-<dt class="field-even">height</dt>
-<dd class="field-even"><p>5.01806in</p>
-</dd>
-</dl>
-</dd>
-</dl>
-</th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><div class="line-block">
-<div class="line">When Atlantic overturning
-shuts off, pycnocline</div>
-<div class="line">deepens.</div>
-</div>
-<div class="line-block">
-<div class="line">This increases the mixing
-between high and low</div>
-<div class="line">latitudes… more in Pacific
-than Atlantic.</div>
-</div>
-<p>For realistic range of mixing
-fluxes this can lead to
-restart of strong intermediate
-water formation in Pacific.</p>
-</th>
-<th class="head"><blockquote>
-<div></div></blockquote>
-<dl class="simple">
-<dt>image:: _static/media8/image8.png</dt><dd><dl class="field-list simple">
-<dt class="field-odd">width</dt>
-<dd class="field-odd"><p>7.26111in</p>
-</dd>
-<dt class="field-even">height</dt>
-<dd class="field-even"><p>5.44583in</p>
-</dd>
-</dl>
-</dd>
-</dl>
-</th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<a class="reference internal image-reference" href="_images/image513.png"><img alt="_images/image513.png" src="_images/image513.png" style="width: 4in; height: 2in;" /></a>
+<a class="reference internal image-reference" href="_images/image612.png"><img alt="_images/image612.png" src="_images/image612.png" style="width: 4in; height: 2in;" /></a>
+<p>If freshwater flux is higher in the Pacific, increasing hydrological cycle shuts off Pacific first, then Atlantic.</p>
+<p>If freshwater flux is higher in Atlantic/Arctic, potential for restart of Pacific overturning when Arctic turns off.</p>
+<p>Three ways of increasing Pacific overturning!</p>
+<a class="reference internal image-reference" href="_images/image712.png"><img alt="_images/image712.png" src="_images/image712.png" style="width: 6in; height: 5in;" /></a>
+<p>When Atlantic overturning shuts off, pycnocline deepens.
+This increases the mixing between high and low latitudes… more in Pacific than Atlantic.
+For realistic range of mixing fluxes this can lead to restart of strong intermediate water formation in Pacific.</p>
+<a class="reference internal image-reference" href="_images/image812.png"><img alt="_images/image812.png" src="_images/image812.png" style="width: 4in; height: 6in;" /></a>
 </section>
 <section id="task-2-5-phase-1-data-final-delivery">
 <h2>5   Task 2.5: Phase 1 Data Final Delivery<a class="headerlink" href="#task-2-5-phase-1-data-final-delivery" title="Permalink to this heading"></a></h2>
-<blockquote>
-<div><p><em>Subtask Description: We will document updates and deliver any new
-datasets.</em></p>
-<div class="line-block">
-<div class="line">The final delivery of data will include the following:</div>
-<div class="line">• 4-box Model Python machine learning generated datasets</div>
-<div class="line">• Stochastic 4-box Model Python machine learning generated
-datasets• 6-box Model Matlab code on github, but the machine
-learning generated datasets are not finalized yet</div>
-<div class="line">• Calibrated 4-box Model CESM2 Large Ensemble datasets</div>
-</div>
-<p>Task 2.5: Phase 1 Data Final Delivery – 4-Box Model • Using the 4-box
-model as a way to generate data for the AI methods</p>
+<p><em>Subtask Description: We will document updates and deliver any new datasets.</em></p>
+<p>The final delivery of data will include the following:</p>
 <ul class="simple">
-<li><p>For long time scales, Atlantic overturning can often be described</p></li>
+<li><p>4-box Model Python machine learning generated datasets</p></li>
+<li><p>Stochastic 4-box Model Python machine learning generated datasets</p></li>
+<li><p>6-box Model Matlab code on github, but the machine learning generated datasets are not finalized yet</p></li>
+<li><p>Calibrated 4-box Model CESM2 Large Ensemble datasets</p></li>
 </ul>
-<p>by the simple box model</p>
-<a class="reference internal image-reference" href="_images/image912.png"><img alt="_images/image912.png" src="_images/image912.png" style="width: 7.80278in; height: 3.72917in;" /></a>
-</div></blockquote>
-<p>The Gnanadesikan 4-Box Model</p>
-<blockquote>
-<div><p>Task 2.5: Phase 1 Data Final Delivery – 4-Box Model</p>
-</div></blockquote>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><ul class="simple">
-<li><p>Created a python package of</p></li>
-</ul>
-<p>the 4-box model that allows
-one to specify initial
-conditions, and parameter
-values</p>
-<ul class="simple">
-<li><p>The python package recreates</p></li>
-</ul>
-<p>the Gnanadesikan experiments
-(in Matlab code)</p>
-<ul class="simple">
-<li><p>Generates the same plots</p></li>
-<li><p>Enables creation of labeled</p></li>
-</ul>
-<p>training data for training
-machine learning algorithms
-and temporal training data for
-training the AI surrogates</p>
-<ul class="simple">
-<li><p>Produces datasets in netcdf</p></li>
-</ul>
-<p>format</p>
-</th>
-<th class="head"><dl class="simple">
-<dt>image:: _static/media8/image10.png</dt><dd><dl class="field-list simple">
-<dt class="field-odd">width</dt>
-<dd class="field-odd"><p>4.2in</p>
-</dd>
-<dt class="field-even">height</dt>
-<dd class="field-even"><p>2.51944in</p>
-</dd>
-</dl>
-</dd>
-<dt>image:: _static/media8/image11.png</dt><dd><dl class="field-list simple">
-<dt class="field-odd">width</dt>
-<dd class="field-odd"><p>3.81528in</p>
-</dd>
-<dt class="field-even">height</dt>
-<dd class="field-even"><p>2.37083in</p>
-</dd>
-</dl>
-</dd>
-</dl>
-</th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<div><p>Task 2.5: Phase 1 Data Final Delivery – 4-Box
-Model<a class="reference internal" href="_images/image135.png"><img alt="image3" src="_images/image135.png" style="width: 3.375in; height: 2.56645in;" /></a><a class="reference internal" href="_images/image145.png"><img alt="image4" src="_images/image145.png" style="width: 4.51389in; height: 2.72222in;" /></a><a class="reference internal" href="_images/image155.png"><img alt="image5" src="_images/image155.png" style="width: 4.72083in; height: 2.3843in;" /></a><img alt="image6" src="_images/image165.png" /><img alt="image7" src="_images/image175.png" /><a class="reference internal" href="_images/image186.png"><img alt="image8" src="_images/image186.png" style="width: 0.11111in;" /></a><img alt="image9" src="_images/image194.png" /><img alt="image10" src="_images/image205.png" /><img alt="image11" src="_images/image218.png" /><img alt="image12" src="_images/image225.png" /><img alt="image13" src="_images/image235.png" /><img alt="image14" src="_images/image245.png" /><img alt="image15" src="_images/image254.png" /><img alt="image16" src="_images/image265.png" /><img alt="image17" src="_images/image275.png" /><img alt="image18" src="_images/image283.png" /><a class="reference internal" href="_images/image294.png"><img alt="image19" src="_images/image294.png" style="width: 0.16667in;" /></a><img alt="image20" src="_images/image303.png" /><img alt="image21" src="_images/image317.png" /><img alt="image22" src="_images/image324.png" /><img alt="image23" src="_images/image334.png" /><img alt="image24" src="_images/image344.png" /><img alt="image25" src="_images/image353.png" /><img alt="image26" src="_images/image363.png" /><img alt="image27" src="_images/image373.png" /><img alt="image28" src="_images/image383.png" /><a class="reference internal" href="_images/image393.png"><img alt="image29" src="_images/image393.png" style="width: 0.125in;" /></a><a class="reference internal" href="_images/image403.png"><img alt="image30" src="_images/image403.png" style="width: 0.11111in;" /></a><img alt="image31" src="_images/image415.png" /><img alt="image32" src="_images/image422.png" /><img alt="image33" src="_images/image432.png" /><img alt="image34" src="_images/image442.png" /><img alt="image35" src="_images/image452.png" /><img alt="image36" src="_images/image462.png" /><a class="reference internal" href="_images/image472.png"><img alt="image37" src="_images/image472.png" style="width: 0.20833in;" /></a><img alt="image38" src="_images/image482.png" /><a class="reference internal" href="_images/image492.png"><img alt="image39" src="_images/image492.png" style="width: 0.27778in;" /></a><img alt="image40" src="_images/image502.png" /><a class="reference internal" href="_images/image513.png"><img alt="image41" src="_images/image513.png" style="width: 0.29167in;" /></a><a class="reference internal" href="_images/image522.png"><img alt="image42" src="_images/image522.png" style="width: 0.16667in;" /></a><a class="reference internal" href="_images/image532.png"><img alt="image43" src="_images/image532.png" style="width: 0.33333in;" /></a><img alt="image44" src="_images/image541.png" /><a class="reference internal" href="_images/image551.png"><img alt="image45" src="_images/image551.png" style="width: 0.29167in;" /></a><a class="reference internal" href="_images/image561.png"><img alt="image46" src="_images/image561.png" style="width: 0.19444in;" /></a><a class="reference internal" href="_images/image571.png"><img alt="image47" src="_images/image571.png" style="width: 0.29167in;" /></a><a class="reference internal" href="_images/image581.png"><img alt="image48" src="_images/image581.png" style="width: 0.31944in;" /></a></p>
-</div></blockquote>
+<p><a href="#id4"><span class="problematic" id="id5">**</span></a>Task 2.5: Phase 1 Data Final Delivery – 4-Box Model **</p>
 <ul>
-<li><p>Data available on sciserver.org</p></li>
-<li><p>Code available at <a class="reference external" href="https://github.com/JHUAPL/PACMANs">https://github.com/JHUAPL/PACMANs</a></p></li>
-<li><p>4-box model tutorial is on the ACTM Gallery</p>
+<li><p>Using the 4-box model as a way to generate data for the AI methods</p></li>
+<li><p>For long time scales, Atlantic overturning can often be described by the simple box model</p>
 <blockquote>
-<div><p>Task 2.5: Phase 1 Data Final Delivery – 6-Box Model</p>
+<div><a class="reference internal image-reference" href="_images/image912.png"><img alt="_images/image912.png" src="_images/image912.png" style="width: 7.80278in; height: 3.72917in;" /></a>
 </div></blockquote>
 </li>
-<li><p>6-box model Matlab code is in github</p></li>
-<li><p>Python code for the 6-box model has</p></li>
 </ul>
-<p>been developed
-• Scripts to generate Machine Learning
-datasets are also built
-• However, the code requires formal
-review, documentation and tutorials before release in github public
-‒ Will be part of Phase2
-image:: _static/media8/image59.png</p>
+<p>The Gnanadesikan 4-Box Model</p>
+<ul>
+<li><p>Created a python package of the 4-box model that allows one to specify initial conditions, and parameter values</p></li>
+<li><p>The python package recreates the Gnanadesikan experiments (in Matlab code)</p></li>
+<li><p>Generates the same plots</p></li>
+<li><p>Enables creation of labeled training data for training machine learning algorithms and temporal training data for training the AI surrogates</p></li>
+<li><p>Produces datasets in netcdf format</p>
 <blockquote>
-<div><dl class="field-list simple">
-<dt class="field-odd">width</dt>
-<dd class="field-odd"><p>5.89167in</p>
-</dd>
-<dt class="field-even">height</dt>
-<dd class="field-even"><p>2.59861in</p>
+<div><a class="reference internal image-reference" href="_images/image1010.png"><img alt="_images/image1010.png" src="_images/image1010.png" style="width: 4.80278in; height: 2.72917in;" /></a>
+<a class="reference internal image-reference" href="_images/image116.png"><img alt="_images/image116.png" src="_images/image116.png" style="width: 3.80278in; height: 2.72917in;" /></a>
+</div></blockquote>
+</li>
+</ul>
+<ul class="simple">
+<li><p>Data available on sciserver.org</p></li>
+<li><p>Code available at <a class="reference external" href="https://github.com/JHUAPL/PACMANs">https://github.com/JHUAPL/PACMANs</a></p></li>
+<li><p>4-box model tutorial is on the ACTM Gallery</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/image126.png"><img alt="_images/image126.png" src="_images/image126.png" style="width: 3.80278in; height: 1.72917in;" /></a>
+<a class="reference internal image-reference" href="_images/image145.png"><img alt="_images/image145.png" src="_images/image145.png" style="width: 3.80278in; height: 2.72917in;" /></a>
+<a class="reference internal image-reference" href="_images/image155.png"><img alt="_images/image155.png" src="_images/image155.png" style="width: 3.80278in; height: 2.72917in;" /></a>
+<p>** Task 2.5: Phase 1 Data Final Delivery – 6-Box Model**</p>
+<ul class="simple">
+<li><p>6-box model Matlab code is in github</p></li>
+<li><p>Python code for the 6-box model has been developed</p></li>
+<li><p>Scripts to generate Machine Learning datasets are also built</p></li>
+<li><dl class="simple">
+<dt>However, the code requires formal review, documentation and tutorials before release in github public</dt><dd><p>‒ Will be part of Phase2</p>
 </dd>
 </dl>
-</div></blockquote>
-</section>
-<section id="task-2-5-phase-1-data-final-delivery-cesm2">
-<h2>6 Task 2.5: Phase 1 Data Final Delivery – CESM2<a class="headerlink" href="#task-2-5-phase-1-data-final-delivery-cesm2" title="Permalink to this heading"></a></h2>
-<div class="line-block">
-<div class="line">Fitting CESM2 Large Ensemble to the Gnanadesikan 4-box model•
-Volume-averaged means for potential density in each box</div>
-</div>
-<p><a href="#id4"><span class="problematic" id="id5">|image209|</span></a></p>
-<blockquote>
-<div><p>Task 2.5: Phase 1 Data Final Delivery -
-CESM2</p>
-</div></blockquote>
-<p><a href="#id6"><span class="problematic" id="id7">|image210|</span></a></p>
-<blockquote>
-<div><p>Task 2.5: Phase 1 Data Final Delivery - CESM2<a class="reference internal" href="_images/image971.png"><img alt="image86" src="_images/image971.png" style="width: 6.69028in; height: 5.01771in;" /></a></p>
-<div class="line-block">
-<div class="line"><strong>Goodness of fit</strong></div>
-<div class="line">For each of the 11 ensemble members, the correlation coefficient
-and the rms error normalized by the mean are shown for both the</div>
-</div>
-<div class="line-block">
-<div class="line">AMOC (Mn) and the pycnocline depth (D). Recall that member 1</div>
-<div class="line">is used to fit the data- it is excluded from the following:</div>
-</div>
-<div class="line-block">
-<div class="line">The mean correlation coefficient is 0.9 for Mn and 0.8 for D.</div>
-<div class="line">On average, the rms error is 12% of the mean Mn and 1% of the</div>
-<div class="line">mean D.</div>
-</div>
-</div></blockquote>
+</li>
+</ul>
+<a class="reference internal image-reference" href="_images/image522.png"><img alt="_images/image522.png" src="_images/image522.png" style="width: 5.80278in; height: 2.72917in;" /></a>
+<p><strong>Task 2.5: Phase 1 Data Final Delivery – CESM2</strong></p>
+<p>Fitting CESM2 Large Ensemble to the Gnanadesikan 4-box model</p>
+<a class="reference internal image-reference" href="_images/image209.png"><img alt="_images/image209.png" src="_images/image209.png" style="width: 6.80278in; height: 4.72917in;" /></a>
+<p><strong>Goodness of fit</strong></p>
+<p>For each of the 11 ensemble members, the correlation coefficient and the rms error normalized by the mean are shown for both the AMOC (Mn) and the pycnocline depth (D). Recall that member 1 is used to fit the data- it is excluded from the following:</p>
+<p>The mean correlation coefficient is 0.9 for Mn and 0.8 for D.</p>
+<p>On average, the rms error is 12% of the mean Mn and 1% of the mean D.</p>
 <a class="reference internal image-reference" href="_images/image951.png"><img alt="_images/image951.png" src="_images/image951.png" style="width: 4.04583in; height: 3.06944in;" /></a>
-<p>Time series shown again</p>
 </section>
 <section id="task-3-6-ai-physics-informed-surrogate-model-phase-1-final-report">
-<h2>7   Task 3.6: AI Physics-Informed Surrogate Model Phase 1 Final Report<a class="headerlink" href="#task-3-6-ai-physics-informed-surrogate-model-phase-1-final-report" title="Permalink to this heading"></a></h2>
+<h2>6   Task 3.6: AI Physics-Informed Surrogate Model Phase 1 Final Report<a class="headerlink" href="#task-3-6-ai-physics-informed-surrogate-model-phase-1-final-report" title="Permalink to this heading"></a></h2>
 <blockquote>
-<div><p><em>Subtask Description: We will provide a final report of the surrogate
-models performance with a comparison to conventional models using metrics defined in Milestone 3.</em></p>
-<p>In this report we review the findings of the bifurcation analysis and
-provide a comparative estimate of the time required to compute the
-Escape Time Distribution with the Full Model and the Learned
-Parameter Dependent effective Stochastic Differential Equation target
-tipping point surrogate model.</p>
-<p>Task 3.6: AI Physics-Informed Surrogate Model Phase 1 Final Report –
-Bifurcation Analysis</p>
+<div><p><em>Subtask Description: We will provide a final report of the surrogate models performance with a comparison to conventional models using metrics defined in Milestone 3.</em></p>
 </div></blockquote>
+<p>In this report we review the findings of the bifurcation analysis and provide a comparative estimate of the time required to compute the Escape Time Distribution with the Full Model and the Learned Parameter Dependent effective Stochastic Differential Equation target tipping point surrogate model.</p>
+<p><strong>Task 3.6: AI Physics-Informed Surrogate Model Phase 1 Final Report – Bifurcation Analysis</strong></p>
 <a class="reference internal image-reference" href="_images/image981.png"><img alt="_images/image981.png" src="_images/image981.png" style="width: 5.62in; height: 3.59in;" /></a>
-<p>We consider a dynamical box model with four boxes:
-• The southern high latitudes (0.308S)
-• The northern high latitudes (0.458N)
-• Mid-to-low latitudes
-• A deep box that lies beneath all of the surface boxes</p>
-<p>State variables:
-• 𝐷: Low latitude pycnocline depth
-• T_S,T_n,T_l, T_d: Temperatures of the four boxes
-• S_S,S_n,S_l, S_d: Salinities of the four boxes •
-• Single-headed bold arrows denote net fluxes of water
-• Double-headed arrows denote mixing fluxes</p>
+<dl class="simple">
+<dt>We consider a dynamical box model with four boxes:</dt><dd><ul class="simple">
+<li><p>The southern high latitudes (0.308S)</p></li>
+<li><p>The northern high latitudes (0.458N)</p></li>
+<li><p>Mid-to-low latitudes</p></li>
+<li><p>A deep box that lies beneath all of the surface boxes</p></li>
+</ul>
+</dd>
+</dl>
+<p>State variables:</p>
 <blockquote>
-<div><p>Task 3.6: AI Physics-Informed Surrogate Model Phase 1 Final Report –
-Bifurcation
-Analysis</p>
+<div><ul class="simple">
+<li><p>𝐷: Low latitude pycnocline depth</p></li>
+<li><p>T_S,T_n,T_l, T_d: Temperatures of the four boxes</p></li>
+<li><p>S_S,S_n,S_l, S_d: Salinities of the four boxes •</p></li>
+<li><p>Single-headed bold arrows denote net fluxes of water</p></li>
+<li><p>Double-headed arrows denote mixing fluxes</p></li>
+</ul>
 </div></blockquote>
 <p><a href="#id8"><span class="problematic" id="id9">|image211|</span></a>
 These are the equations that we start with (nine differential equations)</p>
-<blockquote>
-<div><p>Task 3.6: AI Physics-Informed Surrogate Model Phase 1 Final Report –
-Bifurcation Analysis</p>
-</div></blockquote>
 <p><a href="#id10"><span class="problematic" id="id11">|image212|</span></a></p>
-<p>IMPORTANTLY, we explicitly used the fact that there exists an algebraic
-constraint (a salt balance) that reduces the equations by one and
-removes a neutral direction. This helps the conditioning of the Jacobian</p>
-<blockquote>
-<div><p>Task 3.6: AI Physics-Informed Surrogate Model Phase 1 Final Report –
-Bifurcation Analysis</p>
-</div></blockquote>
+<p>IMPORTANTLY, we explicitly used the fact that there exists an algebraic constraint (a salt balance) that reduces the equations by one and removes a neutral direction. This helps the conditioning of the Jacobian</p>
 <p><a href="#id12"><span class="problematic" id="id13">|image213|</span></a></p>
 <p>To make computations more accurate numerically, we non-dimensionalized the equations in ways <em>meaningful to the domain scientist</em> (Anand G.) to reduce the number of free parameters</p>
-<blockquote>
-<div><p>With the non-dimensionalized equations, the problem possesses not
-one, but two tipping points (from the “upper” branch to the lower,
-but also from the lower to the upper) as shown in figures below.</p>
-</div></blockquote>
-<dl class="simple">
-<dt>..image:: _static/media8/image134.png</dt><dd><dl class="field-list simple">
-<dt class="field-odd">width</dt>
-<dd class="field-odd"><p>5.018in</p>
-</dd>
-<dt class="field-even">height</dt>
-<dd class="field-even"><p>3.763in</p>
-</dd>
-</dl>
-</dd>
-</dl>
+<p>With the non-dimensionalized equations, the problem possesses not one, but two tipping points (from the “upper” branch to the lower, but also from the lower to the upper) as shown in figures below.</p>
+<a class="reference internal image-reference" href="_images/image1341.png"><img alt="_images/image1341.png" src="_images/image1341.png" style="width: 5.04583in; height: 3.06944in;" /></a>
 <p>Diagram of NH Overturning Mn</p>
-<dl class="simple">
-<dt>..image:: _static/media8/image135.png</dt><dd><dl class="field-list simple">
-<dt class="field-odd">width</dt>
-<dd class="field-odd"><p>5.018in</p>
-</dd>
-<dt class="field-even">height</dt>
-<dd class="field-even"><p>3.763in</p>
-</dd>
-</dl>
-</dd>
-</dl>
+<a class="reference internal image-reference" href="_images/image135.png"><img alt="_images/image135.png" src="_images/image135.png" style="width: 5.04583in; height: 3.06944in;" /></a>
 <p>Zoomed-In View of the subcritical Hopf Bifurcation Point</p>
-<blockquote>
-<div><p>Task 3.6: AI Physics-Informed Surrogate Model Phase 1 Final Report –
-Bifurcation Analysis</p>
-</div></blockquote>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 100%" />
@@ -705,227 +382,88 @@ TrFWn=0.0384 is subcritical.</p>
 </tr>
 </tbody>
 </table>
+<p>Diagram of Low Latitude Depth D* (left) and Zoomed-In View of the Hopf Bifurcation Point (right).</p>
+<p>The Hysteretic behavior found in [Gnanadesikan, Kelson, Sten 2018], can be described as:</p>
 <blockquote>
-<div><p>Diagram of Low Latitude Depth D* (left) and Zoomed-In View of the
-Hopf Bifurcation Point (right).</p>
+<div><ul class="simple">
+<li><p>The ‘switching’ between ‘off’ and ‘on’ state is given by a subcritical Hopf bifurcation: H for 𝑇𝑟&#64; = 0.03529</p></li>
+<li><p>And a saddle-node bifurcation: LP for 𝑇𝑟&#64; = 0.01798 TU</p></li>
+</ul>
 </div></blockquote>
-<blockquote>
-<div><div class="line-block">
-<div class="line">The Hysteretic behavior found in</div>
-<div class="line">[Gnanadesikan, Kelson, Sten 2018],</div>
-<div class="line">can be described as:</div>
-</div>
-</div></blockquote>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><ul class="simple">
-<li></li>
-<li></li>
-</ul>
-</th>
-<th class="head"><p>The ‘switching’ between ‘off’
-and ‘on’ state is given by a
-subcritical Hopf bifurcation:
-H for 𝑇𝑟TU &#64; = 0.03529</p>
-<p>And a saddle-node bifurcation:
-LP for 𝑇𝑟TU &#64; = 0.01798</p>
-</th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<div><p>Task 3.6: AI Physics-Informed Surrogate Model Phase 1 Final Report –
-Bifurcation Analysis</p>
+<p><img alt="image138" src="_images/image1551.png" /></p>
 <ul class="simple">
-<li><p>The value where the limit cycle branch appears to become vertical</p></li>
+<li><p>The value where the limit cycle branch appears to become vertical (an infinite period, homoclinic orbit) is 0.0375</p></li>
+<li><p>The subcritical Hopf gives birth to an unstable limit cycle “backwards” in parameter space (that surrounds the exiting stable steady state)</p></li>
+<li><p>This steady state loses stability at the Hopf bifurcation (red branch in figures)</p></li>
+<li><p>The escape (the “tipping”) arises when a stochastic trajectory wandering around the stable state manages to “cross” the unstable limit cycle and escape to either large oscillations or to a completely different lower circulation branch</p></li>
 </ul>
-<p>(an infinite period, homoclinic orbit) is 0.0375</p>
-<ul class="simple">
-<li><p>The subcritical Hopf gives birth to an unstable limit cycle</p></li>
-</ul>
-<p>“backwards” in parameter space (that surrounds the exiting stable
-steady state)</p>
-<ul class="simple">
-<li><p>This steady state loses stability at the Hopf bifurcation (red</p></li>
-</ul>
-<p>branch in figures)</p>
-<ul class="simple">
-<li><p>The escape (the “tipping”) arises when a stochastic trajectory</p></li>
-</ul>
-<p>wandering around the stable state manages to “cross” the unstable
-limit cycle and escape to either large oscillations or to a
-completely different lower circulation branch</p>
-</div></blockquote>
-<blockquote>
-<div><blockquote>
-<div><p>Where the initial condition with D=1 (where D is the low latitude
-pycnocline depth) is attracted by the upper branch because there is
-an early switch activation, so the sharp transition that we see is
-given by the upper limit point (LP). While for D=4 we observe the
-sharp transition close to the subcritical Hopf (the solution loses
-stability at the exact Hopf point because the initial condition may start outside the unstable limit cycle).</p>
+<p>Where the initial condition with D=1 (where D is the low latitude pycnocline depth) is attracted by the upper branch because there is an early switch activation, so the sharp transition that we see is given by the upper limit point (LP). While for D=4 we observe the sharp transition close to the subcritical Hopf (the solution loses stability at the exact Hopf point because the initial condition may start outside the unstable limit cycle).</p>
 <blockquote>
 <div><p><a class="reference internal" href="_images/image140.png"><img alt="image126" src="_images/image140.png" style="width: 5.08056in; height: 3.80972in;" /></a> <a class="reference internal" href="_images/image1411.png"><img alt="image127" src="_images/image1411.png" style="width: 5.08055in; height: 3.80972in;" /></a></p>
 </div></blockquote>
-<p>Temporal Bifurcation Diagram for Depth (left) and the Limit Cycle
-Continuation (right)</p>
-</div></blockquote>
-<p>Task 3.6: AI Physics-Informed Surrogate Model Phase 1 Final Report – Stochastic Model</p>
-</div></blockquote>
+<p>Temporal Bifurcation Diagram for Depth (top) and the Limit Cycle Continuation (bottom)</p>
+<p><strong>Task 3.6: AI Physics-Informed Surrogate Model Phase 1 Final Report – Stochastic Model</strong></p>
 <ul class="simple">
-<li><p>Sitting close to the subcritical Hopf tipping point, on its “safe side” we performed our first stochastic simulations (with fluctuating freshwater flux coefficient, again, designed</p></li>
+<li><p>Sitting close to the subcritical Hopf tipping point, on its “safe side” we performed our first stochastic simulations (with fluctuating freshwater flux coefficient, again, designed in collaboration with the domain expert, Anand G.)</p></li>
+<li><p>Notice on the left simulations, the variable oscillates over time near 4.7 before it eventually “tips”</p></li>
+<li><p>Also notice on the right some initial statistics of escape times for a fixed parameter value</p></li>
 </ul>
-<p>in collaboration with the domain
-expert, Anand G.)
-• Notice on the left simulations, the
-variable oscillates over time near 4.7 before it eventually “tips”
-• Also notice on the right some initial statistics of escape times for a fixed parameter value</p>
-<p><a href="#id14"><span class="problematic" id="id15">|image215|</span></a>
-..</p>
-<blockquote>
-<div><p>Task 3.6: AI Physics-Informed Surrogate Model Phase 1 Final Report –
-SDE Model</p>
-<p>The Stochastic Differential Equation (SDE) model was trained by using
-sampled data of the Full Network’s Dynamics. Those data were used to
-train a parameter dependent SDE network (for two values of the
-parameter p).</p>
-<p>For the neural network’s training we used snapshots of the Full Model
-every five iterations of the full model assuming a time step h=0.01.</p>
-<p>To estimate the computational time needed per approach, we first
-obtain an evaluation of the time needed for a function evaluation of
-the Full Model and of the estimated SDE (eSDE) model:</p>
-</div></blockquote>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 51%" />
-<col style="width: 49%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td colspan="2"><p><strong>Function Evaluation Time (seconds)</strong></p></td>
-</tr>
-<tr class="row-even"><td><p>Full Model</p></td>
-<td><p>eSDE Model</p></td>
-</tr>
-<tr class="row-odd"><td><p>0.0529</p></td>
-<td><p>0.00188</p></td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<div><p>To obtain an estimate of the number of trajectories needed for each
-model to compute the escape time distribution, a bootstrapping method
-was used for each model.</p>
-<p>For both models, the number of samples needed was estimated to be
-N=2000.</p>
-<p>Given this information, we then estimate the number of iterations
-(evaluations) needed for each model, on average, to escape.</p>
+<p><a href="#id14"><span class="problematic" id="id15">|image215|</span></a></p>
+<p>The Stochastic Differential Equation (SDE) model was trained by using sampled data of the Full Network’s Dynamics. Those data were used to train a parameter dependent SDE network (for two values of the parameter p).</p>
+<p>For the neural network’s training we used snapshots of the Full Model every five iterations of the full model assuming a time step h=0.01.</p>
+<p>To estimate the computational time needed per approach, we first obtain an evaluation of the time needed for a function evaluation of the Full Model and of the estimated SDE (eSDE) model:
++————————————+———————————-+
+|              <strong>Function Evaluation Time (seconds)</strong>                   |
++————————————+———————————-+
+|            Full Model              |            eSDE Model            |
++————————————+———————————-+
+|             0.0529                 |            0.00188               |
++————————————+———————————-+</p>
+<p>To obtain an estimate of the number of trajectories needed for each model to compute the escape time distribution, a bootstrapping method was used for each model.</p>
+<p>For both models, the number of samples needed was estimated to be N=2000.</p>
+<p>Given this information, we then estimate the number of iterations (evaluations) needed for each model, on average, to escape.</p>
 <p>For the Full Model, this number was estimated as 281.</p>
-<p>For the Reduced Model, since the escape time was estimated as 0.289
-(for a time step of the Euler Maryama simulation equal to the one
-assumed when training of the model (h=0.01)), we estimate that the
-number of iterations is 28.9 ~29.</p>
-<p>By considering the Function Evaluation time for each model, the
-number of samples needed to obtain an accurate estimate of the escape
-times, but also the number of iterations per model, we obtain an
-estimate of the computational time required to compute the exit time
-distribution per model.</p>
-</div></blockquote>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><table class="docutils align-default">
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p><strong>Escape Time Computational
-Effort (hours)</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td></td>
-</tr>
-</tbody>
-</table>
-</th>
-<th class="head"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><table class="docutils align-default">
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p><strong>Full Model</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td></td>
-</tr>
-</tbody>
-</table>
-</td>
-<td><p><strong>eSDE Model</strong></p></td>
-</tr>
-<tr class="row-odd"><td><table class="docutils align-default">
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>8.26</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td></td>
-</tr>
-</tbody>
-</table>
-</td>
-<td><p>0.00301</p></td>
-</tr>
-</tbody>
-</table>
+<p>For the Reduced Model, since the escape time was estimated as 0.289 (for a time step of the Euler Maryama simulation equal to the one assumed when training of the model (h=0.01)), we estimate that the number of iterations is 28.9 ~29.</p>
+<p>By considering the Function Evaluation time for each model, the number of samples needed to obtain an accurate estimate of the escape times, but also the number of iterations per model, we obtain an estimate of the computational time required to compute the exit time distribution per model.
++———————————–+———————————–+
+| | <strong>Escape Time Computational  |  |                                   |
+| | Effort (hours)</strong>             |  |                                   |
++===================================+===================================+
+| +——————————+  | <strong>eSDE Model</strong>                    |
+| | <strong>Full Model</strong>               |  |                                   |
+| +——————————+  |                                   |
++———————————–+———————————–+
+| +——————————+  | 0.00301                           |
+| | 8.26                         |  |                                   |
+| +——————————+  |                                   |
++———————————–+———————————–+</p>
 <blockquote>
 <div><p>The computational efforts were estimated for the Full Model as
 follows:</p>
 </div></blockquote>
-<p>The computational efforts were estimated for the Full Model as follows:
-• Escape Time Computational Effort =Average Number of Iterations Full Model * Number of Samples Needed <em>Function Evaluation Time
-The computations efforts for the SDE Model were obtained as follows:
-• Escape Time Computational Effort = (Mean Exit Time obtained)/h</em> Number of Samples Needed*Function Evaluation Time</p>
-<blockquote>
-<div><p>Please notice that the function evaluation difference between the
-Full Model is ~28 times larger than the SDE model. However, the ratio
-of the computational time suggests that the Full Model need is ~273
-times more than the SDE model. This can be attributed to the
-following two reasons:</p>
-</div></blockquote>
+<dl class="simple">
+<dt>The computational efforts were estimated for the Full Model as follows:</dt><dd><ul class="simple">
+<li><p>Escape Time Computational Effort =Average Number of Iterations Full Model * Number of Samples Needed <a href="#id6"><span class="problematic" id="id7">*</span></a>Function Evaluation Time</p></li>
+</ul>
+</dd>
+<dt>The computations efforts for the SDE Model were obtained as follows:</dt><dd><ul class="simple">
+<li><p>Escape Time Computational Effort = (Mean Exit Time obtained)/h* Number of Samples Needed*Function Evaluation Time</p></li>
+</ul>
+</dd>
+</dl>
+<p>Please notice that the function evaluation difference between the Full Model is ~28 times larger than the SDE model. However, the ratio of the computational time suggests that the Full Model need is ~273 times more than the SDE model. This can be attributed to the following two reasons:</p>
 <ol class="arabic simple">
 <li><p>We trained the SDE model by using every 5 iterations of the full model so each step of the reduced model corresponds to 5 steps of the Full Model</p></li>
+<li><p>The escape time estimated of the full model is ~2 times larger than the SDE model</p></li>
 </ol>
-<p>2. The escape time estimated of the full model is ~2 times larger than the SDE model
-Those two reasons make the computation of the exit time of the SDE model even smaller than the factor of 28.</p>
-<p>Additional Computational Cost needed for these computations involve:
-1. Sampling the data
-2. Training the SDE Model
-In terms of (1) we sampled a total number of 104,000 data points to train the SDE (even though not all were used). By considering the function evaluation time of the Full Model, the time needed to sample the data was ~1.5 hours. Note that the real time might be larger since computing and storing in RAM those trajectories might increase the time required just for simulation.</p>
-<blockquote>
-<div><p>The training of the SDE model (training for 1,000 epochs) needs about
-0.23 hours. The table below reports the total computational time needed for the SDE model.</p>
-</div></blockquote>
+<p>Those two reasons make the computation of the exit time of the SDE model even smaller than the factor of 28.</p>
+<p>Additional Computational Cost needed for these computations involve:</p>
+<ol class="arabic simple">
+<li><p>Sampling the data</p></li>
+<li><p>Training the SDE Model</p></li>
+</ol>
+<p>In terms of (1) we sampled a total number of 104,000 data points to train the SDE (even though not all were used). By considering the function evaluation time of the Full Model, the time needed to sample the data was ~1.5 hours. Note that the real time might be larger since computing and storing in RAM those trajectories might increase the time required just for simulation.</p>
+<p>The training of the SDE model (training for 1,000 epochs) needs about 0.23 hours. The table below reports the total computational time needed for the SDE model.</p>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 50%" />
@@ -936,12 +474,8 @@ In terms of (1) we sampled a total number of 104,000 data points to train the SD
 <colgroup>
 <col style="width: 100%" />
 </colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p><strong>Task</strong></p></th>
-</tr>
-</thead>
 <tbody>
-<tr class="row-even"><td></td>
+<tr class="row-odd"><td><p><strong>Task</strong></p></td>
 </tr>
 </tbody>
 </table>
@@ -965,12 +499,8 @@ In terms of (1) we sampled a total number of 104,000 data points to train the SD
 <colgroup>
 <col style="width: 100%" />
 </colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Sampling Data</p></th>
-</tr>
-</thead>
 <tbody>
-<tr class="row-even"><td></td>
+<tr class="row-odd"><td><p>Sampling Data</p></td>
 </tr>
 </tbody>
 </table>
@@ -983,12 +513,8 @@ In terms of (1) we sampled a total number of 104,000 data points to train the SD
 <colgroup>
 <col style="width: 100%" />
 </colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Training SDE Model</p></th>
-</tr>
-</thead>
 <tbody>
-<tr class="row-even"><td></td>
+<tr class="row-odd"><td><p>Training SDE Model</p></td>
 </tr>
 </tbody>
 </table>
@@ -999,13 +525,9 @@ In terms of (1) we sampled a total number of 104,000 data points to train the SD
 <colgroup>
 <col style="width: 100%" />
 </colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Escape Time Computations
-SDE Model</p></th>
-</tr>
-</thead>
 <tbody>
-<tr class="row-even"><td></td>
+<tr class="row-odd"><td><p>Escape Time Computations
+SDE Model</p></td>
 </tr>
 </tbody>
 </table>
@@ -1016,12 +538,8 @@ SDE Model</p></th>
 <colgroup>
 <col style="width: 100%" />
 </colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Total</p></th>
-</tr>
-</thead>
 <tbody>
-<tr class="row-even"><td></td>
+<tr class="row-odd"><td><p>Total</p></td>
 </tr>
 </tbody>
 </table>
@@ -1030,20 +548,13 @@ SDE Model</p></th>
 </tr>
 </tbody>
 </table>
-<p>8    Task 4.6 AI Simulation Phase 1 Final Report
-..</p>
-<blockquote>
-<div><p><em>Subtask Description: We will provide a final report of the
-performance of the simulation, causal model, and neuro-symbolic
-translation, including a comparison with conventional models using
-metrics defined in Milestone 3.</em></p>
-<p>In this final report we share the measured results for TIP-GAN, the
-neuro-symbolic translation methods, and early results from the causal
-model. Each area of experimentation was measured in terms of the
-metrics described previously and new metrics as required.</p>
-<p>Task 4.6: AI Simulation Phase 1 Final Report - TIP-GAN</p>
-</div></blockquote>
-<p>Compelling early classification precision, recall, F1 scores of model configurations that lead to AMOC collapse in 4-box model</p>
+</section>
+<section id="task-4-6-ai-simulation-phase-1-final-report">
+<h2>8    Task 4.6 AI Simulation Phase 1 Final Report<a class="headerlink" href="#task-4-6-ai-simulation-phase-1-final-report" title="Permalink to this heading"></a></h2>
+<p><em>Subtask Description: We will provide a final report of the performance of the simulation, causal model, and neuro-symbolic translation, including a comparison with conventional models using metrics defined in Milestone 3.</em></p>
+<p>In this final report we share the measured results for TIP-GAN, the neuro-symbolic translation methods, and early results from the causal model. Each area of experimentation was measured in terms of the metrics described previously and new metrics as required.</p>
+<p><strong>Task 4.6: AI Simulation Phase 1 Final Report - TIP-GAN</strong>
+Compelling early classification precision, recall, F1 scores of model configurations that lead to AMOC collapse in 4-box model</p>
 <dl class="simple">
 <dt>..image:: _static/media8/image143.png</dt><dd><dl class="field-list simple">
 <dt class="field-odd">width</dt>
@@ -1073,8 +584,8 @@ metrics described previously and new metrics as required.</p>
 </dl>
 </dd>
 </dl>
-<p>Recreated Collapses Using Python Generated Tools for Machine Learning Dataset Creation from the 4-Box Model
-Learning Dataset Creation from the 4-Box Model</p>
+<p>Recreated Collapses Using Python Generated Tools for Machine Learning Dataset Creation from the 4-Box Model</p>
+<p>Learning Dataset Creation from the 4-Box Model</p>
 <p>Showed that the GAN could be used to exploit the area of uncertainty connsistent with what was desvribed i the 2018 4-Box Model paper.</p>
 <p>Training samples: 10,774
 Test samples: 2,694
@@ -1108,61 +619,30 @@ GAN (N=3): 98.7%</p>
 <li><p>Additional label (e.g. AMOC recoveries)</p></li>
 <li><p>Larger/stochastic surrogate models (e.g. 6-box model, stochastic 4-box model, AI surrogate model)</p></li>
 </ul>
-<p>Learning to Translate Questions into Programs and Programs into
-Questions</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><ul class="simple">
-<li><p>Specific to image object understanding</p></li>
-</ul>
-<div class="line-block">
-<div class="line">• We adapt this dataset and use only the</div>
-<div class="line">evaluation</div>
-</div>
-<p>question and program portions of the data <a class="reference internal" href="_images/image168.png"><img alt="image149" src="_images/image168.png" style="width: 6.275in; height: 4.67639in;" /></a></p>
-<div class="line-block">
-<div class="line">Using the CLEVR dataset to validate</div>
-<div class="line">architectures:</div>
-<div class="line">(<a class="reference external" href="https://cs.stanford.edu/people/jcjohns/clevr/">https://cs.stanford.edu/people/jcjohns/clevr/</a>)</div>
-</div>
-<ul class="simple">
-<li><p>Common dataset for neuro-symbolic method</p></li>
-</ul>
-</th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td></td>
-</tr>
-</tbody>
-</table>
+<a class="reference internal image-reference" href="_images/image1661.png"><img alt="_images/image1661.png" src="_images/image1661.png" style="width: 3.37778in; height: 3.76667in;" /></a>
+<p><strong>Task 4.6: AI Simulation Phase 1 Final Report – Neuro-Symbolic</strong></p>
 <blockquote>
-<div><p>Task 4.6: AI Simulation Phase 1 Final Report - Neuro-Symbolic</p>
-<div class="line-block">
-<div class="line">• Used 59,307 training samples and 12,698 test samples</div>
-<div class="line">• Trained network with shared word embeddings</div>
-<div class="line">• Evaluated using test samples</div>
-<div class="line">• Test samples contained both natural language questions and
-equivalent programs</div>
-<div class="line">• ~75% accuracy overall translating from questions to questions,
-questions to programs, and programs to questions</div>
-</div>
-<div class="line-block">
-<div class="line"><strong>Example Output:</strong></div>
-<div class="line"><strong>Predicted text:</strong> BOS how many small cyan things are there ? EOS</div>
-<div class="line"><strong>Ground Truth Text:</strong> BOS how many small cyan things are there ?
-EOS</div>
-<div class="line"><strong>Predicted program:</strong> BOS count ( filter_color ( filter_size (
-scene , small ) , cyan ) ) EOS <strong>Ground Truth program:</strong> BOS count
-( filter_color ( filter_size ( scene , small ) , cyan ) ) EOS
-<strong>Predicted text from program:</strong> BOS how many of cyan things are
-are ? ? EOS</div>
-</div>
-<p>Task 4.6: AI Simulation Phase 1 Final Report - Neuro-Symbolic</p>
+<div><a class="reference internal image-reference" href="_images/image1671.png"><img alt="_images/image1671.png" src="_images/image1671.png" style="width: 8.76111in; height: 4.94722in;" /></a>
 </div></blockquote>
+<p>Learning to Translate Questions into Programs and Programs into Questions</p>
+<p>Using the CLEVR dataset to validate architectures: (<a class="reference external" href="https://cs.stanford.edu/people/jcjohns/clevr/">https://cs.stanford.edu/people/jcjohns/clevr/</a>)</p>
+<ul class="simple">
+<li><p>Common dataset for neuro-symbolic method evaluation</p></li>
+<li><p>Specific to image object understanding</p></li>
+<li><p>We adapt this dataset and use only the question and program portions of the data</p></li>
+</ul>
+<p>Task 4.6: AI Simulation Phase 1 Final Report - Neuro-Symbolic</p>
+<ul class="simple">
+<li><p>Used 59,307 training samples and 12,698 test samples</p></li>
+<li><p>Trained network with shared word embeddings</p></li>
+<li><p>Evaluated using test samples</p></li>
+<li><p>Test samples contained both natural language questions and equivalent programs</p></li>
+<li><p>~75% accuracy overall translating from questions to questions, questions to programs, and programs to questions</p></li>
+</ul>
+<p><strong>*Example Output:*</strong></p>
+<p><strong>Predicted text:</strong> BOS how many small cyan things are there ? EOS</p>
+<p><strong>Ground Truth Text:</strong> BOS how many small cyan things are there ? EOS</p>
+<p><strong>Predicted program:</strong> BOS count ( filter_color ( filter_size ( scene , small ) , cyan ) ) EOS Ground Truth program: BOS count ( filter_color ( filter_size ( scene , small ) , cyan ) ) EOS Predicted text from program: BOS how many of cyan things are are ? ? EOS</p>
 <ul>
 <li><p>Validated using the CLEVR dataset</p></li>
 <li><p>Translates GAN output into NL Questions</p></li>
@@ -1182,54 +662,51 @@ are ? ? EOS</div>
 </div></blockquote>
 <p>Using CLEVR Dataset</p>
 <blockquote>
-<div><p>Task 4.6: AI Simulation Phase 1 Final Report - Neuro-Symbolic</p>
-<a class="reference internal image-reference" href="_images/image1721.png"><img alt="_images/image1721.png" src="_images/image1721.png" style="width: 5.76111in; height: 3.94722in;" /></a>
+<div><a class="reference internal image-reference" href="_images/image1721.png"><img alt="_images/image1721.png" src="_images/image1721.png" style="width: 5.76111in; height: 3.94722in;" /></a>
 </div></blockquote>
-<ul class="simple">
+<ul>
 <li><dl class="simple">
-<dt>Adding additional questions to the training dataset</dt><dd><ul>
+<dt>Adding additional questions to the training dataset</dt><dd><ul class="simple">
 <li><p>~250,000 generated questions</p></li>
 </ul>
 </dd>
 </dl>
 </li>
-<li><p>Transfer from model trained purely on</p></li>
-</ul>
-<p>CLEVR data
-• 40 token question max
-• Preliminary results</p>
+<li><p>Transfer from model trained purely on CLEVR data</p></li>
+<li><p>40 token question max</p></li>
+<li><p>Preliminary results</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>Overall Test Set accuracy: 83%</p></li>
 <li><p>Test size: 25,000 question/program pairs</p></li>
 </ul>
 </div></blockquote>
-<p>New (examples of) AMOC-Specific Questions:
-• If I increase ekman flux by some value will overturning increase
-• If I increase low lat thermocline depth by some value will overturning increase
-• If I decrease freshwater flux by some value will overturning decrease
-• If I set ekman flux to some value, freshwater flux to some value and the thermocline depth of lower latitudes to some value will
-overturning increase..</p>
-<blockquote>
-<div><div class="line-block">
-<div class="line">Task 4.6: AI Simulation Phase 1 Final Report – Causal Modeling</div>
-</div>
-</div></blockquote>
+</li>
+</ul>
+<p>New (examples of) AMOC-Specific Questions:</p>
 <ul class="simple">
+<li><p>If I increase ekman flux by some value will overturning increase</p></li>
+<li><p>If I increase low lat thermocline depth by some value will overturning increase</p></li>
+<li><p>If I decrease freshwater flux by some value will overturning decrease</p></li>
+<li><p>If I set ekman flux to some value, freshwater flux to some value and the thermocline depth of lower latitudes to some value will overturning increase..</p></li>
+</ul>
+<p><strong>Task 4.6: AI Simulation Phase 1 Final Report – Causal Modeling</strong></p>
+<ul>
 <li><p>Causal path learning algorithmic development underway</p></li>
 <li><p>For each epoch, each generator will have a set of batch models it perturbed</p></li>
 <li><p>Causal model is built from batches perturbed over the total epoch for each generator</p></li>
-<li><dl class="simple">
-<dt>We focus on the 3-parameter experiments involving:</dt><dd><ul>
+<li><p>We focus on the 3-parameter experiments involving:</p>
+<blockquote>
+<div><ul class="simple">
 <li><p>Dlow0 - Thermocline depth of lower latitudes</p></li>
 <li><p>Mek - Ekman flux from the southern ocean</p></li>
 <li><p>Fwn - Fresh water flux (North)</p></li>
 </ul>
-</dd>
-</dl>
+</div></blockquote>
 </li>
-<li><dl class="simple">
-<dt>And on the relationship between freshwater, salinity, temperature with respect to overturning:</dt><dd><ul>
+<li><p>And on the relationship between freshwater, salinity, temperature with respect to overturning:</p>
+<blockquote>
+<div><ul class="simple">
 <li><p>T_south – Temperatures of the southern box</p></li>
 <li><p>T_north – Temperatures of the northern box</p></li>
 <li><p>S_south – Salinity of the southern box</p></li>
@@ -1237,210 +714,58 @@ overturning increase..</p>
 <li><p>D_low0 – Thermocline depth of lower latitudes</p></li>
 <li><p>M_n – Overturning Transport</p></li>
 </ul>
-</dd>
-</dl>
+</div></blockquote>
 </li>
 </ul>
 </section>
 <section id="task-5-2-evaluation-final-report">
-<h2>8   Task 5.2: Evaluation Final Report<a class="headerlink" href="#task-5-2-evaluation-final-report" title="Permalink to this heading"></a></h2>
-<blockquote>
-<div><div class="line-block">
-<div class="line"><em>Subtask Description: We report on the results of a benchmark
-comparison between the AI approach and the conventional approach, comparing their performance.</em></div>
-</div>
-<p>We summarize the results of the benchmark comparison between the AI
-approach and the conventional approach.</p>
-<div class="line-block">
-<div class="line">• In the surrogate modeling bifurcation efforts, a Hopf bifurcation
-was detected for the 4-box model (in addition to previously known
-fold bifurcations)</div>
-<div class="line">• In the TIP-GAN experiments, when benchmarking with the 4-box
-model, we showed that the TIP-GAN generators when focused on the
-area of uncertainty in terms of discriminator predictions was
-consistent with the area of the separatrix</div>
-<div class="line">• In the neuro-symbolic
-translations we benchmarked the network’s performance in terms of a
-common benchmark – the CLEVR dataset and performance was
-exceptional (close to 100%) for text-to-text translations and
-text-to-program translations using Levenshtein distance. Program to
-text was over 60% in terms of performance</div>
-</div>
-</div></blockquote>
-<p><a class="reference internal" href="_images/image1741.png"><img alt="image151" src="_images/image1741.png" style="width: 1.96805in; height: 1.96805in;" /></a><a class="reference internal" href="_images/image135.png"><img alt="image152" src="_images/image135.png" style="width: 3.375in; height: 2.56645in;" /></a><a class="reference internal" href="_images/image1751.png"><img alt="image153" src="_images/image1751.png" style="width: 3.99444in; height: 3.05202in;" /></a><a class="reference internal" href="_images/image176.png"><img alt="image154" src="_images/image176.png" style="width: 7.55556in; height: 5.08333in;" /></a><a class="reference internal" href="_images/image155.png"><img alt="image155" src="_images/image155.png" style="width: 4.94028in; height: 2.49514in;" /></a><a class="reference internal" href="_images/image177.png"><img alt="image156" src="_images/image177.png" style="width: 0.29167in;" /></a><a class="reference internal" href="_images/image178.png"><img alt="image157" src="_images/image178.png" style="width: 0.58333in;" /></a><img alt="image158" src="_images/image179.png" /><a class="reference internal" href="_images/image180.png"><img alt="image159" src="_images/image180.png" style="width: 0.25in;" /></a><img alt="image160" src="_images/image1811.png" /><img alt="image161" src="_images/image1821.png" /><img alt="image162" src="_images/image1831.png" /><img alt="image163" src="_images/image1841.png" /><img alt="image164" src="_images/image1851.png" /><img alt="image165" src="_images/image1861.png" /><img alt="image166" src="_images/image187.png" /><img alt="image167" src="_images/image188.png" /><img alt="image168" src="_images/image189.png" /><a class="reference internal" href="_images/image190.png"><img alt="image169" src="_images/image190.png" style="width: 0.29167in;" /></a><img alt="image170" src="_images/image1911.png" /><a class="reference internal" href="_images/image1921.png"><img alt="image171" src="_images/image1921.png" style="width: 0.29167in;" /></a><a class="reference internal" href="_images/image1931.png"><img alt="image172" src="_images/image1931.png" style="width: 0.16667in;" /></a><a class="reference internal" href="_images/image1941.png"><img alt="image173" src="_images/image1941.png" style="width: 0.34722in;" /></a><img alt="image174" src="_images/image195.png" /><a class="reference internal" href="_images/image196.png"><img alt="image175" src="_images/image196.png" style="width: 0.29167in;" /></a><a class="reference internal" href="_images/image197.png"><img alt="image176" src="_images/image197.png" style="width: 0.29167in;" /></a><a class="reference internal" href="_images/image198.png"><img alt="image177" src="_images/image198.png" style="width: 0.41667in;" /></a><a class="reference internal" href="_images/image199.png"><img alt="image178" src="_images/image199.png" style="width: 0.19444in;" /></a><img alt="image179" src="_images/image200.png" /><a class="reference internal" href="_images/image2011.png"><img alt="image180" src="_images/image2011.png" style="width: 0.29167in;" /></a><a class="reference internal" href="_images/image2021.png"><img alt="image181" src="_images/image2021.png" style="width: 0.20833in;" /></a><img alt="image182" src="_images/image2031.png" /><a class="reference internal" href="_images/image2041.png"><img alt="image183" src="_images/image2041.png" style="width: 0.75in;" /></a><a class="reference internal" href="_images/image2051.png"><img alt="image184" src="_images/image2051.png" style="width: 0.125in;" /></a><a class="reference internal" href="_images/image206.png"><img alt="image185" src="_images/image206.png" style="width: 0.29167in;" /></a><a class="reference internal" href="_images/image207.png"><img alt="image186" src="_images/image207.png" style="width: 0.31944in;" /></a></p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Summary</p></th>
-<th class="head"><p>Phase 1 source code can be
-found in github Phase 1
-datasets can be found at
-sciserver.com Phase 1 reports
-can be found on readthedocs</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>1. Boers, Niklas. “Observation-based early-warning signals for a
-collapse of the Atlantic Meridional Overturning Circulation.”
-Nature Climate Change 11, no. 8 Citations</p>
-<p>(2021): 680-688.</p>
-<p>2. Gnanadesikan, A., A simple model for the structure of the
-oceanic pycnocline, Science., 283:2077-2079, (1999).</p>
-</th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td></td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<div><div class="line-block">
-<div class="line">3. Forget, G., J.-M. Campin, P. Heimbach, C. N. Hill, R. M. Ponte,
-C. Wunsch, ECCO version 4: An integrated framework for non-linear
-inverse modeling and global ocean state estimation. Geosci. Model
-Dev. 8, 3071–3104 (2015)</div>
-<div class="line">4. Gnanadesikan, A., R. Kelson and M. Sten, Flux correction and
-overturning stability: Insights from a dynamical box model, J.
-Climate, 31, 9335-9350, <a class="reference external" href="https://doi.org/10.1175/JCLI-D-18-0388.1">https://doi.org/10.1175/JCLI-D-18-0388.1</a>,
-(2018).</div>
-</div>
-<p>5. Kaufhold, John Patrick, and Jennifer Alexander Sleeman. “Systems
-and methods for deep model translation generation.” U.S. Patent No.
-10,504,004. 10 Dec. 2019.</p>
-<p>6. Garcez, Artur d’Avila, and Luis C. Lamb. “Neurosymbolic AI: the
-3rd Wave.” arXiv preprint arXiv:2012.05876 (2020).</p>
-<p>7. Stommel, H. Thermohaline convection with two stable regimes of
-flow. Tellus 13, 224–230 (1961).</p>
-<p>8. Karniadakis, George Em, Ioannis G. Kevrekidis, Lu Lu, Paris
-Perdikaris, Sifan Wang, and Liu Yang. “Physics-informed machine
-learning.” Nature Reviews Physics 3, no. 6 (2021): 422-440.</p>
-<p>9. Sleeman, Jennifer, Milton Halem, Zhifeng Yang, Vanessa Caicedo,
-Belay Demoz, and Ruben Delgado. “A Deep Machine Learning Approach for
-LIDAR Based Boundary Layer Height Detection.” In IGARSS 2020-2020
-IEEE International Geoscience and Remote Sensing Symposium, pp.
-3676-3679. IEEE, 2020.</p>
-<p>10. Patel, Kinjal, Jennifer Sleeman, and Milton Halem. “Physics-aware
-deep edge detection network.” In Remote Sensing of Clouds and the
-Atmosphere XXVI, vol. 11859, pp. 32-38. SPIE, 2021.</p>
-<p>11.Brulé, Joshua. “A causation coefficient and taxonomy of
-correlation/causation relationships.” arXiv preprint arXiv:1708.05069
-(2017).</p>
-<p>12. Rasp, Stephan, Michael S. Pritchard, and Pierre Gentine. “Deep
-learning to represent subgrid processes in climate models.”
-Proceedings of the National Academy of Sciences 115, no. 39 (2018):
-9684-9689.</p>
-<p>13. Bolton, Thomas, and Laure Zanna. “Applications of deep learning
-to ocean data inference and subgrid parameterization.” Journal of
-Advances in Modeling Earth Systems 11, no. 1 (2019): 376-399.</p>
-<p>14. Kurth, Thorsten, Sean Treichler, Joshua Romero, Mayur Mudigonda,
-Nathan Luehr, Everett Phillips, Ankur Mahesh et al. “Exascale deep
-learning for climate analytics.” In SC18: International Conference
-for High Performance Computing, Networking, Storage and Analysis, pp.
-649-660. IEEE, 2018.</p>
-</div></blockquote>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>15. Weber, Theodore, Austin Corotan, Brian Hutchinson, Ben
-Kravitz, and Robert Link. “Deep learning for creating surrogate
-models of precipitation in Earth Citations cont.</p>
-<p>system models.” Atmospheric Chemistry and Physics 20, no. 4
-(2020): 2303-2317.</p>
-<p>16. Matsubara, Takashi, Ai Ishikawa, and Takaharu Yaguchi. “Deep
-energy-based modeling of discrete-time physics.” arXiv preprint
-arXiv:1905.08604 (2019).</p>
-</th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td></td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<div><p>17. Kleinen, T., Held, H. &amp; Petschel-Held, G. The potential role of
-spectral properties in detecting thresholds in the Earth system:
-application to the thermohaline circulation. Ocean Dyn. 53, 53–63
-(2003).</p>
-<p>18. Kocaoglu, Murat, Christopher Snyder, Alexandros G. Dimakis, and
-Sriram Vishwanath. “Causalgan: Learning causal implicit generative
-models with adversarial training.” arXiv preprint arXiv:1709.02023
-(2017).</p>
-<p>19. Feinman, Reuben, and Brenden M. Lake. “Learning Task-General
-Representations with Generative Neuro-Symbolic Modeling.” arXiv
-preprint</p>
-<p>arXiv:2006.14448 (2020).</p>
-<p>20. Yi, Kexin, Chuang Gan, Yunzhu Li, Pushmeet Kohli, Jiajun Wu,
-Antonio Torralba, and Joshua B. Tenenbaum. “Clevrer: Collision events
-for video representation and reasoning.” arXiv preprint
-arXiv:1910.01442 (2019).</p>
-<p>21. Nowack, Peer, Jakob Runge, Veronika Eyring, and Joanna D. Haigh.
-“Causal networks for climate model evaluation and constrained
-projections.” Nature communications 11, no. 1 (2020): 1-11.</p>
-<p>22. Andersson, Tom R., J. Scott Hosking, María Pérez-Ortiz, Brooks
-Paige, Andrew Elliott, Chris Russell, Stephen Law et al. “Seasonal
-Arctic sea ice forecasting with probabilistic deep learning.” Nature
-communications 12, no. 1 (2021): 1-12.</p>
-<p>23. Storchan, Victor, Svitlana Vyetrenko, and Tucker Balch. “MAS-GAN:
-Adversarial Calibration of Multi-Agent Market Simulators.” (2020).</p>
-<p>24. De Raedt, Luc, Robin Manhaeve, Sebastijan Dumancic, Thomas
-Demeester, and Angelika Kimmig. “Neuro-symbolic=neural+ logical+
-probabilistic.” In NeSy’19&#64; IJCAI, the 14th International Workshop on
-Neural-Symbolic Learning and Reasoning. 2019.</p>
-<p>25. Eyring, V., Bony, S., Meehl, G. A., Senior, C. A., Stevens, B.,
-Stouffer, R. J., and Taylor, K. E.: Overview of the Coupled Model
-Intercomparison Project Phase 6 (CMIP6) experimental design and
-organization, Geosci. Model Dev., 9, 1937-1958,
-doi:10.5194/gmd-9-1937-2016, 2016.</p>
-<p>26. Swingedouw, Didier, Chinwe Ifejika Speranza, Annett Bartsch, Gael
-Durand, Cedric Jamet, Gregory Beaugrand, and Alessandra Conversi.
-“Early warning from space for a few key tipping points in physical,
-biological, and social-ecological systems.” Surveys in geophysics 41,
-no. 6 (2020): 1237-1284.</p>
-<p>27. Reichstein, Markus, Gustau Camps-Valls, Bjorn Stevens, Martin
-Jung, Joachim Denzler, and Nuno Carvalhais. “Deep learning and
-process understanding for</p>
-<p>data-driven Earth system science.” Nature 566, no. 7743 (2019):
-195-204.</p>
-<p>Citations cont.</p>
-<p>28. Sleeman, Jennifer, Ivanka Stajner, Christoph Keller, Milton
-Halem, Christopher Hamer, Raffaele Montuoro, and Barry Baker. “The
-Integration of Artificial Intelligence for Improved Operational Air
-Quality Forecasting.” In AGU Fall Meeting 2021. 2021.</p>
-<div class="line-block">
-<div class="line">29. Bellomo, K., Angeloni, M., Corti, S. <em>et al.</em> Future climate
-change shaped by inter-model differences in Atlantic meridional
-overturning circulation response. <em>Nat Commun</em> <strong>12,</strong> 3659 (2021).</div>
-<div class="line">30. Sgubin, G., Swingedouw, D., Drijfhout, S. <em>et al.</em> Abrupt
-cooling over the North Atlantic in modern climate models. <em>Nat
-Commun</em> <strong>8,</strong> 14375</div>
-<div class="line">(2017).</div>
-<div class="line">31. Swingedouw, D., Bily, A., Esquerdo, C., Borchert, L. F.,
-Sgubin, G., Mignot, J., &amp; Menary, M. (2021). On the risk of abrupt
-changes in the North Atlantic subpolar gyre in CMIP6 models.
-<em>Annals of the New York Academy of Sciences</em>, <em>1504</em>(1), 187-201.</div>
-<div class="line">32. Mao, Jiayuan, Chuang Gan, Pushmeet Kohli, Joshua B. Tenenbaum,
-and Jiajun Wu. “The neuro-symbolic concept learner: Interpreting
-scenes, words, and sentences from natural supervision.” <em>arXiv
-preprint arXiv:1904.12584</em> (2019).</div>
-</div>
-</div></blockquote>
+<h2>7   Task 5.2: Evaluation Final Report<a class="headerlink" href="#task-5-2-evaluation-final-report" title="Permalink to this heading"></a></h2>
+<p><em>Subtask Description: We report on the results of a benchmark comparison between the AI approach and the conventional approach, comparing their performance.</em></p>
+<p>We summarize the results of the benchmark comparison between the AI approach and the conventional approach.</p>
+<ul class="simple">
+<li><p>In the surrogate modeling bifurcation efforts, a Hopf bifurcation was detected for the 4-box model (in addition to previously known fold bifurcations)</p></li>
+<li><p>In the TIP-GAN experiments, when benchmarking with the 4-box model, we showed that the TIP-GAN generators when focused on the area of uncertainty in terms of discriminator predictions was consistent with the area of the separatrix</p></li>
+<li><p>In the neuro-symbolic translations we benchmarked the network’s performance in terms of a common benchmark – the CLEVR dataset and performance was exceptional (close to 100%) for text-to-text translations and text-to-program translations using Levenshtein distance. Program to text was over 60% in terms of performance</p></li>
+</ul>
+<p><strong>Summary</strong>
+Phase 1 source code can be found in github</p>
+<p>Phase 1 datasets can be found at sciserver.com</p>
+<p>Phase 1 reports can be found on readthedocs</p>
+<a class="reference internal image-reference" href="_images/image126.png"><img alt="_images/image126.png" src="_images/image126.png" style="width: 4.53889in; height: 1.65972in;" /></a>
+<p>1. Boers, Niklas. “Observation-based early-warning signals for a collapse of the Atlantic Meridional Overturning Circulation.” Nature Climate Change 11, no. 8
+(2021): 680-688.
+2. Gnanadesikan, A., A simple model for the structure of the oceanic pycnocline, Science., 283:2077-2079, (1999).
+3. Forget, G., J.-M. Campin, P. Heimbach, C. N. Hill, R. M. Ponte, C. Wunsch, ECCO version 4: An integrated framework for non-linear inverse modeling and global ocean state estimation. Geosci. Model Dev. 8, 3071–3104 (2015)
+4. Gnanadesikan, A., R. Kelson and M. Sten, Flux correction and overturning stability: Insights from a dynamical box model, J. Climate, 31, 9335-9350, <a class="reference external" href="https://doi.org/10.1175/JCLI-D-18-0388.1">https://doi.org/10.1175/JCLI-D-18-0388.1</a>, (2018).
+5. Kaufhold, John Patrick, and Jennifer Alexander Sleeman. “Systems and methods for deep model translation generation.” U.S. Patent No. 10,504,004. 10 Dec. 2019.
+6. Garcez, Artur d’Avila, and Luis C. Lamb. “Neurosymbolic AI: the 3rd Wave.” arXiv preprint arXiv:2012.05876 (2020).
+7. Stommel, H. Thermohaline convection with two stable regimes of flow. Tellus 13, 224–230 (1961).
+8. Karniadakis, George Em, Ioannis G. Kevrekidis, Lu Lu, Paris Perdikaris, Sifan Wang, and Liu Yang. “Physics-informed machine learning.” Nature Reviews Physics 3, no. 6 (2021): 422-440.
+9. Sleeman, Jennifer, Milton Halem, Zhifeng Yang, Vanessa Caicedo, Belay Demoz, and Ruben Delgado. “A Deep Machine Learning Approach for LIDAR Based Boundary Layer Height Detection.” In IGARSS 2020-2020 IEEE International Geoscience and Remote Sensing Symposium, pp. 3676-3679. IEEE, 2020.
+10. Patel, Kinjal, Jennifer Sleeman, and Milton Halem. “Physics-aware deep edge detection network.” In Remote Sensing of Clouds and the Atmosphere XXVI, vol. 11859, pp. 32-38. SPIE, 2021.
+11.Brulé, Joshua. “A causation coefficient and taxonomy of correlation/causation relationships.” arXiv preprint arXiv:1708.05069 (2017).
+12. Rasp, Stephan, Michael S. Pritchard, and Pierre Gentine. “Deep learning to represent subgrid processes in climate models.” Proceedings of the National Academy of Sciences 115, no. 39 (2018): 9684-9689.
+13. Bolton, Thomas, and Laure Zanna. “Applications of deep learning to ocean data inference and subgrid parameterization.” Journal of Advances in Modeling Earth Systems 11, no. 1 (2019): 376-399.
+14. Kurth, Thorsten, Sean Treichler, Joshua Romero, Mayur Mudigonda, Nathan Luehr, Everett Phillips, Ankur Mahesh et al. “Exascale deep learning for climate analytics.” In SC18: International Conference for High Performance Computing, Networking, Storage and Analysis, pp. 649-660. IEEE, 2018.
+15. Weber, Theodore, Austin Corotan, Brian Hutchinson, Ben Kravitz, and Robert Link. “Deep learning for creating surrogate models of precipitation in Earth system models.” Atmospheric Chemistry and Physics 20, no. 4 (2020): 2303-2317.
+16. Matsubara, Takashi, Ai Ishikawa, and Takaharu Yaguchi. “Deep energy-based modeling of discrete-time physics.” arXiv preprint arXiv:1905.08604 (2019).
+17. Kleinen, T., Held, H. &amp; Petschel-Held, G. The potential role of spectral properties in detecting thresholds in the Earth system: application to the thermohaline circulation. Ocean Dyn. 53, 53–63 (2003).
+18. Kocaoglu, Murat, Christopher Snyder, Alexandros G. Dimakis, and Sriram Vishwanath. “Causalgan: Learning causal implicit generative models with adversarial training.” arXiv preprint arXiv:1709.02023 (2017).
+19. Feinman, Reuben, and Brenden M. Lake. “Learning Task-General Representations with Generative Neuro-Symbolic Modeling.” arXiv preprint arXiv:2006.14448 (2020).
+20. Yi, Kexin, Chuang Gan, Yunzhu Li, Pushmeet Kohli, Jiajun Wu, Antonio Torralba, and Joshua B. Tenenbaum. “Clevrer: Collision events for video representation and reasoning.” arXiv preprint arXiv:1910.01442 (2019).
+21. Nowack, Peer, Jakob Runge, Veronika Eyring, and Joanna D. Haigh. “Causal networks for climate model evaluation and constrained projections.” Nature communications 11, no. 1 (2020): 1-11.
+22. Andersson, Tom R., J. Scott Hosking, María Pérez-Ortiz, Brooks Paige, Andrew Elliott, Chris Russell, Stephen Law et al. “Seasonal Arctic sea ice forecasting with probabilistic deep learning.” Nature communications 12, no. 1 (2021): 1-12.
+23. Storchan, Victor, Svitlana Vyetrenko, and Tucker Balch. “MAS-GAN: Adversarial Calibration of Multi-Agent Market Simulators.” (2020).
+24. De Raedt, Luc, Robin Manhaeve, Sebastijan Dumancic, Thomas Demeester, and Angelika Kimmig. “Neuro-symbolic=neural+ logical+ probabilistic.” In NeSy’19&#64; IJCAI, the 14th International Workshop on Neural-Symbolic Learning and Reasoning. 2019.
+25. Eyring, V., Bony, S., Meehl, G. A., Senior, C. A., Stevens, B., Stouffer, R. J., and Taylor, K. E.: Overview of the Coupled Model Intercomparison Project Phase 6 (CMIP6) experimental design and organization, Geosci. Model Dev., 9, 1937-1958, doi:10.5194/gmd-9-1937-2016, 2016.
+26. Swingedouw, Didier, Chinwe Ifejika Speranza, Annett Bartsch, Gael Durand, Cedric Jamet, Gregory Beaugrand, and Alessandra Conversi. “Early warning from space for a few key tipping points in physical, biological, and social-ecological systems.” Surveys in geophysics 41, no. 6 (2020): 1237-1284.
+27. Reichstein, Markus, Gustau Camps-Valls, Bjorn Stevens, Martin Jung, Joachim Denzler, and Nuno Carvalhais. “Deep learning and process understanding for data-driven Earth system science.” Nature 566, no. 7743 (2019): 195-204.
+28. Sleeman, Jennifer, Ivanka Stajner, Christoph Keller, Milton Halem, Christopher Hamer, Raffaele Montuoro, and Barry Baker. “The Integration of Artificial Intelligence for Improved Operational Air Quality Forecasting.” In AGU Fall Meeting 2021. 2021.
+29. Bellomo, K., Angeloni, M., Corti, S. et al. Future climate change shaped by inter-model differences in Atlantic meridional overturning circulation response. Nat Commun 12, 3659 (2021). https://doi.org/10.1038/s41467-021-24015-w
+30. Sgubin, G., Swingedouw, D., Drijfhout, S. et al. Abrupt cooling over the North Atlantic in modern climate models. Nat Commun 8, 14375
+(2017). https://doi.org/10.1038/ncomms14375
+31. Swingedouw, D., Bily, A., Esquerdo, C., Borchert, L. F., Sgubin, G., Mignot, J., &amp; Menary, M. (2021). On the risk of abrupt changes in the North Atlantic subpolar gyre in CMIP6 models. Annals of the New York Academy of Sciences, 1504(1), 187-201. https://doi.org/10.1111/nyas.14659
+32. Mao, Jiayuan, Chuang Gan, Pushmeet Kohli, Joshua B. Tenenbaum, and Jiajun Wu. “The neuro-symbolic concept learner: Interpreting scenes, words, and sentences from natural supervision.” arXiv preprint arXiv:1904.12584 (2019).</p>
 </section>
 </section>
 

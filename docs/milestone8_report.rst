@@ -32,213 +32,157 @@ Milestone 8 Progress Report
 
    • The delivery for this milestone is this final report for Phase 1
 
-   | Goals
-   | The goal for this milestone included:
-   | • Deliver final report of all modules to conclude the Phase 1 effort including: • Data analysis
+**Goals **
+The goal for this milestone included:
+    • Deliver final report of all modules to conclude the Phase 1 effort including: • Data analysis
 
-   • Characterization of benefits of new hybrid models over conventional models
+    • Characterization of benefits of new hybrid models over conventional models
 
-   • Evaluations
+    • Evaluations
 
-   • All models, source code, and datasets to support results
+    • All models, source code, and datasets to support results
 
 2   Final Report Accomplishments
 --------------------------------
 • Development of the new 6-box model for AMOC tipping point research
-    • Enables the study of oscillations providing insights into why some slow-downs lead to full collapses whereas some lead to recovery, which could inform climate intervention
-strategies
+    • Enables the study of oscillations providing insights into why some slow-downs lead to full collapses whereas some lead to recovery, which could inform climate intervention strategies
+
 • Generation of novel AMOC tipping point datasets geared toward machine learning
     • Includes open sourced models being used by other performers
+
 • CEMS2 4-box model Verification – Path for AI Learning of Large GCM Models
-    • Research showed 4-box model captures 60-90% of the variation in the AMOC and pycnocline of CESM2, suggesting 4-box results can be used to understand CMIP-class AMOC
-model disagreement
+    • Research showed 4-box model captures 60-90% of the variation in the AMOC and pycnocline of CESM2, suggesting 4-box results can be used to understand CMIP-class AMOC model disagreement
+
 • New bifurcation method for stochastic differential equations to estimate escape times in addition to identifying bifurcations
     • Goes beyond state of the art in providing measurements for determining distance from a tipping point and likelihood of recovering – applied to the stochastic 4-box model
+
 • New AI-based method: TIP-GAN, a generative adversarial network that is used to discover AMOC tipping points
     • Generalizable to other types of tipping points
-• Newly developed neuro-symbolic deep learning architecture that provides a means to ask questions of what is learned by TIP-
-GAN and a way to explore causal paths
+
+• Newly developed neuro-symbolic deep learning architecture that provides a means to ask questions of what is learned by TIP-GAN and a way to explore causal paths
+
 • First version of causal models based on TIP-GAN learned paths
-• Three accepted AGU presentations (2 oral, 1 poster), one AAAI Fall Symposium paper acceptance, draft of two journal papers,
-proposal acceptance to the AAAI Spring Symposium for AI Climate Tipping-Point Discovery (ACTD)
+
+• Three accepted AGU presentations (2 oral, 1 poster), one AAAI Fall Symposium paper acceptance, draft of two journal papers, proposal acceptance to the AAAI Spring Symposium for AI Climate Tipping-Point Discovery (ACTD)
 
 
 
 3 Final Report Accomplishments
 ------------------------------
 
-   This report includes a detailed final report for Phase 1 of:
+This report includes a detailed final report for Phase 1 of:
 
-   | • The conventional use of ocean models in terms of climate
-     forecasting
-   | • Updates and delivery of any new datasets
-   | • Surrogate models performance with a comparison to conventional
-     models using metrics defined in Milestone 3
-   | • Performance of the simulation, causal model, and neuro-symbolic
-     translation, including a comparison with conventional models using
-     metrics defined in Milestone 3
-   | • Benchmark comparison between the AI approach and the conventional
-     approach, comparing their performance
+• The conventional use of ocean models in terms of climate forecasting
+
+• Updates and delivery of any new datasets
+
+• Surrogate models performance with a comparison to conventional models using metrics defined in Milestone 3
+
+• Performance of the simulation, causal model, and neuro-symbolic translation, including a comparison with conventional models using metrics defined in Milestone 3
+
+• Benchmark comparison between the AI approach and the conventional approach, comparing their performance
 
 
 
 4 Task 1.4 Use Case Ocean Models Comparisons
 --------------------------------------------
 
-*Subtask Description: We will provide a final report detailing the
-     conventional use of ocean models in terms of climate forecastig*
+*Subtask Description: We will provide a final report detailing the conventional use of ocean models in terms of climate forecastig*
 
 
-   In this report we provide a detailed discussion around the 4-box and
-   6-box models and the benefits of using these models to train machine
-   learning algorithms with a path towards applying machine learning
-   algorithms to large coupled GCMs.
+In this report we provide a detailed discussion around the 4-box and 6-box models and the benefits of using these models to train machine learning algorithms with a path towards applying machine learning algorithms to large coupled GCMs.
 
-+-----------------------------------+-----------------------------------+
-|    Task 1.4: Use Case Ocean       |                                   |
-|    Models Comparisons – 4-Box     |                                   |
-|    Model                          |                                   |
-+===================================+===================================+
-|    On long time scales, Atlantic  | |image1|                          |
-|    overturning can often be       |                                   |
-|    described by the simple box    |                                   |
-|    model…                         |                                   |
-|                                   |                                   |
-|    … which exhibits tipping       |                                   |
-|    points.                        |                                   |
-|                                   |                                   |
-|    • We used the box model as a   |                                   |
-|    first-step data set            |                                   |
-|                                   |                                   |
-|    • We then extended this to     |                                   |
-|    include the larger climate     |                                   |
-|    models                         |                                   |
-|                                   |                                   |
-|    • Extend to include Pacific    |                                   |
-|    Basin                          |                                   |
-|                                   |                                   |
-|    • Calibrated model against     |                                   |
-|    specific climate models        |                                   |
-|                                   |                                   |
-|    (NCAR+CMIP6) using             |                                   |
-|    preindustrial and historical   |                                   |
-|                                   |                                   |
-|    simulations                    |                                   |
-|                                   |                                   |
-|    • Showed that model can        |                                   |
-|    capture both mean state and    |                                   |
-|                                   |                                   |
-|    variability                    |                                   |
-|                                   |                                   |
-|    • Used surrogate model to      |                                   |
-|    project tipping points,        |                                   |
-|    examine                        |                                   |
-|                                   |                                   |
-|    for accuracy of prediction     |                                   |
-+-----------------------------------+-----------------------------------+
+**Task 1.4: Use Case Ocean Models Comparisons – 4-Box Model**
+On long time scales, Atlantic overturning can often be described by the simple box model...
+... which exhibits tipping points.
 
-..
+• We used the box model as a first-step data set
+
+• We then extended this to include the larger climate models
+
+    • Extend to include Pacific Basin
+
+    • Calibrated model against specific climate models (NCAR+CMIP6) using preindustrial and historical simulations
+
+    • Showed that model can capture both mean state and variability
+
+    • Used surrogate model to project tipping points, examine for accuracy of prediction
+
+|image1|
 
    | *Gnanadesikan, 1999;*
    | *Gnanadesikan, Kelson and Sten, J. Climate 2018*
 
-.. image:: _static/media8/image4.png
-   :width: 6.30556in
-   :height: 2.77778in
 
-   Task 1.4: Use Case Ocean Models Comparisons – 6-Box Model
+** Task 1.4: Use Case Ocean Models Comparisons – 6-Box Model**
 
 .. image:: _static/media8/image208.png
    :width: 6in
    :height: 4in
 
 
-+-----------------------------------+-----------------------------------+
-| • In the calibrating model,       |    ..                             |
-| Pacific shows more “resistance”   | image::  _static/media8/image5.png|
-| to overturning than Southern      |       :width: 2.80556in           |
-| Ocean. Why?                       |       :height: 1.88889in          |
-|                                   |                                   |
-|    - Atlantic is denser than      |                                   |
-|    Southern Ocean                 |    ..                             |
-|                                   | image:: _static/media8/image6.png |
-|    - Sinking gets kick from both  |       :width: 2.80556in           |
-|    intermediate and shallow water |       :height: 1.88889in          |
-|    (low resistance)               |                                   |
-|                                   |                                   |
-|    - Pacific is *lighter* than    |                                   |
-|    Southern Ocean. Sinking is     |                                   |
-|    opposed by AAIW… (higher       |                                   |
-|    resistance)                    |                                   |
-|                                   |                                   |
-|    • North Pacific receives less  |                                   |
-|    freshwater than North Atlantic |                                   |
-|    +Arctic                        |                                   |
-+===================================+===================================+
-+-----------------------------------+-----------------------------------+
+• In the calibrating model, Pacific shows more “resistance” to overturning than Southern Ocean. Why?
+    - Atlantic is denser than Southern Ocean
+    - Sinking gets kick from both intermediate and shallow water (low resistance)
+    - Pacific is lighter than Southern Ocean. Sinking is opposed by AAIW... (higher resistance)
+
+• North Pacific receives less freshwater than North Atlantic +Arctic
+
+.. image:: _static/media8/image5.png
+   :width: 4in
+   :height: 2in
+
+.. image:: _static/media8/image6.png
+   :width: 4in
+   :height: 2in
+
+
+..
+If freshwater flux is higher in the Pacific, increasing hydrological cycle shuts off Pacific first, then Atlantic.
+
+If freshwater flux is higher in Atlantic/Arctic, potential for restart of Pacific overturning when Arctic turns off.
+
+Three ways of increasing Pacific overturning!
+
+.. image:: _static/media8/image7.png
+   :width: 6in
+   :height: 5in
+
 
 ..
 
+When Atlantic overturning shuts off, pycnocline deepens.
+This increases the mixing between high and low latitudes... more in Pacific than Atlantic.
+For realistic range of mixing fluxes this can lead to restart of strong intermediate water formation in Pacific.
 
-+-----------------------------------+-----------------------------------+
-|    | If freshwater flux is higher |    ..                             |
-|      in the Pacific, increasing   | image:: _static/media8/image7.png |
-|    | hydrological cycle shuts off |       :width: 7.15556in           |
-|      Pacific first, then          |       :height: 5.01806in          |
-|      Atlantic.                    |                                   |
-|                                   |                                   |
-|    | If freshwater flux is higher |                                   |
-|      in Atlantic/Arctic,          |                                   |
-|      potential for restart of     |                                   |
-|      Pacific                      |                                   |
-|    | overturning when Arctic      |                                   |
-|      turns off.                   |                                   |
-|                                   |                                   |
-|    Three ways of increasing       |                                   |
-|    Pacific overturning!           |                                   |
-+===================================+===================================+
-+-----------------------------------+-----------------------------------+
+.. image:: _static/media8/image8.png
+   :width: 4in
+   :height: 6in
 
-..
-
-
-+-----------------------------------+-----------------------------------+
-|    | When Atlantic overturning    |    ..                             |
-|      shuts off, pycnocline        | image:: _static/media8/image8.png |
-|    | deepens.                     |       :width: 7.26111in           |
-|                                   |       :height: 5.44583in          |
-|    | This increases the mixing    |                                   |
-|      between high and low         |                                   |
-|    | latitudes… more in Pacific   |                                   |
-|      than Atlantic.               |                                   |
-|                                   |                                   |
-|    For realistic range of mixing  |                                   |
-|    fluxes this can lead to        |                                   |
-|    restart of strong intermediate |                                   |
-|    water formation in Pacific.    |                                   |
-+===================================+===================================+
-+-----------------------------------+-----------------------------------+
 
 ..
 
 5   Task 2.5: Phase 1 Data Final Delivery
 -----------------------------------------
 
-   *Subtask Description: We will document updates and deliver any new
-   datasets.*
+*Subtask Description: We will document updates and deliver any new datasets.*
 
-   | The final delivery of data will include the following:
-   | • 4-box Model Python machine learning generated datasets
-   | • Stochastic 4-box Model Python machine learning generated
-     datasets• 6-box Model Matlab code on github, but the machine
-     learning generated datasets are not finalized yet
-   | • Calibrated 4-box Model CESM2 Large Ensemble datasets
+The final delivery of data will include the following:
 
-   Task 2.5: Phase 1 Data Final Delivery – 4-Box Model • Using the 4-box
-   model as a way to generate data for the AI methods
+• 4-box Model Python machine learning generated datasets
 
-   • For long time scales, Atlantic overturning can often be described
-   by the simple box model
+• Stochastic 4-box Model Python machine learning generated datasets
+
+• 6-box Model Matlab code on github, but the machine learning generated datasets are not finalized yet
+
+• Calibrated 4-box Model CESM2 Large Ensemble datasets
+
+
+**Task 2.5: Phase 1 Data Final Delivery – 4-Box Model **
+
+• Using the 4-box model as a way to generate data for the AI methods
+
+• For long time scales, Atlantic overturning can often be described by the simple box model
 
    .. image:: _static/media8/image9.png
       :width: 7.80278in
@@ -246,170 +190,160 @@ proposal acceptance to the AAAI Spring Symposium for AI Climate Tipping-Point Di
 
 The Gnanadesikan 4-Box Model
 
-   Task 2.5: Phase 1 Data Final Delivery – 4-Box Model
+• Created a python package of the 4-box model that allows one to specify initial conditions, and parameter values
 
-+-----------------------------------+-----------------------------------+
-|    • Created a python package of  |image:: _static/media8/image10.png |
-|    the 4-box model that allows    |      :width: 4.2in                |
-|    one to specify initial         |      :height: 2.51944in           |
-|    conditions, and parameter      |                                   |
-|    values                         |                                   |
-|                                   |                                   |
-|    • The python package recreates |image:: _static/media8/image11.png |
-|    the Gnanadesikan experiments   |       :width: 3.81528in           |
-|    (in Matlab code)               |       :height: 2.37083in          |
-|                                   |                                   |
-|    • Generates the same plots     |                                   |
-|                                   |                                   |
-|    • Enables creation of labeled  |                                   |
-|    training data for training     |                                   |
-|    machine learning algorithms    |                                   |
-|    and temporal training data for |                                   |
-|    training the AI surrogates     |                                   |
-|                                   |                                   |
-|    • Produces datasets in netcdf  |                                   |
-|    format                         |                                   |
-+===================================+===================================+
-+-----------------------------------+-----------------------------------+
+• The python package recreates the Gnanadesikan experiments (in Matlab code)
+
+• Generates the same plots
+
+• Enables creation of labeled training data for training machine learning algorithms and temporal training data for training the AI surrogates
+
+• Produces datasets in netcdf format
+
+   .. image:: _static/media8/image10.png
+      :width: 4.80278in
+      :height: 2.72917in
+
+
+   .. image:: _static/media8/image11.png
+      :width: 3.80278in
+      :height: 2.72917in
 
 ..
 
-   Task 2.5: Phase 1 Data Final Delivery – 4-Box
-   Model\ |image3|\ |image4|\ |image5|\ |image6|\ |image7|\ |image8|\ |image9|\ |image10|\ |image11|\ |image12|\ |image13|\ |image14|\ |image15|\ |image16|\ |image17|\ |image18|\ |image19|\ |image20|\ |image21|\ |image22|\ |image23|\ |image24|\ |image25|\ |image26|\ |image27|\ |image28|\ |image29|\ |image30|\ |image31|\ |image32|\ |image33|\ |image34|\ |image35|\ |image36|\ |image37|\ |image38|\ |image39|\ |image40|\ |image41|\ |image42|\ |image43|\ |image44|\ |image45|\ |image46|\ |image47|\ |image48|
 
 • Data available on sciserver.org
+
 • Code available at https://github.com/JHUAPL/PACMANs
+
 • 4-box model tutorial is on the ACTM Gallery
 
-   Task 2.5: Phase 1 Data Final Delivery – 6-Box Model
+.. image:: _static/media8/image12.png
+    :width: 3.80278in
+    :height: 1.72917in
+
+.. image:: _static/media8/image14.png
+      :width: 3.80278in
+      :height: 2.72917in
+
+.. image:: _static/media8/image15.png
+      :width: 3.80278in
+      :height: 2.72917in
+
+
+
+** Task 2.5: Phase 1 Data Final Delivery – 6-Box Model**
+
 
 • 6-box model Matlab code is in github
-• Python code for the 6-box model has
-been developed
-• Scripts to generate Machine Learning
-datasets are also built
-• However, the code requires formal
-review, documentation and tutorials before release in github public
-‒ Will be part of Phase2
-image:: _static/media8/image59.png
-      :width: 5.89167in
-      :height: 2.59861in
+• Python code for the 6-box model has been developed
+• Scripts to generate Machine Learning datasets are also built
+• However, the code requires formal review, documentation and tutorials before release in github public
+    ‒ Will be part of Phase2
+
+.. image:: _static/media8/image52.png
+      :width: 5.80278in
+      :height: 2.72917in
 
 
 
 
 
-6 Task 2.5: Phase 1 Data Final Delivery – CESM2
------------------------------------------------
-| Fitting CESM2 Large Ensemble to the Gnanadesikan 4-box model•
-  Volume-averaged means for potential density in each box
+**Task 2.5: Phase 1 Data Final Delivery – CESM2**
 
-|image209|
+Fitting CESM2 Large Ensemble to the Gnanadesikan 4-box model
 
-..
-
-   Task 2.5: Phase 1 Data Final Delivery -
-   CESM2\
-
-|image210|
+.. image:: _static/media8/image209.png
+      :width: 6.80278in
+      :height: 4.72917in
 
 
-   Task 2.5: Phase 1 Data Final Delivery - CESM2\ |image86|
+.. image:: _static/media8/image210.png
+      :width: 6.80278in
+      :height: 4.72917in
 
-   | **Goodness of fit**
-   | For each of the 11 ensemble members, the correlation coefficient
-     and the rms error normalized by the mean are shown for both the
 
-   | AMOC (Mn) and the pycnocline depth (D). Recall that member 1
-   | is used to fit the data- it is excluded from the following:
+   Task 2.5: Phase 1 Data Final Delivery - CESM2
 
-   | The mean correlation coefficient is 0.9 for Mn and 0.8 for D.
-   | On average, the rms error is 12% of the mean Mn and 1% of the
-   | mean D.
+**Goodness of fit**
+
+For each of the 11 ensemble members, the correlation coefficient and the rms error normalized by the mean are shown for both the AMOC (Mn) and the pycnocline depth (D). Recall that member 1 is used to fit the data- it is excluded from the following:
+
+The mean correlation coefficient is 0.9 for Mn and 0.8 for D.
+
+On average, the rms error is 12% of the mean Mn and 1% of the mean D.
 
 .. image:: _static/media8/image95.png
    :width: 4.04583in
    :height: 3.06944in
 
-Time series shown again
 
-7   Task 3.6: AI Physics-Informed Surrogate Model Phase 1 Final Report
+6   Task 3.6: AI Physics-Informed Surrogate Model Phase 1 Final Report
 ----------------------------------------------------------------------
-   *Subtask Description: We will provide a final report of the surrogate
-   models performance with a comparison to conventional models using metrics defined in Milestone 3.*
+   *Subtask Description: We will provide a final report of the surrogate models performance with a comparison to conventional models using metrics defined in Milestone 3.*
 
-   In this report we review the findings of the bifurcation analysis and
-   provide a comparative estimate of the time required to compute the
-   Escape Time Distribution with the Full Model and the Learned
-   Parameter Dependent effective Stochastic Differential Equation target
-   tipping point surrogate model.
+In this report we review the findings of the bifurcation analysis and provide a comparative estimate of the time required to compute the Escape Time Distribution with the Full Model and the Learned Parameter Dependent effective Stochastic Differential Equation target tipping point surrogate model.
 
-   Task 3.6: AI Physics-Informed Surrogate Model Phase 1 Final Report –
-   Bifurcation Analysis
+**Task 3.6: AI Physics-Informed Surrogate Model Phase 1 Final Report – Bifurcation Analysis**
 
 .. image:: _static/media8/image98.png
-         :width: 5.62in
-         :height: 3.59in
+    :width: 5.62in
+    :height: 3.59in
+
 We consider a dynamical box model with four boxes:
-• The southern high latitudes (0.308S)
-• The northern high latitudes (0.458N)
-• Mid-to-low latitudes
-• A deep box that lies beneath all of the surface boxes
+    • The southern high latitudes (0.308S)
+
+    • The northern high latitudes (0.458N)
+
+    • Mid-to-low latitudes
+
+    • A deep box that lies beneath all of the surface boxes
 
 State variables:
-• 𝐷: Low latitude pycnocline depth
-• T_S,T_n,T_l, T_d: Temperatures of the four boxes
-• S_S,S_n,S_l, S_d: Salinities of the four boxes •
-• Single-headed bold arrows denote net fluxes of water
-• Double-headed arrows denote mixing fluxes
+
+    • 𝐷: Low latitude pycnocline depth
+
+    • T_S,T_n,T_l, T_d: Temperatures of the four boxes
+
+    • S_S,S_n,S_l, S_d: Salinities of the four boxes •
+
+    • Single-headed bold arrows denote net fluxes of water
+
+    • Double-headed arrows denote mixing fluxes
 
 ..
 
-   Task 3.6: AI Physics-Informed Surrogate Model Phase 1 Final Report –
-   Bifurcation
-   Analysis\
 
-|image211|
+\ |image211|
 These are the equations that we start with (nine differential equations)
 
 
 
-   Task 3.6: AI Physics-Informed Surrogate Model Phase 1 Final Report –
-   Bifurcation Analysis
+\ |image212|
 
-|image212|
-
-IMPORTANTLY, we explicitly used the fact that there exists an algebraic
-constraint (a salt balance) that reduces the equations by one and
-removes a neutral direction. This helps the conditioning of the Jacobian
+IMPORTANTLY, we explicitly used the fact that there exists an algebraic constraint (a salt balance) that reduces the equations by one and removes a neutral direction. This helps the conditioning of the Jacobian
 
 
-   Task 3.6: AI Physics-Informed Surrogate Model Phase 1 Final Report –
-   Bifurcation Analysis
-
-|image213|
+\ |image213|
 
 To make computations more accurate numerically, we non-dimensionalized the equations in ways *meaningful to the domain scientist* (Anand G.) to reduce the number of free parameters
 
 ..
 
-   With the non-dimensionalized equations, the problem possesses not
-   one, but two tipping points (from the “upper” branch to the lower,
-   but also from the lower to the upper) as shown in figures below.
+With the non-dimensionalized equations, the problem possesses not one, but two tipping points (from the “upper” branch to the lower, but also from the lower to the upper) as shown in figures below.
 
-..image:: _static/media8/image134.png
-        :width: 5.018in
-        :height: 3.763in
+.. image:: _static/media8/image134.png
+   :width: 5.04583in
+   :height: 3.06944in
+
 Diagram of NH Overturning Mn
 
-..image:: _static/media8/image135.png
-        :width: 5.018in
-        :height: 3.763in
+.. image:: _static/media8/image135.png
+   :width: 5.04583in
+   :height: 3.06944in
+
 Zoomed-In View of the subcritical Hopf Bifurcation Point
 
-
-   Task 3.6: AI Physics-Informed Surrogate Model Phase 1 Final Report –
-   Bifurcation Analysis
 
 +-----------------------------------------------------------------------+
 |    Second view - the two tipping points are of different nature: one  |
@@ -420,88 +354,55 @@ Zoomed-In View of the subcritical Hopf Bifurcation Point
 |    |image122| |image123|                                              |
 +=======================================================================+
 +-----------------------------------------------------------------------+
-   Diagram of Low Latitude Depth D\* (left) and Zoomed-In View of the
-   Hopf Bifurcation Point (right).
-..
+Diagram of Low Latitude Depth D\* (left) and Zoomed-In View of the Hopf Bifurcation Point (right).
 
 
-   | The Hysteretic behavior found in
-   | [Gnanadesikan, Kelson, Sten 2018],
-   | can be described as:
 
-+-----------------------------------+-----------------------------------+
-| •                                 |    The ‘switching’ between ‘off’  |
-|                                   |    and ‘on’ state is given by a   |
-| •                                 |    subcritical Hopf bifurcation:  |
-|                                   |    H for 𝑇𝑟TU @ = 0.03529         |
-|                                   |                                   |
-|                                   |    And a saddle-node bifurcation: |
-|                                   |    LP for 𝑇𝑟TU @ = 0.01798        |
-+===================================+===================================+
-+-----------------------------------+-----------------------------------+
+The Hysteretic behavior found in [Gnanadesikan, Kelson, Sten 2018], can be described as:
 
-..
+  • The ‘switching’ between ‘off’ and ‘on’ state is given by a subcritical Hopf bifurcation: H for 𝑇𝑟@ = 0.03529
 
-   Task 3.6: AI Physics-Informed Surrogate Model Phase 1 Final Report –
-   Bifurcation Analysis
+  • And a saddle-node bifurcation: LP for 𝑇𝑟@ = 0.01798 TU
 
-   • The value where the limit cycle branch appears to become vertical
-   (an infinite period, homoclinic orbit) is 0.0375
+\ |image138|
 
-   • The subcritical Hopf gives birth to an unstable limit cycle
-   “backwards” in parameter space (that surrounds the exiting stable
-   steady state)
 
-   • This steady state loses stability at the Hopf bifurcation (red
-   branch in figures)
+• The value where the limit cycle branch appears to become vertical (an infinite period, homoclinic orbit) is 0.0375
 
-   • The escape (the “tipping") arises when a stochastic trajectory
-   wandering around the stable state manages to "cross” the unstable
-   limit cycle and escape to either large oscillations or to a
-   completely different lower circulation branch
+• The subcritical Hopf gives birth to an unstable limit cycle “backwards” in parameter space (that surrounds the exiting stable steady state)
+
+• This steady state loses stability at the Hopf bifurcation (red branch in figures)
+
+• The escape (the “tipping") arises when a stochastic trajectory wandering around the stable state manages to "cross” the unstable limit cycle and escape to either large oscillations or to a completely different lower circulation branch
 
 
 ..
 
-   Where the initial condition with D=1 (where D is the low latitude
-   pycnocline depth) is attracted by the upper branch because there is
-   an early switch activation, so the sharp transition that we see is
-   given by the upper limit point (LP). While for D=4 we observe the
-   sharp transition close to the subcritical Hopf (the solution loses
-   stability at the exact Hopf point because the initial condition may start outside the unstable limit cycle).
+Where the initial condition with D=1 (where D is the low latitude pycnocline depth) is attracted by the upper branch because there is an early switch activation, so the sharp transition that we see is given by the upper limit point (LP). While for D=4 we observe the sharp transition close to the subcritical Hopf (the solution loses stability at the exact Hopf point because the initial condition may start outside the unstable limit cycle).
 
     |image126| |image127|
 
-   Temporal Bifurcation Diagram for Depth (left) and the Limit Cycle
-   Continuation (right)
-
-  Task 3.6: AI Physics-Informed Surrogate Model Phase 1 Final Report – Stochastic Model
+Temporal Bifurcation Diagram for Depth (top) and the Limit Cycle Continuation (bottom)
 
 
-• Sitting close to the subcritical Hopf tipping point, on its "safe side" we performed our first stochastic simulations (with fluctuating freshwater flux coefficient, again, designed
-in collaboration with the domain
-expert, Anand G.)
-• Notice on the left simulations, the
-variable oscillates over time near 4.7 before it eventually "tips"
+**Task 3.6: AI Physics-Informed Surrogate Model Phase 1 Final Report – Stochastic Model**
+
+• Sitting close to the subcritical Hopf tipping point, on its "safe side" we performed our first stochastic simulations (with fluctuating freshwater flux coefficient, again, designed in collaboration with the domain expert, Anand G.)
+
+• Notice on the left simulations, the variable oscillates over time near 4.7 before it eventually "tips"
+
 • Also notice on the right some initial statistics of escape times for a fixed parameter value
 
-|image215|
-..
+\ |image215|
 
-   Task 3.6: AI Physics-Informed Surrogate Model Phase 1 Final Report –
-   SDE Model
 
-   The Stochastic Differential Equation (SDE) model was trained by using
-   sampled data of the Full Network’s Dynamics. Those data were used to
-   train a parameter dependent SDE network (for two values of the
-   parameter p).
 
-   For the neural network’s training we used snapshots of the Full Model
-   every five iterations of the full model assuming a time step h=0.01.
 
-   To estimate the computational time needed per approach, we first
-   obtain an evaluation of the time needed for a function evaluation of
-   the Full Model and of the estimated SDE (eSDE) model:
+The Stochastic Differential Equation (SDE) model was trained by using sampled data of the Full Network’s Dynamics. Those data were used to train a parameter dependent SDE network (for two values of the parameter p).
+
+For the neural network’s training we used snapshots of the Full Model every five iterations of the full model assuming a time step h=0.01.
+
+To estimate the computational time needed per approach, we first obtain an evaluation of the time needed for a function evaluation of the Full Model and of the estimated SDE (eSDE) model:
 +------------------------------------+----------------------------------+
 |              **Function Evaluation Time (seconds)**                   |
 +------------------------------------+----------------------------------+
@@ -512,47 +413,29 @@ variable oscillates over time near 4.7 before it eventually "tips"
 
 ..
 
+To obtain an estimate of the number of trajectories needed for each model to compute the escape time distribution, a bootstrapping method was used for each model.
 
-   To obtain an estimate of the number of trajectories needed for each
-   model to compute the escape time distribution, a bootstrapping method
-   was used for each model.
+For both models, the number of samples needed was estimated to be N=2000.
 
-   For both models, the number of samples needed was estimated to be
-   N=2000.
+Given this information, we then estimate the number of iterations (evaluations) needed for each model, on average, to escape.
 
-   Given this information, we then estimate the number of iterations
-   (evaluations) needed for each model, on average, to escape.
+For the Full Model, this number was estimated as 281.
 
-   For the Full Model, this number was estimated as 281.
-
-   For the Reduced Model, since the escape time was estimated as 0.289
-   (for a time step of the Euler Maryama simulation equal to the one
-   assumed when training of the model (h=0.01)), we estimate that the
-   number of iterations is 28.9 ~29.
+For the Reduced Model, since the escape time was estimated as 0.289 (for a time step of the Euler Maryama simulation equal to the one assumed when training of the model (h=0.01)), we estimate that the number of iterations is 28.9 ~29.
 
 
 
-   By considering the Function Evaluation time for each model, the
-   number of samples needed to obtain an accurate estimate of the escape
-   times, but also the number of iterations per model, we obtain an
-   estimate of the computational time required to compute the exit time
-   distribution per model.
-
+By considering the Function Evaluation time for each model, the number of samples needed to obtain an accurate estimate of the escape times, but also the number of iterations per model, we obtain an estimate of the computational time required to compute the exit time distribution per model.
 +-----------------------------------+-----------------------------------+
-| +------------------------------+  |                                   |
 | | **Escape Time Computational  |  |                                   |
 | | Effort (hours)**             |  |                                   |
-| +==============================+  |                                   |
-| +------------------------------+  |                                   |
 +===================================+===================================+
 | +------------------------------+  | **eSDE Model**                    |
 | | **Full Model**               |  |                                   |
-| +==============================+  |                                   |
 | +------------------------------+  |                                   |
 +-----------------------------------+-----------------------------------+
 | +------------------------------+  | 0.00301                           |
 | | 8.26                         |  |                                   |
-| +==============================+  |                                   |
 | +------------------------------+  |                                   |
 +-----------------------------------+-----------------------------------+
 
@@ -564,37 +447,36 @@ variable oscillates over time near 4.7 before it eventually "tips"
 
 
 The computational efforts were estimated for the Full Model as follows:
-• Escape Time Computational Effort =Average Number of Iterations Full Model * Number of Samples Needed *Function Evaluation Time
+    • Escape Time Computational Effort =Average Number of Iterations Full Model * Number of Samples Needed *Function Evaluation Time
+
 The computations efforts for the SDE Model were obtained as follows:
-• Escape Time Computational Effort = (Mean Exit Time obtained)/h* Number of Samples Needed*Function Evaluation Time
+    • Escape Time Computational Effort = (Mean Exit Time obtained)/h* Number of Samples Needed*Function Evaluation Time
 
 
-   Please notice that the function evaluation difference between the
-   Full Model is ~28 times larger than the SDE model. However, the ratio
-   of the computational time suggests that the Full Model need is ~273
-   times more than the SDE model. This can be attributed to the
-   following two reasons:
-
+Please notice that the function evaluation difference between the Full Model is ~28 times larger than the SDE model. However, the ratio of the computational time suggests that the Full Model need is ~273 times more than the SDE model. This can be attributed to the following two reasons:
 
 1. We trained the SDE model by using every 5 iterations of the full model so each step of the reduced model corresponds to 5 steps of the Full Model
+
 2. The escape time estimated of the full model is ~2 times larger than the SDE model
+
 Those two reasons make the computation of the exit time of the SDE model even smaller than the factor of 28.
 
 
 
 Additional Computational Cost needed for these computations involve:
+
 1. Sampling the data
+
 2. Training the SDE Model
+
 In terms of (1) we sampled a total number of 104,000 data points to train the SDE (even though not all were used). By considering the function evaluation time of the Full Model, the time needed to sample the data was ~1.5 hours. Note that the real time might be larger since computing and storing in RAM those trajectories might increase the time required just for simulation.
 
 
-   The training of the SDE model (training for 1,000 epochs) needs about
-   0.23 hours. The table below reports the total computational time needed for the SDE model.
+The training of the SDE model (training for 1,000 epochs) needs about 0.23 hours. The table below reports the total computational time needed for the SDE model.
 
 +-----------------------------------+-----------------------------------+
 | +------------------------------+  | **Computational Time (hours)**    |
 | | **Task**                     |  |                                   |
-| +==============================+  |                                   |
 | +------------------------------+  |                                   |
 +===================================+===================================+
 +-----------------------------------+-----------------------------------+
@@ -602,55 +484,46 @@ In terms of (1) we sampled a total number of 104,000 data points to train the SD
 +-----------------------------------+-----------------------------------+
 | +------------------------------+  | 1.5                               |
 | | Sampling Data                |  |                                   |
-| +==============================+  |                                   |
 | +------------------------------+  |                                   |
 +===================================+===================================+
 | +------------------------------+  | 0.23                              |
 | | Training SDE Model           |  |                                   |
-| +==============================+  |                                   |
 | +------------------------------+  |                                   |
 +-----------------------------------+-----------------------------------+
 | +------------------------------+  | 0.031                             |
 | |    Escape Time Computations  |  |                                   |
 | |    SDE Model                 |  |                                   |
-| +==============================+  |                                   |
 | +------------------------------+  |                                   |
 +-----------------------------------+-----------------------------------+
 | +------------------------------+  | 1.78                              |
 | | Total                        |  |                                   |
-| +==============================+  |                                   |
 | +------------------------------+  |                                   |
 +-----------------------------------+-----------------------------------+
 
 8    Task 4.6 AI Simulation Phase 1 Final Report
-..
+------------------------------------------------
 
-   *Subtask Description: We will provide a final report of the
-   performance of the simulation, causal model, and neuro-symbolic
-   translation, including a comparison with conventional models using
-   metrics defined in Milestone 3.*
+*Subtask Description: We will provide a final report of the performance of the simulation, causal model, and neuro-symbolic translation, including a comparison with conventional models using metrics defined in Milestone 3.*
 
-   In this final report we share the measured results for TIP-GAN, the
-   neuro-symbolic translation methods, and early results from the causal
-   model. Each area of experimentation was measured in terms of the
-   metrics described previously and new metrics as required.
+In this final report we share the measured results for TIP-GAN, the neuro-symbolic translation methods, and early results from the causal model. Each area of experimentation was measured in terms of the metrics described previously and new metrics as required.
 
-   Task 4.6: AI Simulation Phase 1 Final Report - TIP-GAN
+**Task 4.6: AI Simulation Phase 1 Final Report - TIP-GAN**
 Compelling early classification precision, recall, F1 scores of model configurations that lead to AMOC collapse in 4-box model
 
 ..image:: _static/media8/image143.png
-        :width: 5.018in
-        :height: 3.763in
+    :width: 5.018in
+    :height: 3.763in
 
 ..image:: _static/media8/image144.png
-        :width: 5.018in
-        :height: 3.763in
+    :width: 5.018in
+    :height: 3.763in
 
 ..image:: _static/media8/image145.png
-        :width: 5.018in
-        :height: 3.763in
+    :width: 5.018in
+    :height: 3.763in
 
 Recreated Collapses Using Python Generated Tools for Machine Learning Dataset Creation from the 4-Box Model
+
 Learning Dataset Creation from the 4-Box Model
 
 Showed that the GAN could be used to exploit the area of uncertainty connsistent with what was desvribed i the 2018 4-Box Model paper.
@@ -691,7 +564,9 @@ Comparing GAN Generated Results for N = (1,2,3) with the Test Set.
     • Perturb more variables
         • Joint exploration (𝐴TU<V, 𝐴WX, 𝑀UY, 𝐾Z, 𝜀, 𝐷;[\R, 𝐹\:)
         • Time (N and tstep_size)
+
 • Additional label (e.g. AMOC recoveries)
+
 • Larger/stochastic surrogate models (e.g. 6-box model, stochastic 4-box model, AI surrogate model)
 
 .. image:: _static/media8/image166.png
@@ -700,58 +575,50 @@ Comparing GAN Generated Results for N = (1,2,3) with the Test Set.
 
 
 
-   Task 4.6: AI Simulation Phase 1 Final Report – Neuro-Symbolic
+**Task 4.6: AI Simulation Phase 1 Final Report – Neuro-Symbolic**
 
    .. image:: _static/media8/image167.png
       :width: 8.76111in
       :height: 4.94722in
 
-Learning to Translate Questions into Programs and Programs into
-Questions
+Learning to Translate Questions into Programs and Programs into Questions
 
+Using the CLEVR dataset to validate architectures: (https://cs.stanford.edu/people/jcjohns/clevr/)
 
-+-----------------------------------------------------------------------+
-|    • Specific to image object understanding                           |
-|                                                                       |
-|    | • We adapt this dataset and use only the                         |
-|    | evaluation                                                       |
-|                                                                       |
-|    question and program portions of the data |image149|               |
-|                                                                       |
-|    | Using the CLEVR dataset to validate                              |
-|    | architectures:                                                   |
-|    | (https://cs.stanford.edu/people/jcjohns/clevr/)                  |
-|                                                                       |
-|    • Common dataset for neuro-symbolic method                         |
-+=======================================================================+
-+-----------------------------------------------------------------------+
+• Common dataset for neuro-symbolic method evaluation
+
+• Specific to image object understanding
+
+• We adapt this dataset and use only the question and program portions of the data
 
 ..
 
-   Task 4.6: AI Simulation Phase 1 Final Report - Neuro-Symbolic
+Task 4.6: AI Simulation Phase 1 Final Report - Neuro-Symbolic
 
-   | • Used 59,307 training samples and 12,698 test samples
-   | • Trained network with shared word embeddings
-   | • Evaluated using test samples
-   | • Test samples contained both natural language questions and
-     equivalent programs
-   | • ~75% accuracy overall translating from questions to questions,
-     questions to programs, and programs to questions
+• Used 59,307 training samples and 12,698 test samples
 
-   | **Example Output:**
-   | **Predicted text:** BOS how many small cyan things are there ? EOS
-   | **Ground Truth Text:** BOS how many small cyan things are there ?
-     EOS
-   | **Predicted program:** BOS count ( filter_color ( filter_size (
-     scene , small ) , cyan ) ) EOS **Ground Truth program:** BOS count
-     ( filter_color ( filter_size ( scene , small ) , cyan ) ) EOS
-     **Predicted text from program:** BOS how many of cyan things are
-     are ? ? EOS
+• Trained network with shared word embeddings
 
-   Task 4.6: AI Simulation Phase 1 Final Report - Neuro-Symbolic
+• Evaluated using test samples
+
+• Test samples contained both natural language questions and equivalent programs
+
+• ~75% accuracy overall translating from questions to questions, questions to programs, and programs to questions
+
+
+***Example Output:***
+
+**Predicted text:** BOS how many small cyan things are there ? EOS
+
+**Ground Truth Text:** BOS how many small cyan things are there ? EOS
+
+**Predicted program:** BOS count ( filter_color ( filter_size ( scene , small ) , cyan ) ) EOS Ground Truth program: BOS count ( filter_color ( filter_size ( scene , small ) , cyan ) ) EOS Predicted text from program: BOS how many of cyan things are are ? ? EOS
+
 
 • Validated using the CLEVR dataset
+
 • Translates GAN output into NL Questions
+
 • Able to convert NL Questions into symbolic Programs that the GAN could answer
    .. image:: _static/media8/image169.png
       :width: 4.76111in
@@ -771,7 +638,7 @@ Using CLEVR Dataset
 
 ..
 
-   Task 4.6: AI Simulation Phase 1 Final Report - Neuro-Symbolic
+
 
    .. image:: _static/media8/image172.png
       :width: 5.76111in
@@ -779,241 +646,151 @@ Using CLEVR Dataset
 
 • Adding additional questions to the training dataset
     • ~250,000 generated questions
-• Transfer from model trained purely on
-CLEVR data
-• 40 token question max
-• Preliminary results
-    • Overall Test Set accuracy: 83%
-    • Test size: 25,000 question/program pairs
-New (examples of) AMOC-Specific Questions:
-• If I increase ekman flux by some value will overturning increase
-• If I increase low lat thermocline depth by some value will overturning increase
-• If I decrease freshwater flux by some value will overturning decrease
-• If I set ekman flux to some value, freshwater flux to some value and the thermocline depth of lower latitudes to some value will
-overturning increase..
 
-   | Task 4.6: AI Simulation Phase 1 Final Report – Causal Modeling
+
+• Transfer from model trained purely on CLEVR data
+
+• 40 token question max
+
+• Preliminary results
+
+    • Overall Test Set accuracy: 83%
+
+    • Test size: 25,000 question/program pairs
+
+New (examples of) AMOC-Specific Questions:
+
+• If I increase ekman flux by some value will overturning increase
+
+• If I increase low lat thermocline depth by some value will overturning increase
+
+• If I decrease freshwater flux by some value will overturning decrease
+
+• If I set ekman flux to some value, freshwater flux to some value and the thermocline depth of lower latitudes to some value will overturning increase..
+
+**Task 4.6: AI Simulation Phase 1 Final Report – Causal Modeling**
 
 • Causal path learning algorithmic development underway
+
 • For each epoch, each generator will have a set of batch models it perturbed
+
 • Causal model is built from batches perturbed over the total epoch for each generator
+
 • We focus on the 3-parameter experiments involving:
+
     • Dlow0 - Thermocline depth of lower latitudes
+
     • Mek - Ekman flux from the southern ocean
+
     • Fwn - Fresh water flux (North)
+
 • And on the relationship between freshwater, salinity, temperature with respect to overturning:
+
     • T_south – Temperatures of the southern box
+
     • T_north – Temperatures of the northern box
+
     • S_south – Salinity of the southern box
+
     • S_north – Salinity of the northern box
+
     • D_low0 – Thermocline depth of lower latitudes
+
     • M_n – Overturning Transport
 
-..
 
-8   Task 5.2: Evaluation Final Report
+7   Task 5.2: Evaluation Final Report
 --------------------------------------
-   | *Subtask Description: We report on the results of a benchmark
-     comparison between the AI approach and the conventional approach, comparing their performance.*
+*Subtask Description: We report on the results of a benchmark comparison between the AI approach and the conventional approach, comparing their performance.*
 
-   We summarize the results of the benchmark comparison between the AI
-   approach and the conventional approach.
+We summarize the results of the benchmark comparison between the AI approach and the conventional approach.
 
-   | • In the surrogate modeling bifurcation efforts, a Hopf bifurcation
-     was detected for the 4-box model (in addition to previously known
-     fold bifurcations)
-   | • In the TIP-GAN experiments, when benchmarking with the 4-box
-     model, we showed that the TIP-GAN generators when focused on the
-     area of uncertainty in terms of discriminator predictions was
-     consistent with the area of the separatrix
-   | • In the neuro-symbolic
-     translations we benchmarked the network’s performance in terms of a
-     common benchmark – the CLEVR dataset and performance was
-     exceptional (close to 100%) for text-to-text translations and
-     text-to-program translations using Levenshtein distance. Program to
-     text was over 60% in terms of performance
+• In the surrogate modeling bifurcation efforts, a Hopf bifurcation was detected for the 4-box model (in addition to previously known fold bifurcations)
 
-|image151|\ |image152|\ |image153|\ |image154|\ |image155|\ |image156|\ |image157|\ |image158|\ |image159|\ |image160|\ |image161|\ |image162|\ |image163|\ |image164|\ |image165|\ |image166|\ |image167|\ |image168|\ |image169|\ |image170|\ |image171|\ |image172|\ |image173|\ |image174|\ |image175|\ |image176|\ |image177|\ |image178|\ |image179|\ |image180|\ |image181|\ |image182|\ |image183|\ |image184|\ |image185|\ |image186|
+• In the TIP-GAN experiments, when benchmarking with the 4-box model, we showed that the TIP-GAN generators when focused on the area of uncertainty in terms of discriminator predictions was consistent with the area of the separatrix
 
-+-----------------------------------+-----------------------------------+
-| Summary                           |    Phase 1 source code can be     |
-|                                   |    found in github Phase 1        |
-|                                   |    datasets can be found at       |
-|                                   |    sciserver.com Phase 1 reports  |
-|                                   |    can be found on readthedocs    |
-+===================================+===================================+
-+-----------------------------------+-----------------------------------+
+• In the neuro-symbolic translations we benchmarked the network’s performance in terms of a common benchmark – the CLEVR dataset and performance was exceptional (close to 100%) for text-to-text translations and text-to-program translations using Levenshtein distance. Program to text was over 60% in terms of performance
+
+
+**Summary**
+Phase 1 source code can be found in github
+
+Phase 1 datasets can be found at sciserver.com
+
+Phase 1 reports can be found on readthedocs
+
 
 .. image:: _static/media8/image12.png
    :width: 4.53889in
    :height: 1.65972in
 
-   | PACMAN’s
-   | 4-Box
-   | Model
-   | Tutorial
 
-+-----------------------------------------------------------------------+
-|    1. Boers, Niklas. "Observation-based early-warning signals for a   |
-|    collapse of the Atlantic Meridional Overturning Circulation."      |
-|    Nature Climate Change 11, no. 8 Citations                          |
-|                                                                       |
-|    (2021): 680-688.                                                   |
-|                                                                       |
-|    2. Gnanadesikan, A., A simple model for the structure of the       |
-|    oceanic pycnocline, Science., 283:2077-2079, (1999).               |
-+=======================================================================+
-+-----------------------------------------------------------------------+
 
-..
+1. Boers, Niklas. "Observation-based early-warning signals for a collapse of the Atlantic Meridional Overturning Circulation." Nature Climate Change 11, no. 8 (2021): 680-688.
 
-   | 3. Forget, G., J.-M. Campin, P. Heimbach, C. N. Hill, R. M. Ponte,
-     C. Wunsch, ECCO version 4: An integrated framework for non-linear
-     inverse modeling and global ocean state estimation. Geosci. Model
-     Dev. 8, 3071–3104 (2015)
-   | 4. Gnanadesikan, A., R. Kelson and M. Sten, Flux correction and
-     overturning stability: Insights from a dynamical box model, J.
-     Climate, 31, 9335-9350, https://doi.org/10.1175/JCLI-D-18-0388.1,
-     (2018).
+2. Gnanadesikan, A., A simple model for the structure of the oceanic pycnocline, Science., 283:2077-2079, (1999).
 
-   5. Kaufhold, John Patrick, and Jennifer Alexander Sleeman. "Systems
-   and methods for deep model translation generation." U.S. Patent No.
-   10,504,004. 10 Dec. 2019.
+3. Forget, G., J.-M. Campin, P. Heimbach, C. N. Hill, R. M. Ponte, C. Wunsch, ECCO version 4: An integrated framework for non-linear inverse modeling and global ocean state estimation. Geosci. Model Dev. 8, 3071–3104 (2015)
 
-   6. Garcez, Artur d'Avila, and Luis C. Lamb. "Neurosymbolic AI: the
-   3rd Wave." arXiv preprint arXiv:2012.05876 (2020).
+4. Gnanadesikan, A., R. Kelson and M. Sten, Flux correction and overturning stability: Insights from a dynamical box model, J. Climate, 31, 9335-9350, https://doi.org/10.1175/JCLI-D-18-0388.1, (2018).
 
-   7. Stommel, H. Thermohaline convection with two stable regimes of
-   flow. Tellus 13, 224–230 (1961).
+5. Kaufhold, John Patrick, and Jennifer Alexander Sleeman. "Systems and methods for deep model translation generation." U.S. Patent No. 10,504,004. 10 Dec. 2019.
 
-   8. Karniadakis, George Em, Ioannis G. Kevrekidis, Lu Lu, Paris
-   Perdikaris, Sifan Wang, and Liu Yang. "Physics-informed machine
-   learning." Nature Reviews Physics 3, no. 6 (2021): 422-440.
+6. Garcez, Artur d'Avila, and Luis C. Lamb. "Neurosymbolic AI: the 3rd Wave." arXiv preprint arXiv:2012.05876 (2020).
 
-   9. Sleeman, Jennifer, Milton Halem, Zhifeng Yang, Vanessa Caicedo,
-   Belay Demoz, and Ruben Delgado. "A Deep Machine Learning Approach for
-   LIDAR Based Boundary Layer Height Detection." In IGARSS 2020-2020
-   IEEE International Geoscience and Remote Sensing Symposium, pp.
-   3676-3679. IEEE, 2020.
+7. Stommel, H. Thermohaline convection with two stable regimes of flow. Tellus 13, 224–230 (1961).
 
-   10. Patel, Kinjal, Jennifer Sleeman, and Milton Halem. "Physics-aware
-   deep edge detection network." In Remote Sensing of Clouds and the
-   Atmosphere XXVI, vol. 11859, pp. 32-38. SPIE, 2021.
+8. Karniadakis, George Em, Ioannis G. Kevrekidis, Lu Lu, Paris Perdikaris, Sifan Wang, and Liu Yang. "Physics-informed machine learning." Nature Reviews Physics 3, no. 6 (2021): 422-440.
 
-   11.Brulé, Joshua. "A causation coefficient and taxonomy of
-   correlation/causation relationships." arXiv preprint arXiv:1708.05069
-   (2017).
+9. Sleeman, Jennifer, Milton Halem, Zhifeng Yang, Vanessa Caicedo, Belay Demoz, and Ruben Delgado. "A Deep Machine Learning Approach for LIDAR Based Boundary Layer Height Detection." In IGARSS 2020-2020 IEEE International Geoscience and Remote Sensing Symposium, pp. 3676-3679. IEEE, 2020.
 
-   12. Rasp, Stephan, Michael S. Pritchard, and Pierre Gentine. "Deep
-   learning to represent subgrid processes in climate models."
-   Proceedings of the National Academy of Sciences 115, no. 39 (2018):
-   9684-9689.
+10. Patel, Kinjal, Jennifer Sleeman, and Milton Halem. "Physics-aware deep edge detection network." In Remote Sensing of Clouds and the Atmosphere XXVI, vol. 11859, pp. 32-38. SPIE, 2021.
 
-   13. Bolton, Thomas, and Laure Zanna. "Applications of deep learning
-   to ocean data inference and subgrid parameterization." Journal of
-   Advances in Modeling Earth Systems 11, no. 1 (2019): 376-399.
+11.Brulé, Joshua. "A causation coefficient and taxonomy of correlation/causation relationships." arXiv preprint arXiv:1708.05069 (2017).
 
-   14. Kurth, Thorsten, Sean Treichler, Joshua Romero, Mayur Mudigonda,
-   Nathan Luehr, Everett Phillips, Ankur Mahesh et al. "Exascale deep
-   learning for climate analytics." In SC18: International Conference
-   for High Performance Computing, Networking, Storage and Analysis, pp.
-   649-660. IEEE, 2018.
+12. Rasp, Stephan, Michael S. Pritchard, and Pierre Gentine. "Deep learning to represent subgrid processes in climate models." Proceedings of the National Academy of Sciences 115, no. 39 (2018): 9684-9689.
 
-+-----------------------------------------------------------------------+
-|    15. Weber, Theodore, Austin Corotan, Brian Hutchinson, Ben         |
-|    Kravitz, and Robert Link. "Deep learning for creating surrogate    |
-|    models of precipitation in Earth Citations cont.                   |
-|                                                                       |
-|    system models." Atmospheric Chemistry and Physics 20, no. 4        |
-|    (2020): 2303-2317.                                                 |
-|                                                                       |
-|    16. Matsubara, Takashi, Ai Ishikawa, and Takaharu Yaguchi. "Deep   |
-|    energy-based modeling of discrete-time physics." arXiv preprint    |
-|    arXiv:1905.08604 (2019).                                           |
-+=======================================================================+
-+-----------------------------------------------------------------------+
+13. Bolton, Thomas, and Laure Zanna. "Applications of deep learning to ocean data inference and subgrid parameterization." Journal of Advances in Modeling Earth Systems 11, no. 1 (2019): 376-399.
 
-..
+14. Kurth, Thorsten, Sean Treichler, Joshua Romero, Mayur Mudigonda, Nathan Luehr, Everett Phillips, Ankur Mahesh et al. "Exascale deep learning for climate analytics." In SC18: International Conference for High Performance Computing, Networking, Storage and Analysis, pp. 649-660. IEEE, 2018.
 
-   17. Kleinen, T., Held, H. & Petschel-Held, G. The potential role of
-   spectral properties in detecting thresholds in the Earth system:
-   application to the thermohaline circulation. Ocean Dyn. 53, 53–63
-   (2003).
+15. Weber, Theodore, Austin Corotan, Brian Hutchinson, Ben Kravitz, and Robert Link. "Deep learning for creating surrogate models of precipitation in Earth system models." Atmospheric Chemistry and Physics 20, no. 4 (2020): 2303-2317.
 
-   18. Kocaoglu, Murat, Christopher Snyder, Alexandros G. Dimakis, and
-   Sriram Vishwanath. "Causalgan: Learning causal implicit generative
-   models with adversarial training." arXiv preprint arXiv:1709.02023
-   (2017).
+16. Matsubara, Takashi, Ai Ishikawa, and Takaharu Yaguchi. "Deep energy-based modeling of discrete-time physics." arXiv preprint arXiv:1905.08604 (2019).
 
-   19. Feinman, Reuben, and Brenden M. Lake. "Learning Task-General
-   Representations with Generative Neuro-Symbolic Modeling." arXiv
-   preprint
+17. Kleinen, T., Held, H. & Petschel-Held, G. The potential role of spectral properties in detecting thresholds in the Earth system: application to the thermohaline circulation. Ocean Dyn. 53, 53–63 (2003).
 
-   arXiv:2006.14448 (2020).
+18. Kocaoglu, Murat, Christopher Snyder, Alexandros G. Dimakis, and Sriram Vishwanath. "Causalgan: Learning causal implicit generative models with adversarial training." arXiv preprint arXiv:1709.02023 (2017).
 
-   20. Yi, Kexin, Chuang Gan, Yunzhu Li, Pushmeet Kohli, Jiajun Wu,
-   Antonio Torralba, and Joshua B. Tenenbaum. "Clevrer: Collision events
-   for video representation and reasoning." arXiv preprint
-   arXiv:1910.01442 (2019).
+19. Feinman, Reuben, and Brenden M. Lake. "Learning Task-General Representations with Generative Neuro-Symbolic Modeling." arXiv preprint arXiv:2006.14448 (2020).
 
-   21. Nowack, Peer, Jakob Runge, Veronika Eyring, and Joanna D. Haigh.
-   "Causal networks for climate model evaluation and constrained
-   projections." Nature communications 11, no. 1 (2020): 1-11.
+20. Yi, Kexin, Chuang Gan, Yunzhu Li, Pushmeet Kohli, Jiajun Wu, Antonio Torralba, and Joshua B. Tenenbaum. "Clevrer: Collision events for video representation and reasoning." arXiv preprint arXiv:1910.01442 (2019).
 
-   22. Andersson, Tom R., J. Scott Hosking, María Pérez-Ortiz, Brooks
-   Paige, Andrew Elliott, Chris Russell, Stephen Law et al. "Seasonal
-   Arctic sea ice forecasting with probabilistic deep learning." Nature
-   communications 12, no. 1 (2021): 1-12.
+21. Nowack, Peer, Jakob Runge, Veronika Eyring, and Joanna D. Haigh. "Causal networks for climate model evaluation and constrained projections." Nature communications 11, no. 1 (2020): 1-11.
 
-   23. Storchan, Victor, Svitlana Vyetrenko, and Tucker Balch. "MAS-GAN:
-   Adversarial Calibration of Multi-Agent Market Simulators." (2020).
+22. Andersson, Tom R., J. Scott Hosking, María Pérez-Ortiz, Brooks Paige, Andrew Elliott, Chris Russell, Stephen Law et al. "Seasonal Arctic sea ice forecasting with probabilistic deep learning." Nature communications 12, no. 1 (2021): 1-12.
 
-   24. De Raedt, Luc, Robin Manhaeve, Sebastijan Dumancic, Thomas
-   Demeester, and Angelika Kimmig. "Neuro-symbolic=neural+ logical+
-   probabilistic." In NeSy'19@ IJCAI, the 14th International Workshop on
-   Neural-Symbolic Learning and Reasoning. 2019.
+23. Storchan, Victor, Svitlana Vyetrenko, and Tucker Balch. "MAS-GAN: Adversarial Calibration of Multi-Agent Market Simulators." (2020).
 
-   25. Eyring, V., Bony, S., Meehl, G. A., Senior, C. A., Stevens, B.,
-   Stouffer, R. J., and Taylor, K. E.: Overview of the Coupled Model
-   Intercomparison Project Phase 6 (CMIP6) experimental design and
-   organization, Geosci. Model Dev., 9, 1937-1958,
-   doi:10.5194/gmd-9-1937-2016, 2016.
+24. De Raedt, Luc, Robin Manhaeve, Sebastijan Dumancic, Thomas Demeester, and Angelika Kimmig. "Neuro-symbolic=neural+ logical+ probabilistic." In NeSy'19@ IJCAI, the 14th International Workshop on Neural-Symbolic Learning and Reasoning. 2019.
 
-   26. Swingedouw, Didier, Chinwe Ifejika Speranza, Annett Bartsch, Gael
-   Durand, Cedric Jamet, Gregory Beaugrand, and Alessandra Conversi.
-   "Early warning from space for a few key tipping points in physical,
-   biological, and social-ecological systems." Surveys in geophysics 41,
-   no. 6 (2020): 1237-1284.
+25. Eyring, V., Bony, S., Meehl, G. A., Senior, C. A., Stevens, B., Stouffer, R. J., and Taylor, K. E.: Overview of the Coupled Model Intercomparison Project Phase 6 (CMIP6) experimental design and organization, Geosci. Model Dev., 9, 1937-1958, doi:10.5194/gmd-9-1937-2016, 2016.
 
-   27. Reichstein, Markus, Gustau Camps-Valls, Bjorn Stevens, Martin
-   Jung, Joachim Denzler, and Nuno Carvalhais. "Deep learning and
-   process understanding for
+26. Swingedouw, Didier, Chinwe Ifejika Speranza, Annett Bartsch, Gael Durand, Cedric Jamet, Gregory Beaugrand, and Alessandra Conversi. "Early warning from space for a few key tipping points in physical, biological, and social-ecological systems." Surveys in geophysics 41, no. 6 (2020): 1237-1284.
 
-   data-driven Earth system science." Nature 566, no. 7743 (2019):
-   195-204.
+27. Reichstein, Markus, Gustau Camps-Valls, Bjorn Stevens, Martin Jung, Joachim Denzler, and Nuno Carvalhais. "Deep learning and process understanding for data-driven Earth system science." Nature 566, no. 7743 (2019): 195-204.
 
-   Citations cont.
+28. Sleeman, Jennifer, Ivanka Stajner, Christoph Keller, Milton Halem, Christopher Hamer, Raffaele Montuoro, and Barry Baker. "The Integration of Artificial Intelligence for Improved Operational Air Quality Forecasting." In AGU Fall Meeting 2021. 2021.
 
-   28. Sleeman, Jennifer, Ivanka Stajner, Christoph Keller, Milton
-   Halem, Christopher Hamer, Raffaele Montuoro, and Barry Baker. "The
-   Integration of Artificial Intelligence for Improved Operational Air
-   Quality Forecasting." In AGU Fall Meeting 2021. 2021.
+29. Bellomo, K., Angeloni, M., Corti, S. et al. Future climate change shaped by inter-model differences in Atlantic meridional overturning circulation response. Nat Commun 12, 3659 (2021). https://doi.org/10.1038/s41467-021-24015-w
 
-   | 29. Bellomo, K., Angeloni, M., Corti, S. *et al.* Future climate
-     change shaped by inter-model differences in Atlantic meridional
-     overturning circulation response. *Nat Commun* **12,** 3659 (2021).
-   | 30. Sgubin, G., Swingedouw, D., Drijfhout, S. *et al.* Abrupt
-     cooling over the North Atlantic in modern climate models. *Nat
-     Commun* **8,** 14375
-   | (2017).
-   | 31. Swingedouw, D., Bily, A., Esquerdo, C., Borchert, L. F.,
-     Sgubin, G., Mignot, J., & Menary, M. (2021). On the risk of abrupt
-     changes in the North Atlantic subpolar gyre in CMIP6 models.
-     *Annals of the New York Academy of Sciences*, *1504*\ (1), 187-201.
-   | 32. Mao, Jiayuan, Chuang Gan, Pushmeet Kohli, Joshua B. Tenenbaum,
-     and Jiajun Wu. "The neuro-symbolic concept learner: Interpreting
-     scenes, words, and sentences from natural supervision." *arXiv
-     preprint arXiv:1904.12584* (2019).
+30. Sgubin, G., Swingedouw, D., Drijfhout, S. et al. Abrupt cooling over the North Atlantic in modern climate models. Nat Commun 8, 14375 (2017). https://doi.org/10.1038/ncomms14375
+
+31. Swingedouw, D., Bily, A., Esquerdo, C., Borchert, L. F., Sgubin, G., Mignot, J., & Menary, M. (2021). On the risk of abrupt changes in the North Atlantic subpolar gyre in CMIP6 models. Annals of the New York Academy of Sciences, 1504(1), 187-201. https://doi.org/10.1111/nyas.14659
+
+32. Mao, Jiayuan, Chuang Gan, Pushmeet Kohli, Joshua B. Tenenbaum, and Jiajun Wu. "The neuro-symbolic concept learner: Interpreting scenes, words, and sentences from natural supervision." arXiv preprint arXiv:1904.12584 (2019).
+
+
 
 .. |image1| image:: _static/media8/image2.png
    :width: 3.82222in

@@ -43,38 +43,55 @@ Milestone 10 Progress Report
 3   Goals and Impact
 --------------------
 The goal for this milestone includes:
+
 • Delivering preliminary results from analysis on chosen data.
 
 4   Task 2.6: Data Analysis of the Ocean Models Dataset
 -------------------------------------------------------
 Subtask Description: We will report on preliminary results of the ocean models dataset, which is based on the simplified GCM model and observable data that will be added to further evaluate its value based on what the hybrid AI approach indicates.
+
 • In this report we describe preliminary analysis of the experiments described in the Milestone 9 Report, which includes:
+
     • Analysis related to observable data experimentation.
 
 **Task 2.6: Data Analysis of the Ocean Models Dataset – Introduction**
 
 • Assessing the value of new data assumes one has observational data and needs to measure how that observational data will impact performance.
+
 • However, one must first ask, “What are we looking for in the observations?” • In this case we are looking for changes in modal structure (dynamics) that results in variability.
+
 • A first step is identifying interesting behavior that we do not understand due to variability.
+
 • A second step is identifying how observations could be used to measure this variability.
+
 • In this report we identify interesting behavior and give insight into what would be needed to better understand the modal structure that results in the variability and how it leads to the observed behavior.
 
 **Task 2.6: Thinking About Variability and Tipping Points**
+
 • One possibility is that variability can be described as:
+
 1. A development of a surface anomaly that changes the overturning (positive or negative salinity anomaly).
+
 2. The resultant change in circulation produces opposite-sign salinity anomaly...
+
 3. That then propagates into convective region and causes a switch.
+
 With regards to delayed oscillator mechanism:
+
 • Two questions:
-1. Is overturning variability described by this mechanism in models with tipping points?
-2. Does the oscillator mechanism change under climate change?
+
+    1. Is overturning variability described by this mechanism in models with tipping points?
+
+    2. Does the oscillator mechanism change under climate change?
 
 **Task 2.6: Illustration of the Mechanism**
+
 .. image:: _static/media10/image1.png
-   :width: 6.40278in
-   :height: 5.27303in
+    :width: 6.40278in
+    :height: 4.27303in
 
 **Task 2.6: How Do We Determine What Data Is Needed?**
+
 • What terms contribute to the salinity budget of key centers of action?
     • 3-D advection of salinity,
     • Rate of mixing from below, and
@@ -83,8 +100,11 @@ With regards to delayed oscillator mechanism:
 • What we show here is what regions matter and when they matter.
 
 **Task 2.6: Q1. Is Overturning Variability Described By This Mechanism in Models with Tipping Points?**
+
 • Top figures show convective mode, tends to drive negative values of mode 2 with ~4 year lag, very weak growth
+
 • Bottom figures show gyre boundary shift mode, correlated with positive tendency of convective mode. Peaks four years early. (Precursor!)
+
 • Isolates gyre boundary region as critical.
 
 .. image:: _static/media10/image2.png

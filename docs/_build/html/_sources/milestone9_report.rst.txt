@@ -108,13 +108,16 @@ How does the AI simulation exploit this emergent behavior?
    *Subtask Description: Develop a scenario-based experiment that will exploit the value of new data and measure how the system performs under condition where new data from additional sources will improve the overall functioning of the system.*
 
 • Tipping points may differ across models and between models and the real world because models don’t have precursors of overturning change correctly.
+
 • Example- plot at left show precursors of a 1Sv rise in overturning in a climate model (similar to recent observations).
+
 • Are precursors robust across models- and do they also project onto tipping point collapse (use data from CMIP6 models to evaluate this)?
+
 • Use Case Experiment: Evaluate whether initializing a model near collapse with positive/negative precursor patterns determines whether it collapses.
 
 .. image:: _static/media9/image3.png
-   :width: 5.40278in
-   :height: 5.27303in
+    :width: 5.40278in
+    :height: 5.27303in
 
 
 ..
@@ -142,8 +145,8 @@ Each 35 years, at an effective radiative increase of 2W/m2, we branch off two si
 These will determine whether the AMOC recovers, stabilizes, or continues to collapse under different possible future carbon states.
 
 .. image:: _static/media9/image4.png
-   :width: 9.40278in
-   :height: 6.27303in
+    :width: 9.40278in
+    :height: 6.27303in
 
 ..
 
