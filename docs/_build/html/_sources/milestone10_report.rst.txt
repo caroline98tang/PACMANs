@@ -71,8 +71,8 @@ With regards to delayed oscillator mechanism:
 
 **Task 2.6: Illustration of the Mechanism**
 .. image:: _static/media10/image1.png
-         :width: 6.40278in
-         :height: 5.27303in
+   :width: 6.40278in
+   :height: 5.27303in
 
 **Task 2.6: How Do We Determine What Data Is Needed?**
 • What terms contribute to the salinity budget of key centers of action?

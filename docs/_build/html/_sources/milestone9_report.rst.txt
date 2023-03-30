@@ -24,64 +24,58 @@ Milestone 9 Progress Report
 • Larry White (JHU APL)
 • Marisa Hughes (JHU APL)
 
-   Overview
+1   Overview
+-------------
 
    • This technical report covers the period of December 13, 2022, through January 9, 2022.
 
    • The deliverable for this milestone is this report. This report includes a detailed research plan for Phase 2, which details the finalized strategy to estimate the “value of new data” and finalized targets for forecast.
 
-   | Team Resources
-   | • Code
+2  Team Resources
+-----------------
+    • Code
 
-• https://github.com/JHUAPL/PACMANs - Public to all (Up to date with all code from start to MS 3 deliverables)
+        • https://github.com/JHUAPL/PACMANs - Public to all (Up to date with all code from start to MS 3 deliverables)
 
-   • https://github.com/JHUAPL/PACMANs_internal - Public to DARPA, JHU, and APL (Hold until internal approvals)
+        • https://github.com/JHUAPL/PACMANs_internal - Public to DARPA, JHU, and APL
 
    • Documentation
 
-   • https://pacmans.readthedocs.io/en/latest/
+        • https://pacmans.readthedocs.io/en/latest/
 
    • Datasets
 
-   • http://sciserver.org/public-data/PACMANS/datasets
+        • http://sciserver.org/public-data/PACMANS/datasets
 
-   | Goals and Impact
+3    Goals and Impact
+----------------------
    | Goal for this milestone includes:
 
-   • Finalize strategy to estimate the “value of new data” and finalize the targets for forecast.
+        • Finalize strategy to estimate the “value of new data” and finalize the targets for forecast.
 
-   Preliminary Discussion – Data Sources
+4   Preliminary Discussion
+--------------------------
 
-   • The primary dataset for scientific discovery will be the CMIP6 archive of global coupled models.
+Preliminary Discussion – Data Sources
 
-   • Those models with ensembles of runs for certain forward projections will be valuable in understanding *predictability* of the changes in AMOC.
+    • The primary dataset for scientific discovery will be the CMIP6 archive of global coupled models.
 
-   • Model disagreement, paired with GAN discovery of tipping points,
-   will identify the important parameters or conditions that control the
-   AMOC shutoff.
+    • Those models with ensembles of runs for certain forward projections will be valuable in understanding *predictability* of the changes in AMOC.
 
-   • Observations that could put limits on these parameters or indicate
-   these conditions will be the most valuable new data that could be
-   generated.
+    • Model disagreement, paired with GAN discovery of tipping points, will identify the important parameters or conditions that control the AMOC shutoff.
 
-   • We expect important initial conditions to include the AMOC
-   strength, which could be better measured with added data from floats
-   for improved T, S structure measures, moorings for bottom pressure,
-   or satellite SST and SSS.
+    • Observations that could put limits on these parameters or indicate these conditions will be the most valuable new data that could be generated.
 
-   • We expect an important forcing to be the freshwater flux from the
-   Arctic, which might be measured by floats and satellites.
+        • We expect important initial conditions to include the AMOC strength, which could be better measured with added data from floats for improved T, S structure measures, moorings for bottom pressure, or satellite SST and SSS.
 
-   • We expect the important parameters to be mixing rates, which can be
-   measured with in-situ and satellite monitoring of significant
-   salinity anomalies for their decay rate or potentially dye
-   experiments at the (sub)mesoscale.
+        • We expect an important forcing to be the freshwater flux from the Arctic, which might be measured by floats and satellites.
 
-   • Existing satellite and ARGO datasets will be examined to determine
-   what we can already learn of freshwater fluxes, AMOC strength, and
-   salinity anomalies to constrain our model analyses.
+        • We expect the important parameters to be mixing rates, which can be measured with in-situ and satellite monitoring of significant salinity anomalies for their decay rate or potentially dye experiments at the (sub)mesoscale.
 
-   Preliminary Discussion – Value of New Data
+        • Existing satellite and ARGO datasets will be examined to determine what we can already learn of freshwater fluxes, AMOC strength, and salinity anomalies to constrain our model analyses.
+
+
+Preliminary Discussion – Value of New Data
 • Emergent parameters- efficiency with which large-scale available potential energy is converted to overturning.
 • Emergent behavior- low damping of salinity anomalies near collapse (requires measuring air- sea water fluxes/salt transports).
 • Precursor patterns- focus modeling activity near tipping point, look for common precursors of collapse.
@@ -92,39 +86,26 @@ Milestone 9 Progress Report
 
 ..
 
-   Preliminary Discussion – Questions to Explore
+Preliminary Discussion – Questions to Explore
 
-   Is there **emergent behavior** that can serve as a an index of whether models are approaching a tipping point?
-
-   • Amplitude of variability in the overturning circulation?
-
-   • Appearance or disappearance of oscillations in overturning transport?
+Is there **emergent behavior** that can serve as a an index of whether models are approaching a tipping point?
+    • Amplitude of variability in the overturning circulation?
+    • Appearance or disappearance of oscillations in overturning transport?
     • Damping time and/or persistence of salinity anomalies.
+    • Relative phase of salinity and pycnocline depth anomalies.
 
-   • Relative phase of salinity and pycnocline depth anomalies.
+Is this emergent behavior **detectable** with a relatively short time  series?
+    • Example: In box model, overturning variability increases as tipping point is approached… but hundreds of years of output are needed to see changes.
+    • Examine whether this is true in models with different periodicities in overturning variability.
 
-   Is this emergent behavior **detectable** with a relatively short time  series?
+How does the AI simulation exploit this emergent behavior?
+    • Could the GAN be directed to exploit spaces that have high probability of causing a tip?
+    • Could additional data be used to improve the adversarial game?
 
-   • Example: In box model, overturning variability increases as tipping
-   point is approached… but hundreds of years of output are needed to
-   see changes.
+5   Task 1.5: Use Case Ocean Modeling – Value of New Data for Tipping Point Detection Experiments
+--------------------------------------------------------------------------------------------------
 
-   • Examine whether this is true in models with different periodicities
-   in overturning variability.
-
-   How does the AI simulation exploit this emergent behavior?
-
-   • Could the GAN be directed to exploit spaces that have high
-   probability of causing a tip?
-
-   • Could additional data be used to improve the adversarial game?
-
-   Task 1.5: Use Case Ocean Modeling – Value of New Data for Tipping
-   Point Detection Experiments
-
-   *Subtask Description: Develop a scenario-based experiment that will
-   exploit the value of new data and measure how the system performs under condition where new data from additional
-   sources will improve the overall functioning of the system.*
+   *Subtask Description: Develop a scenario-based experiment that will exploit the value of new data and measure how the system performs under condition where new data from additional sources will improve the overall functioning of the system.*
 
 • Tipping points may differ across models and between models and the real world because models don’t have precursors of overturning change correctly.
 • Example- plot at left show precursors of a 1Sv rise in overturning in a climate model (similar to recent observations).
@@ -141,28 +122,20 @@ Milestone 9 Progress Report
    Task 1.5: Use Case Ocean Modeling – Value of New Data for Tipping
    Point Detection Experiments
 
-   *Subtask Description: Develop a scenario-based experiment that will
-   exploit the value of new data and measure how the system performs
-   under condition where new data from additional sources will improve
-   the overall functioning of the system.*
+   *Subtask Description: Develop a scenario-based experiment that will exploit the value of new data and measure how the system performs under condition where new data from additional sources will improve the overall functioning of the system.*
 
-   • Tipping points may differ across models and between models and the
-   real world because models don’t *respond* to perturbations correctly.
+   • Tipping points may differ across models and between models and the real world because models don’t *respond* to perturbations correctly.
 
-   • Problem- this response is an *emergent relationship,* depending on
-   many parameters.
+   • Problem- this response is an *emergent relationship,* depending on many parameters.
 
-   • Preliminary result- lateral mixing can play a part in this
-   relationship.
+   • Preliminary result- lateral mixing can play a part in this relationship.
 
-   | • *Use Case Experiment*:
-   | Run simulations where lateral mixing is changed in boundary of
-     subpolar gyre. See if this makes models less stable.
+    • *Use Case Experiment*:
+        Run simulations where lateral mixing is changed in boundary of subpolar gyre. See if this makes models less stable.
 
-   **Results from these two “value of data experiments” will direct the
-   additional experiments to be conducted during Phase 2.**
+**Results from these two “value of data experiments” will direct the additional experiments to be conducted during Phase 2.**
 
-   Use Case Ocean Modeling Experimental Plan
+*Use Case Ocean Modeling Experimental Plan*
 
 From a steady 2000s climate, we increase atmospheric CO2 at a constant rate of 4ppm/year (1%).
 Each 35 years, at an effective radiative increase of 2W/m2, we branch off two simulations: one with constant CO2 and one with decreasing CO2 at the same 1% annual rate.
@@ -174,26 +147,19 @@ These will determine whether the AMOC recovers, stabilizes, or continues to coll
 
 ..
 
-   Use Case Ocean Modeling Experimental Plan
-
-   When we identify the CO2 range for collapse, we will run a small
-   ensemble of runs covering the lead up and collapse. This will have
-   two methods:
-
 When we identify the CO2 range for collapse, we will run a small ensemble of runs covering the lead up and collapse. This will have two methods:
 1. Targeted: Several runs will have varying initial conditions of known climate oscillations (e.g. Atlantic Multidecadal Oscillation (AMO) phase) and AMOC strength. We will also adjust the parameters from the box model that the GAN indicates the tipping point or separatrix is most sensitive to. We will further incorporate observations to constrain parameters and evaluate their effects.
 2. Random: We will also repeat runs with roundoff-level differences in the atmosphere’s initial conditions. This will allow us to understand the sensitivity of AMOC collapse and recovery, determine what additional measurements could reduce uncertainty in such projections, and enable a parallel understanding of collapse to that of the GAN.
 
 Data Experimental Plan
-1. Calibration of historical and forward scenarios of multiple CMIP models will be
-used to study AMOC collapse through integration in the GAN.
+1. Calibration of historical and forward scenarios of multiple CMIP models will be used to study AMOC collapse through integration in the GAN.
 • AdditionalData/Models:
     • Currently using CESM2: USA, Community Earth System Model
     • New: MPI-ESM1-2-LR: Max Planck Institute for Meteorology Earth System Model; ACCESS-CM2: Australian Community Climate and Earth System Simulator; CAN-ESM5: Canadian Earth System Model
 • These are all z-level models (they use depth below sea surface as their vertical coordinate). Continued code development for calibrating models with other vertical coordinates would be required.
 2. Calibrated data will be used to fit the 4 and 6 box model for multiple CMIP-class global coupled models.
 
-   | Data Experimental Plan
+Data Experimental Plan
    | Calibrated data will be used to fit the 4 and 6 box model for
      multiple CMIP-class global coupled models
 
@@ -206,83 +172,66 @@ In the forward scenario, these allow for 4 box AMOC to explain 91% of variation 
 
 ..
 
-   Data Experimental Plan
+*Data Experimental Plan*
 
 3. The GAN will be used to explore the AMOC dynamics for the different models using the 4 and 6 box model with parameters fitted to the individual models.
 4. The parameters and initial conditions identified for tipping in CESM2 will be tested as part of the targeted ensemble of tipping runs in the use case modeling.
 5. Differences in model parameters that cause higher/lower risk of AMOC collapse analyzed with respect to the different AMOC reduction rates in the forward scenarios, with the goal of explaining model disagreements.
 6. Acquire new observational data to constrain parameters based on GAN results.
 
-   AI Physics-Informed Surrogate Models Experimental Plan – 6 box model
-
-
+6  AI Physics-Informed Surrogate Models Experimental Plan
+------------------------------------------------------------------------
+AI Physics-Informed Surrogate Models Experimental Plan – 6 box model
 1. 6 box model equation set and nondimensionalization will be used to implement a new set of equations.
 2. Will use numerical bifurcation computations with respect to the same parameters we used in the 4 box case to computer several one-parameter bifurcation diagrams in comparable operating regimes.
 3. Will pinpoint the candidate tipping point bifurcations (turning points involving a stable and an unstable steady branch as well as possibly subcritical Hopf bifurcations where a stable focus loses stability “backwards” and an unstable limit cycle is born in the reverse direction.)
-
 4. In the neighborhood of these candidate tipping points will include noise terms for deterministic evolution equations, and perform stochastic simulations from rich ensembles of initial conditions.
 5. Will collect these stochastic trajectories, and then use our stochastic integrator-inspired neural network SDE identification software to learn low-dimensional effective SDEs targeted to the neighborhood of said candidate tipping points.
 6. In a separate effort, will use fully developed weather simulations to calibrate mathematical six- equation model.
 7. Will collect time series of the “six model variables” from the full simulation, and then, using recurrent neural network architectures (e.g. Runge-Kutta recurrent Resnets that we originally proposed), identify black box 6 box models.
 8. In collaboration with Prof. Gnanadesikan, will decide which constitutive and balance terms from the six equation model are firmly established and which are more tenuous.
 
-..
 
-   AI Physics-Informed Surrogate Models Experimental Plan – Exploring
-   use of GAN
-
-
+AI Physics-Informed Surrogate Models Experimental Plan – Exploring use of GAN
 1. Using GANs to assist and enhance multiscale simulations. In traditional statistical physics there exist physics inspired algorithms (like umbrella sampling) using intelligently biased dynamics to generate these configurations. GANs provide a machine-learning alternative, where instead of using dynamic simulations, a database of acceptable microscopic configurations are used.
 2. Will use the same generating philosophy to determine separatrices between flipped states; yet in typical conditional GAN architectures only a single random seed is used in the generator, giving us an effectively one-dimensional set of possible points on the separatrix – which in general is an (n-1) dimensional surface.
 3. Have promising preliminary results using more than one random seed generators to create higher dimensional separatrices in model problems. We plan to use them also here to create tipping classifications in more than two effective dimensions.
 
-   AI Simulation Experimental Plan – GAN and 6 Box Model
-
-
+AI Simulation Experimental Plan – GAN and 6 Box Model
 1. Train the GAN using the 6 box model data. • 6 box model surrogate will be used.
 2. Compare models learned by GAN that “tip” with in-house model runs.
 3. Compare models learned by GAN that did not “tip” with in-house model runs.
 4. Compare models learned by GAN that “tipped and recovered” with in-house model runs.
 
-..
 
-   AI Simulation Experimental Plan – GAN and CESM2 Calibrated Model
-
-
+AI Simulation Experimental Plan – GAN and CESM2 Calibrated Model
 1. Build a calibrated surrogate model using the 4 box/6 box model as a template.
 2. Train the GAN using the 4 box/6 box model data.
-• 4 box/6 box model surrogate will be used.
+    • 4 box/6 box model surrogate will be used.
 3. Compare models learned by GAN that “tip” with in-house model runs.
 4. Compare models learned by GAN that did not “tip” with in-house model runs.
-5. Compare models learned by GAN that “tipped and recovered” with in-house
-model runs.
+5. Compare models learned by GAN that “tipped and recovered” with in-house model runs.
 6. Expansion to fitting less-calibrated data (zonal means rather than boxes).
 
-..
-
-   AI Simulation Experimental Plan – Neuro-Symbolic Questions
-
-
+AI Simulation Experimental Plan – Neuro-Symbolic Questions
 1. Define a set of questions and programs consulting with JHU collaborators that:
-• are realistic scientific questions one would ask.
-• can be validated using a standard in-house modeling approach.
+    • are realistic scientific questions one would ask.
+    • can be validated using a standard in-house modeling approach.
 2. Build a new vocabulary based on these questions.
 3. Build a set of programs for these questions.
 4. Train the neuro-symbolic translators based on new vocabulary.
 5. Perform transfer learning based on new questions/programs.
 6. Evaluate the performance using a held-out set of questions/programs.
-7. Evaluate the performance comparing answers to answers achieved by running
-in-house models.
+7. Evaluate the performance comparing answers to answers achieved by running in-house models.
 
 ..
 
-   AI Simulation Experimental Plan – Causal Model
-
+AI Simulation Experimental Plan – Causal Model
 1. Define a set of known causal relationships among parameters and variables for a set of experiments devised using the 4 box and 6 box models.
-• Carefully devise experiments using 4 box and 6 box models.
-• Consult with JHU collaborators for expected outcomes.
+    • Carefully devise experiments using 4 box and 6 box models.
+    • Consult with JHU collaborators for expected outcomes.
 2. Run the GAN on this dataset.
-• GAN output includes storing model state after each epoch.
+    • GAN output includes storing model state after each epoch.
 3. Apply the causal reasoning logic to the output after the GAN completes training.
 4. Compare what is learned from the causal model with what is expected.
 5. Validate surprising results/findings with JHU collaborators.
@@ -350,12 +299,10 @@ in-house models.
    for High Performance Computing, Networking, Storage and Analysis, pp.
    649-660. IEEE, 2018.
 
-+-----------------------------------------------------------------------+
-|    15. Weber, Theodore, Austin Corotan, Brian Hutchinson, Ben         |
+15. Weber, Theodore, Austin Corotan, Brian Hutchinson, Ben         |
 |    Kravitz, and Robert Link. "Deep learning for creating surrogate    |
 |    models of precipitation in Earth Citations cont.                   |
-+=======================================================================+
-+-----------------------------------------------------------------------+
+
 
 ..
 
@@ -417,12 +364,10 @@ in-house models.
    process understanding for data-driven Earth system science." Nature
    566, no. 7743 (2019): 195-204.
 
-+-----------------------------------------------------------------------+
-|    28. Sleeman, Jennifer, Ivanka Stajner, Christoph Keller, Milton    |
+ 28. Sleeman, Jennifer, Ivanka Stajner, Christoph Keller, Milton    |
 |    Halem, Christopher Hamer, Raffaele Montuoro, and Barry Baker. "The |
 |    Integration of Artificial Citations cont.                          |
-+=======================================================================+
-+-----------------------------------------------------------------------+
+
 
 ..
 

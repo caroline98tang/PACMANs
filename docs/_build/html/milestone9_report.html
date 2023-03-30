@@ -20,7 +20,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Introduction" href="pyBAMOCS_intro.html" />
+    <link rel="next" title="Milestone 10 Progress Report" href="milestone10_report.html" />
     <link rel="prev" title="Milestone 8 Progress Report" href="milestone8_report.html" /> 
 </head>
 
@@ -51,7 +51,16 @@
 <li class="toctree-l1"><a class="reference internal" href="milestone6_report.html">Milestone 6 Progress Report</a></li>
 <li class="toctree-l1"><a class="reference internal" href="milestone7_report.html">Milestone 7 Progress Report</a></li>
 <li class="toctree-l1"><a class="reference internal" href="milestone8_report.html">Milestone 8 Progress Report</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Milestone 9 Progress Report</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Milestone 9 Progress Report</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview">1   Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#team-resources">2  Team Resources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#goals-and-impact">3    Goals and Impact</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#preliminary-discussion">4   Preliminary Discussion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#task-1-5-use-case-ocean-modeling-value-of-new-data-for-tipping-point-detection-experiments">5   Task 1.5: Use Case Ocean Modeling – Value of New Data for Tipping Point Detection Experiments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ai-physics-informed-surrogate-models-experimental-plan">6  AI Physics-Informed Surrogate Models Experimental Plan</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="milestone10_report.html">Milestone 10 Progress Report</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">PyBAMOCS:</span></p>
 <ul>
@@ -128,114 +137,111 @@
 • Anshu Saksena (JHU APL)
 • Larry White (JHU APL)
 • Marisa Hughes (JHU APL)</p>
+<section id="overview">
+<h2>1   Overview<a class="headerlink" href="#overview" title="Permalink to this heading"></a></h2>
 <blockquote>
-<div><p>Overview</p>
-<ul class="simple">
+<div><ul class="simple">
 <li><p>This technical report covers the period of December 13, 2022, through January 9, 2022.</p></li>
 <li><p>The deliverable for this milestone is this report. This report includes a detailed research plan for Phase 2, which details the finalized strategy to estimate the “value of new data” and finalized targets for forecast.</p></li>
 </ul>
-<div class="line-block">
-<div class="line">Team Resources</div>
-<div class="line">• Code</div>
-</div>
 </div></blockquote>
-<ul>
-<li><p><a class="reference external" href="https://github.com/JHUAPL/PACMANs">https://github.com/JHUAPL/PACMANs</a> - Public to all (Up to date with all code from start to MS 3 deliverables)</p>
+</section>
+<section id="team-resources">
+<h2>2  Team Resources<a class="headerlink" href="#team-resources" title="Permalink to this heading"></a></h2>
+<blockquote>
+<div><blockquote>
+<div><ul>
+<li><p>Code</p>
 <blockquote>
 <div><ul class="simple">
-<li><p><a class="reference external" href="https://github.com/JHUAPL/PACMANs_internal">https://github.com/JHUAPL/PACMANs_internal</a> - Public to DARPA, JHU, and APL (Hold until internal approvals)</p></li>
-<li><p>Documentation</p></li>
-<li><p><a class="reference external" href="https://pacmans.readthedocs.io/en/latest/">https://pacmans.readthedocs.io/en/latest/</a></p></li>
-<li><p>Datasets</p></li>
-<li><p><a class="reference external" href="http://sciserver.org/public-data/PACMANS/datasets">http://sciserver.org/public-data/PACMANS/datasets</a></p></li>
+<li><p><a class="reference external" href="https://github.com/JHUAPL/PACMANs">https://github.com/JHUAPL/PACMANs</a> - Public to all (Up to date with all code from start to MS 3 deliverables)</p></li>
+<li><p><a class="reference external" href="https://github.com/JHUAPL/PACMANs_internal">https://github.com/JHUAPL/PACMANs_internal</a> - Public to DARPA, JHU, and APL</p></li>
 </ul>
-<div class="line-block">
-<div class="line">Goals and Impact</div>
-<div class="line">Goal for this milestone includes:</div>
-</div>
-<ul class="simple">
-<li><p>Finalize strategy to estimate the “value of new data” and finalize the targets for forecast.</p></li>
-</ul>
-<p>Preliminary Discussion – Data Sources</p>
-<ul class="simple">
-<li><p>The primary dataset for scientific discovery will be the CMIP6 archive of global coupled models.</p></li>
-<li><p>Those models with ensembles of runs for certain forward projections will be valuable in understanding <em>predictability</em> of the changes in AMOC.</p></li>
-<li><p>Model disagreement, paired with GAN discovery of tipping points,</p></li>
-</ul>
-<p>will identify the important parameters or conditions that control the
-AMOC shutoff.</p>
-<ul class="simple">
-<li><p>Observations that could put limits on these parameters or indicate</p></li>
-</ul>
-<p>these conditions will be the most valuable new data that could be
-generated.</p>
-<ul class="simple">
-<li><p>We expect important initial conditions to include the AMOC</p></li>
-</ul>
-<p>strength, which could be better measured with added data from floats
-for improved T, S structure measures, moorings for bottom pressure,
-or satellite SST and SSS.</p>
-<ul class="simple">
-<li><p>We expect an important forcing to be the freshwater flux from the</p></li>
-</ul>
-<p>Arctic, which might be measured by floats and satellites.</p>
-<ul class="simple">
-<li><p>We expect the important parameters to be mixing rates, which can be</p></li>
-</ul>
-<p>measured with in-situ and satellite monitoring of significant
-salinity anomalies for their decay rate or potentially dye
-experiments at the (sub)mesoscale.</p>
-<ul class="simple">
-<li><p>Existing satellite and ARGO datasets will be examined to determine</p></li>
-</ul>
-<p>what we can already learn of freshwater fluxes, AMOC strength, and
-salinity anomalies to constrain our model analyses.</p>
-<p>Preliminary Discussion – Value of New Data</p>
 </div></blockquote>
 </li>
-<li><p>Emergent parameters- efficiency with which large-scale available potential energy is converted to overturning.</p></li>
-<li><p>Emergent behavior- low damping of salinity anomalies near collapse (requires measuring air- sea water fluxes/salt transports).</p></li>
-<li><p>Precursor patterns- focus modeling activity near tipping point, look for common precursors of collapse.</p></li>
-</ul>
-<a class="reference internal image-reference" href="_images/image219.png"><img alt="_images/image219.png" src="_images/image219.png" style="width: 6.40278in; height: 6.27303in;" /></a>
-<blockquote>
-<div><p>Preliminary Discussion – Questions to Explore</p>
-<p>Is there <strong>emergent behavior</strong> that can serve as a an index of whether models are approaching a tipping point?</p>
-<ul class="simple">
-<li><p>Amplitude of variability in the overturning circulation?</p></li>
-<li><p>Appearance or disappearance of oscillations in overturning transport?</p></li>
-</ul>
-<blockquote>
-<div><ul class="simple">
-<li><p>Damping time and/or persistence of salinity anomalies.</p></li>
 </ul>
 </div></blockquote>
-<ul class="simple">
+<ul>
+<li><p>Documentation</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="https://pacmans.readthedocs.io/en/latest/">https://pacmans.readthedocs.io/en/latest/</a></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Datasets</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="http://sciserver.org/public-data/PACMANS/datasets">http://sciserver.org/public-data/PACMANS/datasets</a></p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</section>
+<section id="goals-and-impact">
+<h2>3    Goals and Impact<a class="headerlink" href="#goals-and-impact" title="Permalink to this heading"></a></h2>
+<blockquote>
+<div><div class="line-block">
+<div class="line">Goal for this milestone includes:</div>
+</div>
+<blockquote>
+<div><ul class="simple">
+<li><p>Finalize strategy to estimate the “value of new data” and finalize the targets for forecast.</p></li>
+</ul>
+</div></blockquote>
+</div></blockquote>
+</section>
+<section id="preliminary-discussion">
+<h2>4   Preliminary Discussion<a class="headerlink" href="#preliminary-discussion" title="Permalink to this heading"></a></h2>
+<p>Preliminary Discussion – Data Sources</p>
+<blockquote>
+<div><ul>
+<li><p>The primary dataset for scientific discovery will be the CMIP6 archive of global coupled models.</p></li>
+<li><p>Those models with ensembles of runs for certain forward projections will be valuable in understanding <em>predictability</em> of the changes in AMOC.</p></li>
+<li><p>Model disagreement, paired with GAN discovery of tipping points, will identify the important parameters or conditions that control the AMOC shutoff.</p></li>
+<li><p>Observations that could put limits on these parameters or indicate these conditions will be the most valuable new data that could be generated.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>We expect important initial conditions to include the AMOC strength, which could be better measured with added data from floats for improved T, S structure measures, moorings for bottom pressure, or satellite SST and SSS.</p></li>
+<li><p>We expect an important forcing to be the freshwater flux from the Arctic, which might be measured by floats and satellites.</p></li>
+<li><p>We expect the important parameters to be mixing rates, which can be measured with in-situ and satellite monitoring of significant salinity anomalies for their decay rate or potentially dye experiments at the (sub)mesoscale.</p></li>
+<li><p>Existing satellite and ARGO datasets will be examined to determine what we can already learn of freshwater fluxes, AMOC strength, and salinity anomalies to constrain our model analyses.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+<p>Preliminary Discussion – Value of New Data
+• Emergent parameters- efficiency with which large-scale available potential energy is converted to overturning.
+• Emergent behavior- low damping of salinity anomalies near collapse (requires measuring air- sea water fluxes/salt transports).
+• Precursor patterns- focus modeling activity near tipping point, look for common precursors of collapse.</p>
+<a class="reference internal image-reference" href="_images/image219.png"><img alt="_images/image219.png" src="_images/image219.png" style="width: 6.40278in; height: 6.27303in;" /></a>
+<p>Preliminary Discussion – Questions to Explore</p>
+<dl class="simple">
+<dt>Is there <strong>emergent behavior</strong> that can serve as a an index of whether models are approaching a tipping point?</dt><dd><ul class="simple">
+<li><p>Amplitude of variability in the overturning circulation?</p></li>
+<li><p>Appearance or disappearance of oscillations in overturning transport?</p></li>
+<li><p>Damping time and/or persistence of salinity anomalies.</p></li>
 <li><p>Relative phase of salinity and pycnocline depth anomalies.</p></li>
 </ul>
-<p>Is this emergent behavior <strong>detectable</strong> with a relatively short time  series?</p>
-<ul class="simple">
-<li><p>Example: In box model, overturning variability increases as tipping</p></li>
+</dd>
+<dt>Is this emergent behavior <strong>detectable</strong> with a relatively short time  series?</dt><dd><ul class="simple">
+<li><p>Example: In box model, overturning variability increases as tipping point is approached… but hundreds of years of output are needed to see changes.</p></li>
+<li><p>Examine whether this is true in models with different periodicities in overturning variability.</p></li>
 </ul>
-<p>point is approached… but hundreds of years of output are needed to
-see changes.</p>
-<ul class="simple">
-<li><p>Examine whether this is true in models with different periodicities</p></li>
-</ul>
-<p>in overturning variability.</p>
-<p>How does the AI simulation exploit this emergent behavior?</p>
-<ul class="simple">
-<li><p>Could the GAN be directed to exploit spaces that have high</p></li>
-</ul>
-<p>probability of causing a tip?</p>
-<ul class="simple">
+</dd>
+<dt>How does the AI simulation exploit this emergent behavior?</dt><dd><ul class="simple">
+<li><p>Could the GAN be directed to exploit spaces that have high probability of causing a tip?</p></li>
 <li><p>Could additional data be used to improve the adversarial game?</p></li>
 </ul>
-<p>Task 1.5: Use Case Ocean Modeling – Value of New Data for Tipping
-Point Detection Experiments</p>
-<p><em>Subtask Description: Develop a scenario-based experiment that will
-exploit the value of new data and measure how the system performs under condition where new data from additional
-sources will improve the overall functioning of the system.</em></p>
+</dd>
+</dl>
+</section>
+<section id="task-1-5-use-case-ocean-modeling-value-of-new-data-for-tipping-point-detection-experiments">
+<h2>5   Task 1.5: Use Case Ocean Modeling – Value of New Data for Tipping Point Detection Experiments<a class="headerlink" href="#task-1-5-use-case-ocean-modeling-value-of-new-data-for-tipping-point-detection-experiments" title="Permalink to this heading"></a></h2>
+<blockquote>
+<div><p><em>Subtask Description: Develop a scenario-based experiment that will exploit the value of new data and measure how the system performs under condition where new data from additional sources will improve the overall functioning of the system.</em></p>
 </div></blockquote>
 <ul class="simple">
 <li><p>Tipping points may differ across models and between models and the real world because models don’t have precursors of overturning change correctly.</p></li>
@@ -247,47 +253,33 @@ sources will improve the overall functioning of the system.</em></p>
 <blockquote>
 <div><p>Task 1.5: Use Case Ocean Modeling – Value of New Data for Tipping
 Point Detection Experiments</p>
-<p><em>Subtask Description: Develop a scenario-based experiment that will
-exploit the value of new data and measure how the system performs
-under condition where new data from additional sources will improve
-the overall functioning of the system.</em></p>
+<p><em>Subtask Description: Develop a scenario-based experiment that will exploit the value of new data and measure how the system performs under condition where new data from additional sources will improve the overall functioning of the system.</em></p>
 <ul class="simple">
-<li><p>Tipping points may differ across models and between models and the</p></li>
+<li><p>Tipping points may differ across models and between models and the real world because models don’t <em>respond</em> to perturbations correctly.</p></li>
+<li><p>Problem- this response is an <em>emergent relationship,</em> depending on many parameters.</p></li>
+<li><p>Preliminary result- lateral mixing can play a part in this relationship.</p></li>
 </ul>
-<p>real world because models don’t <em>respond</em> to perturbations correctly.</p>
-<ul class="simple">
-<li><p>Problem- this response is an <em>emergent relationship,</em> depending on</p></li>
+<blockquote>
+<div><ul class="simple">
+<li><dl class="simple">
+<dt><em>Use Case Experiment</em>:</dt><dd><p>Run simulations where lateral mixing is changed in boundary of subpolar gyre. See if this makes models less stable.</p>
+</dd>
+</dl>
+</li>
 </ul>
-<p>many parameters.</p>
-<ul class="simple">
-<li><p>Preliminary result- lateral mixing can play a part in this</p></li>
-</ul>
-<p>relationship.</p>
-<div class="line-block">
-<div class="line">• <em>Use Case Experiment</em>:</div>
-<div class="line">Run simulations where lateral mixing is changed in boundary of
-subpolar gyre. See if this makes models less stable.</div>
-</div>
-<p><strong>Results from these two “value of data experiments” will direct the
-additional experiments to be conducted during Phase 2.</strong></p>
-<p>Use Case Ocean Modeling Experimental Plan</p>
 </div></blockquote>
+</div></blockquote>
+<p><strong>Results from these two “value of data experiments” will direct the additional experiments to be conducted during Phase 2.</strong></p>
+<p><em>Use Case Ocean Modeling Experimental Plan</em></p>
 <p>From a steady 2000s climate, we increase atmospheric CO2 at a constant rate of 4ppm/year (1%).
 Each 35 years, at an effective radiative increase of 2W/m2, we branch off two simulations: one with constant CO2 and one with decreasing CO2 at the same 1% annual rate.
 These will determine whether the AMOC recovers, stabilizes, or continues to collapse under different possible future carbon states.</p>
 <a class="reference internal image-reference" href="_images/image416.png"><img alt="_images/image416.png" src="_images/image416.png" style="width: 9.40278in; height: 6.27303in;" /></a>
-<blockquote>
-<div><p>Use Case Ocean Modeling Experimental Plan</p>
-<p>When we identify the CO2 range for collapse, we will run a small
-ensemble of runs covering the lead up and collapse. This will have
-two methods:</p>
-</div></blockquote>
 <p>When we identify the CO2 range for collapse, we will run a small ensemble of runs covering the lead up and collapse. This will have two methods:
 1. Targeted: Several runs will have varying initial conditions of known climate oscillations (e.g. Atlantic Multidecadal Oscillation (AMO) phase) and AMOC strength. We will also adjust the parameters from the box model that the GAN indicates the tipping point or separatrix is most sensitive to. We will further incorporate observations to constrain parameters and evaluate their effects.
 2. Random: We will also repeat runs with roundoff-level differences in the atmosphere’s initial conditions. This will allow us to understand the sensitivity of AMOC collapse and recovery, determine what additional measurements could reduce uncertainty in such projections, and enable a parallel understanding of collapse to that of the GAN.</p>
 <p>Data Experimental Plan
-1. Calibration of historical and forward scenarios of multiple CMIP models will be
-used to study AMOC collapse through integration in the GAN.
+1. Calibration of historical and forward scenarios of multiple CMIP models will be used to study AMOC collapse through integration in the GAN.
 • AdditionalData/Models:</p>
 <blockquote>
 <div><ul class="simple">
@@ -298,94 +290,98 @@ used to study AMOC collapse through integration in the GAN.
 <ul class="simple">
 <li><p>These are all z-level models (they use depth below sea surface as their vertical coordinate). Continued code development for calibrating models with other vertical coordinates would be required.</p></li>
 </ul>
-<ol class="arabic" start="2">
-<li><p>Calibrated data will be used to fit the 4 and 6 box model for multiple CMIP-class global coupled models.</p>
-<div class="line-block">
-<div class="line">Data Experimental Plan</div>
+<ol class="arabic simple" start="2">
+<li><p>Calibrated data will be used to fit the 4 and 6 box model for multiple CMIP-class global coupled models.</p></li>
+</ol>
+<dl>
+<dt>Data Experimental Plan</dt><dd><div class="line-block">
 <div class="line">Calibrated data will be used to fit the 4 and 6 box model for
 multiple CMIP-class global coupled models</div>
 </div>
-</li>
-</ol>
+</dd>
+</dl>
 <p>CESM2: Fitting historical run of LE ensemble member 1 yields AI=1429, epsilon=1.6724e-04, Kv=3.3703e-05.
 In the forward scenario, these allow for 4 box AMOC to explain 91% of variation in CESM2 AMOC.</p>
 <a class="reference internal image-reference" href="_images/image514.png"><img alt="_images/image514.png" src="_images/image514.png" style="width: 9.40278in; height: 6.27303in;" /></a>
-<blockquote>
-<div><p>Data Experimental Plan</p>
-</div></blockquote>
-<ol class="arabic" start="3">
+<p><em>Data Experimental Plan</em></p>
+<ol class="arabic simple" start="3">
 <li><p>The GAN will be used to explore the AMOC dynamics for the different models using the 4 and 6 box model with parameters fitted to the individual models.</p></li>
 <li><p>The parameters and initial conditions identified for tipping in CESM2 will be tested as part of the targeted ensemble of tipping runs in the use case modeling.</p></li>
 <li><p>Differences in model parameters that cause higher/lower risk of AMOC collapse analyzed with respect to the different AMOC reduction rates in the forward scenarios, with the goal of explaining model disagreements.</p></li>
-<li><p>Acquire new observational data to constrain parameters based on GAN results.</p>
-<p>AI Physics-Informed Surrogate Models Experimental Plan – 6 box model</p>
-</li>
+<li><p>Acquire new observational data to constrain parameters based on GAN results.</p></li>
 </ol>
-<ol class="arabic simple">
-<li><p>6 box model equation set and nondimensionalization will be used to implement a new set of equations.</p></li>
-<li><p>Will use numerical bifurcation computations with respect to the same parameters we used in the 4 box case to computer several one-parameter bifurcation diagrams in comparable operating regimes.</p></li>
-<li><p>Will pinpoint the candidate tipping point bifurcations (turning points involving a stable and an unstable steady branch as well as possibly subcritical Hopf bifurcations where a stable focus loses stability “backwards” and an unstable limit cycle is born in the reverse direction.)</p></li>
-<li><p>In the neighborhood of these candidate tipping points will include noise terms for deterministic evolution equations, and perform stochastic simulations from rich ensembles of initial conditions.</p></li>
-<li><p>Will collect these stochastic trajectories, and then use our stochastic integrator-inspired neural network SDE identification software to learn low-dimensional effective SDEs targeted to the neighborhood of said candidate tipping points.</p></li>
-<li><p>In a separate effort, will use fully developed weather simulations to calibrate mathematical six- equation model.</p></li>
-<li><p>Will collect time series of the “six model variables” from the full simulation, and then, using recurrent neural network architectures (e.g. Runge-Kutta recurrent Resnets that we originally proposed), identify black box 6 box models.</p></li>
-<li><p>In collaboration with Prof. Gnanadesikan, will decide which constitutive and balance terms from the six equation model are firmly established and which are more tenuous.</p></li>
-</ol>
+</section>
+<section id="ai-physics-informed-surrogate-models-experimental-plan">
+<h2>6  AI Physics-Informed Surrogate Models Experimental Plan<a class="headerlink" href="#ai-physics-informed-surrogate-models-experimental-plan" title="Permalink to this heading"></a></h2>
+<p>AI Physics-Informed Surrogate Models Experimental Plan – 6 box model
+1. 6 box model equation set and nondimensionalization will be used to implement a new set of equations.
+2. Will use numerical bifurcation computations with respect to the same parameters we used in the 4 box case to computer several one-parameter bifurcation diagrams in comparable operating regimes.
+3. Will pinpoint the candidate tipping point bifurcations (turning points involving a stable and an unstable steady branch as well as possibly subcritical Hopf bifurcations where a stable focus loses stability “backwards” and an unstable limit cycle is born in the reverse direction.)
+4. In the neighborhood of these candidate tipping points will include noise terms for deterministic evolution equations, and perform stochastic simulations from rich ensembles of initial conditions.
+5. Will collect these stochastic trajectories, and then use our stochastic integrator-inspired neural network SDE identification software to learn low-dimensional effective SDEs targeted to the neighborhood of said candidate tipping points.
+6. In a separate effort, will use fully developed weather simulations to calibrate mathematical six- equation model.
+7. Will collect time series of the “six model variables” from the full simulation, and then, using recurrent neural network architectures (e.g. Runge-Kutta recurrent Resnets that we originally proposed), identify black box 6 box models.
+8. In collaboration with Prof. Gnanadesikan, will decide which constitutive and balance terms from the six equation model are firmly established and which are more tenuous.</p>
+<p>AI Physics-Informed Surrogate Models Experimental Plan – Exploring use of GAN
+1. Using GANs to assist and enhance multiscale simulations. In traditional statistical physics there exist physics inspired algorithms (like umbrella sampling) using intelligently biased dynamics to generate these configurations. GANs provide a machine-learning alternative, where instead of using dynamic simulations, a database of acceptable microscopic configurations are used.
+2. Will use the same generating philosophy to determine separatrices between flipped states; yet in typical conditional GAN architectures only a single random seed is used in the generator, giving us an effectively one-dimensional set of possible points on the separatrix – which in general is an (n-1) dimensional surface.
+3. Have promising preliminary results using more than one random seed generators to create higher dimensional separatrices in model problems. We plan to use them also here to create tipping classifications in more than two effective dimensions.</p>
+<p>AI Simulation Experimental Plan – GAN and 6 Box Model
+1. Train the GAN using the 6 box model data. • 6 box model surrogate will be used.
+2. Compare models learned by GAN that “tip” with in-house model runs.
+3. Compare models learned by GAN that did not “tip” with in-house model runs.
+4. Compare models learned by GAN that “tipped and recovered” with in-house model runs.</p>
+<p>AI Simulation Experimental Plan – GAN and CESM2 Calibrated Model
+1. Build a calibrated surrogate model using the 4 box/6 box model as a template.
+2. Train the GAN using the 4 box/6 box model data.</p>
 <blockquote>
-<div><p>AI Physics-Informed Surrogate Models Experimental Plan – Exploring
-use of GAN</p>
+<div><ul class="simple">
+<li><p>4 box/6 box model surrogate will be used.</p></li>
+</ul>
 </div></blockquote>
-<ol class="arabic">
-<li><p>Using GANs to assist and enhance multiscale simulations. In traditional statistical physics there exist physics inspired algorithms (like umbrella sampling) using intelligently biased dynamics to generate these configurations. GANs provide a machine-learning alternative, where instead of using dynamic simulations, a database of acceptable microscopic configurations are used.</p></li>
-<li><p>Will use the same generating philosophy to determine separatrices between flipped states; yet in typical conditional GAN architectures only a single random seed is used in the generator, giving us an effectively one-dimensional set of possible points on the separatrix – which in general is an (n-1) dimensional surface.</p></li>
-<li><p>Have promising preliminary results using more than one random seed generators to create higher dimensional separatrices in model problems. We plan to use them also here to create tipping classifications in more than two effective dimensions.</p>
-<p>AI Simulation Experimental Plan – GAN and 6 Box Model</p>
-</li>
-</ol>
-<ol class="arabic simple">
-<li><p>Train the GAN using the 6 box model data. • 6 box model surrogate will be used.</p></li>
+<ol class="arabic simple" start="3">
 <li><p>Compare models learned by GAN that “tip” with in-house model runs.</p></li>
 <li><p>Compare models learned by GAN that did not “tip” with in-house model runs.</p></li>
 <li><p>Compare models learned by GAN that “tipped and recovered” with in-house model runs.</p></li>
+<li><p>Expansion to fitting less-calibrated data (zonal means rather than boxes).</p></li>
 </ol>
+<p>AI Simulation Experimental Plan – Neuro-Symbolic Questions
+1. Define a set of questions and programs consulting with JHU collaborators that:</p>
 <blockquote>
-<div><p>AI Simulation Experimental Plan – GAN and CESM2 Calibrated Model</p>
+<div><ul class="simple">
+<li><p>are realistic scientific questions one would ask.</p></li>
+<li><p>can be validated using a standard in-house modeling approach.</p></li>
+</ul>
 </div></blockquote>
-<ol class="arabic simple">
-<li><p>Build a calibrated surrogate model using the 4 box/6 box model as a template.</p></li>
+<ol class="arabic simple" start="2">
+<li><p>Build a new vocabulary based on these questions.</p></li>
+<li><p>Build a set of programs for these questions.</p></li>
+<li><p>Train the neuro-symbolic translators based on new vocabulary.</p></li>
+<li><p>Perform transfer learning based on new questions/programs.</p></li>
+<li><p>Evaluate the performance using a held-out set of questions/programs.</p></li>
+<li><p>Evaluate the performance comparing answers to answers achieved by running in-house models.</p></li>
 </ol>
-<p>2. Train the GAN using the 4 box/6 box model data.
-• 4 box/6 box model surrogate will be used.
-3. Compare models learned by GAN that “tip” with in-house model runs.
-4. Compare models learned by GAN that did not “tip” with in-house model runs.
-5. Compare models learned by GAN that “tipped and recovered” with in-house
-model runs.
-6. Expansion to fitting less-calibrated data (zonal means rather than boxes).</p>
+<p>AI Simulation Experimental Plan – Causal Model
+1. Define a set of known causal relationships among parameters and variables for a set of experiments devised using the 4 box and 6 box models.</p>
 <blockquote>
-<div><p>AI Simulation Experimental Plan – Neuro-Symbolic Questions</p>
+<div><ul class="simple">
+<li><p>Carefully devise experiments using 4 box and 6 box models.</p></li>
+<li><p>Consult with JHU collaborators for expected outcomes.</p></li>
+</ul>
 </div></blockquote>
-<p>1. Define a set of questions and programs consulting with JHU collaborators that:
-• are realistic scientific questions one would ask.
-• can be validated using a standard in-house modeling approach.
-2. Build a new vocabulary based on these questions.
-3. Build a set of programs for these questions.
-4. Train the neuro-symbolic translators based on new vocabulary.
-5. Perform transfer learning based on new questions/programs.
-6. Evaluate the performance using a held-out set of questions/programs.
-7. Evaluate the performance comparing answers to answers achieved by running
-in-house models.</p>
-<blockquote>
-<div><p>AI Simulation Experimental Plan – Causal Model</p>
-</div></blockquote>
-<p>1. Define a set of known causal relationships among parameters and variables for a set of experiments devised using the 4 box and 6 box models.
-• Carefully devise experiments using 4 box and 6 box models.
-• Consult with JHU collaborators for expected outcomes.
-2. Run the GAN on this dataset.
-• GAN output includes storing model state after each epoch.
-3. Apply the causal reasoning logic to the output after the GAN completes training.
-4. Compare what is learned from the causal model with what is expected.
-5. Validate surprising results/findings with JHU collaborators.
-6. Repeat experiments using the CEMS2-calibrated data (if time permits).</p>
+<ol class="arabic simple" start="2">
+<li><dl class="simple">
+<dt>Run the GAN on this dataset.</dt><dd><ul class="simple">
+<li><p>GAN output includes storing model state after each epoch.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>Apply the causal reasoning logic to the output after the GAN completes training.</p></li>
+<li><p>Compare what is learned from the causal model with what is expected.</p></li>
+<li><p>Validate surprising results/findings with JHU collaborators.</p></li>
+<li><p>Repeat experiments using the CEMS2-calibrated data (if time permits).</p></li>
+</ol>
 <blockquote>
 <div><div class="line-block">
 <div class="line">Citations</div>
@@ -439,22 +435,11 @@ learning for climate analytics.” In SC18: International Conference
 for High Performance Computing, Networking, Storage and Analysis, pp.
 649-660. IEEE, 2018.</p>
 </div></blockquote>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>15. Weber, Theodore, Austin Corotan, Brian Hutchinson, Ben
-Kravitz, and Robert Link. “Deep learning for creating surrogate
-models of precipitation in Earth Citations cont.</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td></td>
-</tr>
-</tbody>
-</table>
+<p>15. Weber, Theodore, Austin Corotan, Brian Hutchinson, Ben         |
+|    Kravitz, and Robert Link. “Deep learning for creating surrogate    |
+|    models of precipitation in Earth Citations cont.                   |</p>
 <blockquote>
+<div><blockquote>
 <div><p>system models.” Atmospheric Chemistry and Physics 20, no. 4 (2020):
 2303-2317.</p>
 <p>16. Matsubara, Takashi, Ai Ishikawa, and Takaharu Yaguchi. “Deep
@@ -502,21 +487,14 @@ Jung, Joachim Denzler, and Nuno Carvalhais. “Deep learning and
 process understanding for data-driven Earth system science.” Nature
 566, no. 7743 (2019): 195-204.</p>
 </div></blockquote>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>28. Sleeman, Jennifer, Ivanka Stajner, Christoph Keller, Milton
-Halem, Christopher Hamer, Raffaele Montuoro, and Barry Baker. “The
-Integration of Artificial Citations cont.</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td></td>
-</tr>
-</tbody>
-</table>
+<ol class="arabic simple" start="28">
+<li><p>Sleeman, Jennifer, Ivanka Stajner, Christoph Keller, Milton    |</p></li>
+</ol>
+</div></blockquote>
+<div class="line-block">
+<div class="line">Halem, Christopher Hamer, Raffaele Montuoro, and Barry Baker. “The |</div>
+<div class="line">Integration of Artificial Citations cont.                          |</div>
+</div>
 <blockquote>
 <div><p>Intelligence for Improved Operational Air Quality Forecasting.” In
 AGU Fall Meeting 2021. 2021.</p>
@@ -539,13 +517,14 @@ preprint arXiv:1904.12584</em> (2019).</div>
 </div>
 </div></blockquote>
 </section>
+</section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="milestone8_report.html" class="btn btn-neutral float-left" title="Milestone 8 Progress Report" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="pyBAMOCS_intro.html" class="btn btn-neutral float-right" title="Introduction" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="milestone10_report.html" class="btn btn-neutral float-right" title="Milestone 10 Progress Report" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
